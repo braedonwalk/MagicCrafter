@@ -5,9 +5,11 @@ using UnityEngine;
 public class ShootSpell : MonoBehaviour
 {
 
-    public Transform spellOrigin;
-    public GameObject spellPrefab;
+    [SerializeField] Transform spellOrigin;
+    [SerializeField] GameObject spellPrefab;
     // PlayerSoundManager soundManager;
+
+    float spellForce = 5f; //MIGRATE TO SPELL MOVEMENT LATER
 
     void Start()
     {
@@ -24,6 +26,8 @@ public class ShootSpell : MonoBehaviour
     }
 
     public void cast(){
-        Instantiate(spellPrefab, spellOrigin.position, spellOrigin.rotation);
+        GameObject spell = Instantiate(spellPrefab, spellOrigin.position, spellOrigin.rotation);
+        Rigidbody2D rb = spell.GetComponent<Rigidbody2D>();
+        rb.AddForce(spellOrigin.up * spellForce, ForceMode2D.Impulse);
     }
 }

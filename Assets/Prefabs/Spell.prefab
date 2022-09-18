@@ -668,7 +668,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: -90, y: 0, z: 0}
+    m_Rotation: {x: 90, y: 0, z: 0}
     m_Scale: {x: 1, y: 0, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -4823,6 +4823,7 @@ GameObject:
   - component: {fileID: 8985421908937429476}
   - component: {fileID: 8985421908937429477}
   - component: {fileID: 671616102399458379}
+  - component: {fileID: -8137600957387256587}
   m_Layer: 0
   m_Name: Spell
   m_TagString: Untagged
@@ -4910,3 +4911,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fabe461b70bc07048ac81009754cd70c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &-8137600957387256587
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8985421908937429478}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
