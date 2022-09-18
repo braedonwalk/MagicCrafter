@@ -11,7 +11,7 @@ public class ShootSpell : MonoBehaviour
 
     void Start()
     {
-        
+        // soundManager = GetComponent<PlayerSoundManager>();
     }
 
     // Update is called once per frame
