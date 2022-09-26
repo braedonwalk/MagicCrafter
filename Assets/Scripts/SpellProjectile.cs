@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShootSpell : MonoBehaviour
+public class SpellProjectile : MonoBehaviour
 {
     
     [SerializeField] GameObject fireBoltPrefab;
