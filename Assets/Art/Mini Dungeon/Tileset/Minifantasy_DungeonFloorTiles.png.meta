@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -118,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee281e8dab574df41a3e439beec6bc48
-      internalID: 520310551
+      spriteID: a7ef484b7eee4164681822973fd9e0ca
+      internalID: 631786136
       vertices: []
       indices: 
       edges: []
@@ -139,8 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 412b82ec5241f90429c3d5c3982d8dc7
-      internalID: -1397388614
+      spriteID: ad0281d893ed55040a9504597c652cee
+      internalID: -658127740
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8704db3a60406264096c5796a8a5161d
-      internalID: -478439788
+      spriteID: cc2abbb15338e66418b26a34deec2e98
+      internalID: 170792105
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27e508e38780caa448554ee53a7ef8aa
-      internalID: -2098177899
+      spriteID: 63bc101bf735e6342bed080077cd4c11
+      internalID: -1109060348
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 907a6ced05dd29f44bf56b69ff5ec969
-      internalID: -1986583762
+      spriteID: 51544a128741ec8438f64b951538b777
+      internalID: 724221839
       vertices: []
       indices: 
       edges: []
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5223b011b54f18f419fcbd6090ace3f7
-      internalID: -1681309042
+      spriteID: a49986b4b49b4534087bad758e61c520
+      internalID: -1757871591
       vertices: []
       indices: 
       edges: []
@@ -244,8 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2064802f44865c640a585a3fcd02dc5f
-      internalID: 5019122
+      spriteID: e107d590a82c7b648b25e876cd76bdf9
+      internalID: 201921544
       vertices: []
       indices: 
       edges: []
@@ -265,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01bc95aa7fb1fef4fa2d68986af5139d
-      internalID: 1946223970
+      spriteID: 296acfbf690e5544697a8b04c78040d6
+      internalID: 1795006702
       vertices: []
       indices: 
       edges: []
@@ -286,8 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e91d01a6fb1c3aa479754853daa82ec4
-      internalID: -1275117465
+      spriteID: b3d266e6cd5b3ea47966184073a7468b
+      internalID: 347460903
       vertices: []
       indices: 
       edges: []
@@ -307,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f26838c4624ba5748b90a1ea83f43687
-      internalID: -2105008803
+      spriteID: b205d7221b7c80b409ee2d403e806a54
+      internalID: 891828221
       vertices: []
       indices: 
       edges: []
@@ -328,8 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 175a7e441b95839459490ca302ead2b6
-      internalID: 1779533909
+      spriteID: f44861989d553fc49b50c5658f34275b
+      internalID: -958691753
       vertices: []
       indices: 
       edges: []
@@ -349,8 +349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f48c7c7bf92abc48bf719403ca5966d
-      internalID: -1601579227
+      spriteID: 73bc76c6505349040b16bdad57eec9cf
+      internalID: -1266254085
       vertices: []
       indices: 
       edges: []
@@ -370,8 +370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b3e5744bb2e57a40a259779a6f987bc
-      internalID: 320899207
+      spriteID: e8a74184c9c14b542b6d51121e79f503
+      internalID: -148896719
       vertices: []
       indices: 
       edges: []
@@ -391,8 +391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caaf5d9a082bdbf4fb4d601285f61cbc
-      internalID: -1586700337
+      spriteID: 1e43cb4642d5718418fc2b6f4bc91c43
+      internalID: 5054224
       vertices: []
       indices: 
       edges: []
@@ -408,20 +408,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Minifantasy_DungeonFloorTiles_2: -478439788
-      Minifantasy_DungeonFloorTiles_6: 5019122
-      Minifantasy_DungeonFloorTiles_4: -1986583762
-      Minifantasy_DungeonFloorTiles_9: -2105008803
-      Minifantasy_DungeonFloorTiles_5: -1681309042
-      Minifantasy_DungeonFloorTiles_3: -2098177899
-      Minifantasy_DungeonFloorTiles_8: -1275117465
-      Minifantasy_DungeonFloorTiles_10: 1779533909
-      Minifantasy_DungeonFloorTiles_0: 520310551
-      Minifantasy_DungeonFloorTiles_7: 1946223970
-      Minifantasy_DungeonFloorTiles_11: -1601579227
-      Minifantasy_DungeonFloorTiles_13: -1586700337
-      Minifantasy_DungeonFloorTiles_1: -1397388614
-      Minifantasy_DungeonFloorTiles_12: 320899207
+      Minifantasy_DungeonFloorTiles_2: 170792105
+      Minifantasy_DungeonFloorTiles_6: 201921544
+      Minifantasy_DungeonFloorTiles_4: 724221839
+      Minifantasy_DungeonFloorTiles_9: 891828221
+      Minifantasy_DungeonFloorTiles_5: -1757871591
+      Minifantasy_DungeonFloorTiles_3: -1109060348
+      Minifantasy_DungeonFloorTiles_8: 347460903
+      Minifantasy_DungeonFloorTiles_10: -958691753
+      Minifantasy_DungeonFloorTiles_0: 631786136
+      Minifantasy_DungeonFloorTiles_7: 1795006702
+      Minifantasy_DungeonFloorTiles_11: -1266254085
+      Minifantasy_DungeonFloorTiles_13: 5054224
+      Minifantasy_DungeonFloorTiles_1: -658127740
+      Minifantasy_DungeonFloorTiles_12: -148896719
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

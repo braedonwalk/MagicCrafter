@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -112,20 +112,41 @@ TextureImporter:
         width: 24
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af5ae67e94696f54aaa89a54e61c7735
-      internalID: 103819647
+      spriteID: 087d1ea2e23b25e42bc87c970d16419c
+      internalID: -1582355516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: Minifantasy_DungeonWallTiles_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596e1b5c60ca5e84795ad0c785415439
+      internalID: 1009332820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_DungeonWallTiles_2
       rect:
         serializedVersion: 2
         x: 40
@@ -139,29 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2f730cefc321194ba7bc45e38d55af2
-      internalID: 410413260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Minifantasy_DungeonWallTiles_2
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 96
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd825ca969344d74c867e77662d8bd0e
-      internalID: 843521167
+      spriteID: 376a804c233ac8e408e37007df3a4eec
+      internalID: -1307955248
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c483c102c01843f41a65a02c1c5a7537
-      internalID: -1765288388
+      spriteID: 206e634de9303234c83bfb10fd795ee4
+      internalID: 247947271
       vertices: []
       indices: 
       edges: []
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1010c8b3c19eafc45a7738922b2f87b5
-      internalID: 731792554
+      spriteID: bb316f78422a1f049969d1d4a88d02d4
+      internalID: -1244882748
       vertices: []
       indices: 
       edges: []
@@ -223,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf1bbd67e73f8449bd59ac540e07fab
-      internalID: -394573577
+      spriteID: e60579008eb923f478300073a8a8f42c
+      internalID: 530692455
       vertices: []
       indices: 
       edges: []
@@ -240,12 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Minifantasy_DungeonWallTiles_1: 410413260
-      Minifantasy_DungeonWallTiles_2: 843521167
-      Minifantasy_DungeonWallTiles_0: 103819647
-      Minifantasy_DungeonWallTiles_3: -1765288388
-      Minifantasy_DungeonWallTiles_5: -394573577
-      Minifantasy_DungeonWallTiles_4: 731792554
+      Minifantasy_DungeonWallTiles_1: 1009332820
+      Minifantasy_DungeonWallTiles_2: -1307955248
+      Minifantasy_DungeonWallTiles_0: -1582355516
+      Minifantasy_DungeonWallTiles_3: 247947271
+      Minifantasy_DungeonWallTiles_5: -1244882748
+      Minifantasy_DungeonWallTiles_4: -1737512790
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
