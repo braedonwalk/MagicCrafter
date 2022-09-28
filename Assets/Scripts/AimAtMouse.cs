@@ -10,6 +10,7 @@ public class AimAtMouse : MonoBehaviour
     Vector2 playerPosition;
     Rigidbody2D rigidBody;
     Vector2 mousePos;
+    int distance = 1;
 
     void Start()
     {
@@ -19,10 +20,16 @@ public class AimAtMouse : MonoBehaviour
     void Update()
     {
         playerPosition = player.GetComponent<Rigidbody2D>().position;
-        rigidBody.position = playerPosition;
-
+        // rigidBody.MovePosition(rigidBody.position + testVector);
+        // rigidBody.position = playerPosition;
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        // Debug.Log(playerPosition);
+
+        rigidBody.position = (transform.position - player.transform.position).normalized * distance + player.transform.position;
+
+        //THIS IS CLOSER TO WHAT I WANT
+        // Vector3 towardMouse = (transform.position - Input.mousePosition).normalized;
+
+        // rigidBody.position =  towardMouse * distance + player.transform.position;
     }
 
     private void FixedUpdate() {

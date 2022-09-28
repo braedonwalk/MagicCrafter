@@ -7,12 +7,13 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rigidBody;
 
-    float moveSpeed = 5f;
     Vector2 movement;
+    PlayerStatManager player;
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        player = GetComponent<PlayerStatManager>();
     }
 
     void Update()
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        rigidBody.MovePosition(rigidBody.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rigidBody.MovePosition(rigidBody.position + movement * player.getPlayerSpeed() * Time.fixedDeltaTime);
     }
+
+    
 }
