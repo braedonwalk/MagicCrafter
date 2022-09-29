@@ -5815,6 +5815,7 @@ GameObject:
   - component: {fileID: 1428251113}
   - component: {fileID: 1428251105}
   - component: {fileID: 1428251110}
+  - component: {fileID: 1428251114}
   - component: {fileID: 1428251111}
   m_Layer: 0
   m_Name: Player
@@ -5897,7 +5898,7 @@ SpriteRenderer:
   m_SortingLayerID: 880999447
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 499310082, guid: 8d41dac3d5dff8542911124d4fa7844e, type: 3}
+  m_Sprite: {fileID: 985639236, guid: 5b9e2f537a0a0464fadf95b649fc807a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5998,6 +5999,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMoveSpeed: 5
+--- !u!114 &1428251114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428251104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f0f8b40551a6b458ca32a0d404f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1428251110}
 --- !u!1 &1692252330
 GameObject:
   m_ObjectHideFlags: 0
@@ -6327,4 +6341,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1428251104}
   speedFX: {fileID: 286778809}
+  newSpeed: 10
   speedTime: 5

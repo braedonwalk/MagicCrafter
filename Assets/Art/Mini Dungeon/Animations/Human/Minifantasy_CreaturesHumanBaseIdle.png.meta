@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,1351 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc5560b1a5cff945b2dccfdf5a6cf22
+      internalID: -514324056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0f60d0c607a5d48a5f4f8962c8fa39
+      internalID: 1005428260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8764967dc310e29429a373860f09302a
+      internalID: 1452563070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c56b8b0ef4dd749ad529ffe31667a2
+      internalID: -994083084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_4
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0843f1e11d4b4748a616f5bbc94b5eb
+      internalID: 649196440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac8759943a5efc41842ec7265004c80
+      internalID: 732423965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34c9c12739ddb343be3efa9193645bc
+      internalID: 1763735245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_7
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a210155af027804db9b4057ca0f9c89
+      internalID: 1991690357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3d092db12b23543a4df14ffcb55179
+      internalID: 2125364802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a806db63873298c4883fed6fea7d6f47
+      internalID: -182620452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098b5b7b601a7664fae310d563d43619
+      internalID: 918365067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_11
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80480adcb8136f949a16f063d73cb540
+      internalID: -1969972565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb4ecac67142c14b820c8e2693f1c82
+      internalID: -1773797918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_13
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37442252177049418f6789198c7bebe
+      internalID: -1480395969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_14
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daaca2df26b34ae49b175d5254d80524
+      internalID: -1246465701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_15
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50be24be5335c9b40893321236b8d4c7
+      internalID: -1454419721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547fa9ab3023f7247915565c608d2077
+      internalID: 2068779183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231862bebd70dc847bfe04fd32fd51b4
+      internalID: -1898407679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_18
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3e2a2769bc2a541b524b0539f1a8e5
+      internalID: 1652009318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910be15f75844314586fa0234686b820
+      internalID: -71216953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_20
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516088133139fcd41b3e1658aba3bd11
+      internalID: -1216695019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21975ba228d45334ca1f593b0e61d5d4
+      internalID: 1590261364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc73ff41b9a9fa409a668aa5e39deb8
+      internalID: -1585009722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_23
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab144649d3ab014680c48b319a5a45f
+      internalID: 213783452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_24
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc44226e957fde409dba6ea08ad1031
+      internalID: 2093049511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366f42207125fec4d81a78fd346ba6e4
+      internalID: 241669626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_26
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54f5afb1e155e642b1bd0ba7d8a8d3e
+      internalID: -1755901293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_27
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b8d4f3cb220434d806e3db5fa21650
+      internalID: -112380187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_28
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a939e5166215040828d88709362766
+      internalID: -867327150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_29
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba76b0fa15325a04281e23afb1328338
+      internalID: -881109105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_30
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d76d1eff0a2e74cafb3aebf178e9c5
+      internalID: -2028211712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_31
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c32acbfd2e83e448826f4a35038a021
+      internalID: 153709685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_32
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c879dfbf9055b9b4880c79b837b67eea
+      internalID: 431723702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef7f96dbe7689d4db7602b31c14971f
+      internalID: 969107049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a857deda480f6e0428ca07036f3f3790
+      internalID: -620576726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_35
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd93e7cc5b5a2840adf29435c8fad61
+      internalID: -436186456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_36
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae2656cfdb633747b991462bc217c52
+      internalID: -79311728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_37
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6431e76ad29726042b621bd1aa744a5c
+      internalID: -1059767589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_38
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e65badf9b8f0840912b7d67a94dd74
+      internalID: -642436684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_39
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277a8ef1c2102c841809f76fcb351c03
+      internalID: -818629281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_40
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d1a5c4ef764104c8108b7243d1683c
+      internalID: -1188136509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_41
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56ef202501307f4f8f298b04d5bb330
+      internalID: -1224383872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_42
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9ceea0bbc56e1419a4a24c30c86499
+      internalID: 494058837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_43
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cad5eac9fca8247951b20223bca25b
+      internalID: -1859983409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_44
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60a5554071035b44a5b92872a1e8f1c
+      internalID: 182158970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_45
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49043af6cb0ab924c9cfd2934a21f269
+      internalID: -122533168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_46
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9d71bc91aac2c46a2e27a24f67484b
+      internalID: -958003778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_47
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f66bf85dd044a40a15005028cbf81f
+      internalID: -898462145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_48
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2a02f7182f9af448cd11565e863792
+      internalID: -329337554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_49
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4d1a9ba11fe404385fa6ced2061356
+      internalID: -1240196680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_50
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7ad2aa0b81d4c4c86cca8f1fbb90b4
+      internalID: -1510832531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_51
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4027a8de82218fc42a21e7dfb7f921c6
+      internalID: -535595763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_52
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1a6e190c46efb458f2e6748ba424e6
+      internalID: 693902166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_53
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc41abed74ce8ef43adc6963b3f15b3f
+      internalID: 1538460490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_54
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6cbd85a6568324797a4fc84a78dae2
+      internalID: 1415496135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_55
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa56b8e495d16a41a225c8e84bfddc3
+      internalID: 2014444663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_56
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62270cfc0b4454447832c5cb2cd31642
+      internalID: 1157075727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_57
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4b87abab46dc840bef56f605a5889b
+      internalID: 641246874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_58
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2810d75ca6764f45a69cc6cda4cbbe2
+      internalID: 1210645766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_59
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b7a2f07d6a34d489b0da5c92e32290
+      internalID: -375077626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_60
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ab53947cf3ddb42a0dee89b0395c69
+      internalID: 650550305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_61
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c6603128d7ea54aa200258815b7a93
+      internalID: 581634054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_62
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2435af3eb4d3d0b4f8f619a4689c0363
+      internalID: -1603707092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseIdle_63
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fb4f890481fa641afe4b4c1ba2ff96
+      internalID: -180963652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -113,7 +1457,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_CreaturesHumanBaseIdle_6: 1763735245
+      Minifantasy_CreaturesHumanBaseIdle_7: 1991690357
+      Minifantasy_CreaturesHumanBaseIdle_0: -514324056
+      Minifantasy_CreaturesHumanBaseIdle_13: -1480395969
+      Minifantasy_CreaturesHumanBaseIdle_11: -1969972565
+      Minifantasy_CreaturesHumanBaseIdle_23: 213783452
+      Minifantasy_CreaturesHumanBaseIdle_63: -180963652
+      Minifantasy_CreaturesHumanBaseIdle_16: 2068779183
+      Minifantasy_CreaturesHumanBaseIdle_34: -620576726
+      Minifantasy_CreaturesHumanBaseIdle_38: -642436684
+      Minifantasy_CreaturesHumanBaseIdle_35: -436186456
+      Minifantasy_CreaturesHumanBaseIdle_57: 641246874
+      Minifantasy_CreaturesHumanBaseIdle_48: -329337554
+      Minifantasy_CreaturesHumanBaseIdle_39: -818629281
+      Minifantasy_CreaturesHumanBaseIdle_51: -535595763
+      Minifantasy_CreaturesHumanBaseIdle_55: 2014444663
+      Minifantasy_CreaturesHumanBaseIdle_9: -182620452
+      Minifantasy_CreaturesHumanBaseIdle_41: -1224383872
+      Minifantasy_CreaturesHumanBaseIdle_28: -867327150
+      Minifantasy_CreaturesHumanBaseIdle_44: 182158970
+      Minifantasy_CreaturesHumanBaseIdle_19: -71216953
+      Minifantasy_CreaturesHumanBaseIdle_4: 649196440
+      Minifantasy_CreaturesHumanBaseIdle_46: -958003778
+      Minifantasy_CreaturesHumanBaseIdle_21: 1590261364
+      Minifantasy_CreaturesHumanBaseIdle_18: 1652009318
+      Minifantasy_CreaturesHumanBaseIdle_47: -898462145
+      Minifantasy_CreaturesHumanBaseIdle_42: 494058837
+      Minifantasy_CreaturesHumanBaseIdle_14: -1246465701
+      Minifantasy_CreaturesHumanBaseIdle_58: 1210645766
+      Minifantasy_CreaturesHumanBaseIdle_25: 241669626
+      Minifantasy_CreaturesHumanBaseIdle_61: 581634054
+      Minifantasy_CreaturesHumanBaseIdle_60: 650550305
+      Minifantasy_CreaturesHumanBaseIdle_26: -1755901293
+      Minifantasy_CreaturesHumanBaseIdle_56: 1157075727
+      Minifantasy_CreaturesHumanBaseIdle_62: -1603707092
+      Minifantasy_CreaturesHumanBaseIdle_20: -1216695019
+      Minifantasy_CreaturesHumanBaseIdle_3: -994083084
+      Minifantasy_CreaturesHumanBaseIdle_10: 918365067
+      Minifantasy_CreaturesHumanBaseIdle_5: 732423965
+      Minifantasy_CreaturesHumanBaseIdle_24: 2093049511
+      Minifantasy_CreaturesHumanBaseIdle_45: -122533168
+      Minifantasy_CreaturesHumanBaseIdle_1: 1005428260
+      Minifantasy_CreaturesHumanBaseIdle_29: -881109105
+      Minifantasy_CreaturesHumanBaseIdle_37: -1059767589
+      Minifantasy_CreaturesHumanBaseIdle_40: -1188136509
+      Minifantasy_CreaturesHumanBaseIdle_43: -1859983409
+      Minifantasy_CreaturesHumanBaseIdle_59: -375077626
+      Minifantasy_CreaturesHumanBaseIdle_30: -2028211712
+      Minifantasy_CreaturesHumanBaseIdle_12: -1773797918
+      Minifantasy_CreaturesHumanBaseIdle_17: -1898407679
+      Minifantasy_CreaturesHumanBaseIdle_33: 969107049
+      Minifantasy_CreaturesHumanBaseIdle_2: 1452563070
+      Minifantasy_CreaturesHumanBaseIdle_27: -112380187
+      Minifantasy_CreaturesHumanBaseIdle_8: 2125364802
+      Minifantasy_CreaturesHumanBaseIdle_32: 431723702
+      Minifantasy_CreaturesHumanBaseIdle_22: -1585009722
+      Minifantasy_CreaturesHumanBaseIdle_53: 1538460490
+      Minifantasy_CreaturesHumanBaseIdle_54: 1415496135
+      Minifantasy_CreaturesHumanBaseIdle_49: -1240196680
+      Minifantasy_CreaturesHumanBaseIdle_50: -1510832531
+      Minifantasy_CreaturesHumanBaseIdle_52: 693902166
+      Minifantasy_CreaturesHumanBaseIdle_15: -1454419721
+      Minifantasy_CreaturesHumanBaseIdle_31: 153709685
+      Minifantasy_CreaturesHumanBaseIdle_36: -79311728
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

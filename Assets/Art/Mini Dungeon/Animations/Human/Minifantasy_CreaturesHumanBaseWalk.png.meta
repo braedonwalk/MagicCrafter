@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5ba882533f3394c8d1e1a7bd15edc1
+      internalID: 985639236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d530796c1681dbb4e9971eabc4ec6725
+      internalID: -1092452126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b02207f0ade43d438360bcda079f5b6
+      internalID: 1940193680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b7d6ecbab1b8448a7cd7a97fdf91c4
+      internalID: 1313178354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce13bb2dd470b248a7893c3062bfcd4
+      internalID: -173798538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_5
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29cfd0b7ff0724429edf20184d5a7cf
+      internalID: -1940517462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_6
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c46d78a34d76b4f82585471b08c08c
+      internalID: -1931918395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_7
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 77
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38ce448274cc1345977b77c793bafbf
+      internalID: -1941738870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_8
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd27627fac8e42b449efa9705ac839a9
+      internalID: -362414024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8e713786102714bb8e38bf50e36611
+      internalID: 1888024037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14a3af1503153f49b27457a06e83e87
+      internalID: -857763766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_11
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 45
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98e13ab3f99bfb4fbdc473201855152
+      internalID: -1413031558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132c68956c7797d44bd6a8bec8e3ce2d
+      internalID: 1754020931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_13
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1d33ec08f989546bc8e9e84d10bc20
+      internalID: -1933826981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dad74f46c58e3d49aad0b7253cbeaeb
+      internalID: -530174781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minifantasy_CreaturesHumanBaseWalk_15
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 13
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71455645e55c6e741ac506566deba6f1
+      internalID: -1341624378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -113,7 +449,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Minifantasy_CreaturesHumanBaseWalk_12: -1708239047
+      Minifantasy_CreaturesHumanBaseWalk_2: -1295898736
+      Minifantasy_CreaturesHumanBaseWalk_14: -540080945
+      Minifantasy_CreaturesHumanBaseWalk_8: 1674270228
+      Minifantasy_CreaturesHumanBaseWalk_5: -19745320
+      Minifantasy_CreaturesHumanBaseWalk_4: 1782551999
+      Minifantasy_CreaturesHumanBaseWalk_1: -1968722299
+      Minifantasy_CreaturesHumanBaseWalk_9: -517917898
+      Minifantasy_CreaturesHumanBaseWalk_10: -300794525
+      Minifantasy_CreaturesHumanBaseWalk_15: 161596942
+      Minifantasy_CreaturesHumanBaseWalk_7: 913433443
+      Minifantasy_CreaturesHumanBaseWalk_0: -984760778
+      Minifantasy_CreaturesHumanBaseWalk_6: -189878955
+      Minifantasy_CreaturesHumanBaseWalk_13: 223779124
+      Minifantasy_CreaturesHumanBaseWalk_11: -557005409
+      Minifantasy_CreaturesHumanBaseWalk_3: -1158731107
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
