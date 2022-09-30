@@ -9,8 +9,8 @@ public class PlayerAnimation : MonoBehaviour
     void Update()
     {
         float playerSpeed = this.GetComponent<PlayerStatManager>().getPlayerSpeed();
-        Debug.Log(playerSpeed);
+        // Debug.Log(playerSpeed);
 
-        animator.SetFloat("speed", playerSpeed);
+        // animator.SetFloat("speed", playerSpeed);
     }
 }
