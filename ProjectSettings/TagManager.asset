@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floors
+    uniqueID: 139903741
+    locked: 0
+  - name: Walls
+    uniqueID: 3762471229
+    locked: 0
+  - name: Props
+    uniqueID: 3937233481
+    locked: 0
+  - name: Player
+    uniqueID: 880999447
+    locked: 0
+  - name: Spells
+    uniqueID: 1765796811
+    locked: 0
