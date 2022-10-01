@@ -7,7 +7,7 @@ public class SpellSelf : MonoBehaviour
     [SerializeField] GameObject player;
     PlayerStatManager statManager;
     [SerializeField] ParticleSystem speedFX;
-    [SerializeField] float newSpeed = 10f;
+    [SerializeField] float modifiedSpeed = 10f;
     [SerializeField] float speedTime = 5f;
 
     void Start()
@@ -20,7 +20,7 @@ public class SpellSelf : MonoBehaviour
         if(Input.GetKeyDown("c")){      //CHANGE KEY TYPE
             // speedFX.Emit(1);
             Debug.Log("i am speed");
-            statManager.changePlayerSpeed(newSpeed);
+            statManager.changePlayerSpeed(modifiedSpeed);
             playSpeedFX();
             
             Invoke("changePlayerSpeed", speedTime);
