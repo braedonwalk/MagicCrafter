@@ -29,7 +29,7 @@ public class SpellProjectile : MonoBehaviour
 
     }
 
-    public void cast(GameObject spellPrefab){
+    void cast(GameObject spellPrefab){
         GameObject spell = Instantiate(spellPrefab, this.transform.position, this.transform.rotation);
         Rigidbody2D rb = spell.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * spellMovement.getSpellForce(), ForceMode2D.Impulse);

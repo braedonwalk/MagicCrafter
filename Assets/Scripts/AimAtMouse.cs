@@ -9,7 +9,7 @@ public class AimAtMouse : MonoBehaviour
     [SerializeField] Camera cam;
     Vector2 playerPosition;
     Rigidbody2D rigidBody;
-    // Vector2 mousePos;
+    Vector2 mousePos;
     // Vector3 towardMouse;
     float distance = 1f;
 
@@ -22,7 +22,7 @@ public class AimAtMouse : MonoBehaviour
     {
         playerPosition = player.GetComponent<Rigidbody2D>().position;
         
-        // mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         
         // towardMouse = (mousePos - playerPosition).normalized;
 
@@ -30,12 +30,16 @@ public class AimAtMouse : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        // mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector2 aimDirection = mousePos - rigidBody.position;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
         rigidBody.rotation = angle;
 
         Vector3 towardMouse = (mousePos - playerPosition).normalized;
         rigidBody.position =  towardMouse * distance + player.transform.position;
+    }
+
+    public Vector2 getMousePos(){
+        return mousePos;
     }
 }
