@@ -7,6 +7,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 {
     
     [SerializeField] private Canvas canvas;
+    [SerializeField] Spell emptySpell;
 
     private RectTransform rectTransform;
     private Vector2 startingPos;
@@ -25,7 +26,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     }
      public void OnBeginDrag(PointerEventData eventData)
     {
-        if (isElement(this.gameObject) || (isValidResult(this.gameObject)) )        
+        if (isElement(this.gameObject) || isValidResult(this.gameObject) || isKnownSpell(this.gameObject))        
             {
                 canvasGroup.alpha = 0.6f;
                 canvasGroup.blocksRaycasts = false;  // check on this- WHAT IS IT????????
@@ -34,7 +35,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 
      public void OnEndDrag(PointerEventData eventData)
     {
-        if (isElement(this.gameObject) || (isValidResult(this.gameObject)) )        
+        if (isElement(this.gameObject) || isValidResult(this.gameObject) || isKnownSpell(this.gameObject))        
         {
             canvasGroup.alpha = 1.0f;
             canvasGroup.blocksRaycasts = true;
@@ -45,12 +46,17 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
                 this.gameObject.GetComponent<ResultSlot>().setCurrentSpell(this.gameObject.GetComponent<ResultSlot>().getEmptySpell());
                 this.gameObject.GetComponent<ResultSlot>().setSprite();
             }
+
+            if (isKnownSpell(this.gameObject))
+            {
+                // change equipped spell appearance
+            }
         }
     }
 
      public void OnDrag(PointerEventData eventData)
     {
-        if (isElement(this.gameObject) || (isValidResult(this.gameObject)) )
+        if (isElement(this.gameObject) || isValidResult(this.gameObject) || isKnownSpell(this.gameObject) )
         {
             rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
         }
@@ -75,5 +81,20 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
         }
         
         return false;
+    }
+
+    bool isKnownSpell(GameObject aGameObject)
+    {
+        if (aGameObject.tag == "KnownSpell" && aGameObject.GetComponent<KnownSpellSlot>().getSpell() != emptySpell)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public Spell getEmptySpell()
+    {
+        return emptySpell;
     }
 }

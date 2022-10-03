@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ResultSpell
+  - Element
+  - KnownSpell
+  - EquippedSpell
   layers:
   - Default
   - TransparentFX

@@ -4,15 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class KnownSpellSlot : MonoBehaviour, IDropHandler
+public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 {
     Image image;
-    Spell spell;
-
+    Spell spell = null;
 
     private void Start() {
         image = this.GetComponent<Image>();
-        spell = this.GetComponent<DragNDrop>().getEmptySpell();
     }
     
     public void OnDrop(PointerEventData eventData)
@@ -20,9 +18,9 @@ public class KnownSpellSlot : MonoBehaviour, IDropHandler
         GameObject droppedSpell = eventData.pointerDrag;
 
 
-        if (droppedSpell.gameObject.tag == "ResultSpell")
+        if (droppedSpell.gameObject.tag == "KnownSpell")
         {
-            spell = droppedSpell.GetComponent<ResultSlot>().getCurrentSpell();
+            spell = droppedSpell.GetComponent<KnownSpellSlot>().getSpell();
             image.sprite = droppedSpell.GetComponent<Image>().sprite;
         }
     }
