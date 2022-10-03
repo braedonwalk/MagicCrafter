@@ -25,20 +25,30 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     }
      public void OnBeginDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 0.6f;
-        canvasGroup.blocksRaycasts = false;  // check on this- WHAT IS IT????????
+        
+        if (this.gameObject.tag == "Element" || (this.gameObject.tag == "ResultSpell" && this.gameObject.GetComponent<ResultSlot>().getCurrentSpell() != this.gameObject.GetComponent<ResultSlot>().getEmptySpell()) )
+        {
+            canvasGroup.alpha = 0.6f;
+            canvasGroup.blocksRaycasts = false;  // check on this- WHAT IS IT????????
+        }
     }
 
      public void OnEndDrag(PointerEventData eventData)
     {
-        canvasGroup.alpha = 1.0f;
-        canvasGroup.blocksRaycasts = true;
-        rectTransform.anchoredPosition = startingPos;
+        if (this.gameObject.tag == "Element" || (this.gameObject.tag == "ResultSpell" && this.gameObject.GetComponent<ResultSlot>().getCurrentSpell() != this.gameObject.GetComponent<ResultSlot>().getEmptySpell()) )
+        {
+            canvasGroup.alpha = 1.0f;
+            canvasGroup.blocksRaycasts = true;
+            rectTransform.anchoredPosition = startingPos;
+        }
     }
 
      public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+        if (this.gameObject.tag == "Element" || (this.gameObject.tag == "ResultSpell" && this.gameObject.GetComponent<ResultSlot>().getCurrentSpell() != this.gameObject.GetComponent<ResultSlot>().getEmptySpell()) )
+        {
+            rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
+        }
     }
 
 
