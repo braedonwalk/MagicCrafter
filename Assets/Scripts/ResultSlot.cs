@@ -47,13 +47,28 @@ public class ResultSlot : MonoBehaviour
             Spell ingredient2 = subList[1];
             Spell result = subList[2];
 
-            if (ingredient1 == spell1 && ingredient2 == spell2)
+            if ( (ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2) )
             {
                 currentSpell = result;
                 image.sprite = result.sprite;
             }
         }
 
+    }
+
+    public Spell getCurrentSpell()
+    {
+        return currentSpell;
+    }
+
+    public void setCurrentSpell(Spell newSpell)
+    {
+        currentSpell = newSpell;
+    }
+
+    public Spell getEmptySpell()
+    {
+        return empty;
     }
 
 }
