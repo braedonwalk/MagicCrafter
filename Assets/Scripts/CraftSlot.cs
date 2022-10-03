@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class SpellSlot : MonoBehaviour, IDropHandler
+public class CraftSlot : MonoBehaviour, IDropHandler
 {
     
     Image image;
@@ -18,12 +18,13 @@ public class SpellSlot : MonoBehaviour, IDropHandler
     
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log("Dropped");
         GameObject droppedSpell = eventData.pointerDrag;
 
-        Debug.Log(this.spell);
         spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
         image.sprite = droppedSpell.GetComponent<Image>().sprite;
-        Debug.Log(this.spell);
+    }
+
+    public Spell getSpell(){
+        return spell;
     }
 }
