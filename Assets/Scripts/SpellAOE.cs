@@ -7,7 +7,9 @@ public class SpellAOE : MonoBehaviour
     
     // [SerializeField] Transform attackPos;
     [SerializeField] LayerMask whatIsEnemies;
-    [SerializeField] float attackRange = 1;
+    [SerializeField] float AOERange = 1;
+    [SerializeField] int damage = 1;
+    [SerializeField] float AOEOriginDistance = 2f;
     AimAtMouse aimAtMouse;
     Vector2 mousePos;
 
@@ -21,15 +23,27 @@ public class SpellAOE : MonoBehaviour
     {
         mousePos = aimAtMouse.getMousePos();
 
-        if(Input.GetButtonDown("Fire1")){      //CHANGE KEY TYPE
-            Debug.Log("AOE");
-            spellPrefab.transform.localScale = new Vector2(attackRange*2, attackRange*2);
-            Instantiate(spellPrefab, mousePos, this.transform.rotation);
+        if(!aimAtMouse.getIsProjectile()){
+            if(Input.GetButtonDown("Fire1")){      //CHANGE KEY TYPE
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(mousePos, AOERange, whatIsEnemies);
+                for (int i = 0; i < enemiesToDamage.Length; i++)
+                {
+                    enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(damage);
+                }
+                // Debug.Log("AOE");
+                spellPrefab.transform.localScale = new Vector2(AOERange*2, AOERange*2);
+                Instantiate(spellPrefab, mousePos, this.transform.rotation);
+            }
         }
     }
 
+    public float getAOEOriginDistance(){
+        return AOEOriginDistance;
+    }
+
+    //EVENTUALLY GET RID OF THIS
     private void OnDrawGizmosSelected() {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(mousePos, attackRange);
+        Gizmos.DrawWireSphere(mousePos, AOERange);
     }
 }
