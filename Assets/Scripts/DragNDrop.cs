@@ -25,31 +25,55 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
     }
      public void OnBeginDrag(PointerEventData eventData)
     {
-        
-        if (this.gameObject.tag == "Element" || (this.gameObject.tag == "ResultSpell" && this.gameObject.GetComponent<ResultSlot>().getCurrentSpell() != this.gameObject.GetComponent<ResultSlot>().getEmptySpell()) )
-        {
-            canvasGroup.alpha = 0.6f;
-            canvasGroup.blocksRaycasts = false;  // check on this- WHAT IS IT????????
-        }
+        if (isElement(this.gameObject) || (isValidResult(this.gameObject)) )        
+            {
+                canvasGroup.alpha = 0.6f;
+                canvasGroup.blocksRaycasts = false;  // check on this- WHAT IS IT????????
+            }
     }
 
      public void OnEndDrag(PointerEventData eventData)
     {
-        if (this.gameObject.tag == "Element" || (this.gameObject.tag == "ResultSpell" && this.gameObject.GetComponent<ResultSlot>().getCurrentSpell() != this.gameObject.GetComponent<ResultSlot>().getEmptySpell()) )
+        if (isElement(this.gameObject) || (isValidResult(this.gameObject)) )        
         {
             canvasGroup.alpha = 1.0f;
             canvasGroup.blocksRaycasts = true;
             rectTransform.anchoredPosition = startingPos;
+
+            if (isValidResult(this.gameObject))
+            {
+                this.gameObject.GetComponent<ResultSlot>().setCurrentSpell(this.gameObject.GetComponent<ResultSlot>().getEmptySpell());
+                this.gameObject.GetComponent<ResultSlot>().setSprite();
+            }
         }
     }
 
      public void OnDrag(PointerEventData eventData)
     {
-        if (this.gameObject.tag == "Element" || (this.gameObject.tag == "ResultSpell" && this.gameObject.GetComponent<ResultSlot>().getCurrentSpell() != this.gameObject.GetComponent<ResultSlot>().getEmptySpell()) )
+        if (isElement(this.gameObject) || (isValidResult(this.gameObject)) )
         {
             rectTransform.anchoredPosition += eventData.delta/canvas.scaleFactor;
         }
     }
 
 
+    bool isElement(GameObject aGameObject)
+    {
+        if (aGameObject.tag == "Element")
+        {
+            return true;
+        }
+        
+        return false;
+    }
+
+    bool isValidResult(GameObject aGameObject)
+    {
+        if (aGameObject.tag == "ResultSpell" && aGameObject.GetComponent<ResultSlot>().getCurrentSpell() != aGameObject.GetComponent<ResultSlot>().getEmptySpell())
+        {
+            return true;
+        }
+        
+        return false;
+    }
 }

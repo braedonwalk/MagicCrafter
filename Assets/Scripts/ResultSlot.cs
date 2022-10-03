@@ -18,6 +18,7 @@ public class ResultSlot : MonoBehaviour
 
     Spell currentSpell;
     Image image;
+    Sprite defaultSprite;
 
 
     void setupRecipes()
@@ -35,6 +36,7 @@ public class ResultSlot : MonoBehaviour
 
         currentSpell = empty;
         image = this.GetComponent<Image>();
+        defaultSprite = image.sprite;
     }
 
 
@@ -69,6 +71,11 @@ public class ResultSlot : MonoBehaviour
     public Spell getEmptySpell()
     {
         return empty;
+    }
+
+    public void setSprite()
+    {
+        image.sprite = defaultSprite;
     }
 
 }
