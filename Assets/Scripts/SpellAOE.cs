@@ -14,6 +14,9 @@ public class SpellAOE : MonoBehaviour
     Vector2 mousePos;
     Vector2 AOEPos;
 
+    [SerializeField] ParticleSystem steamFX;
+    float startSize = 0.5f;
+
     [SerializeField] GameObject spellPrefab;
 
     private void Start() {
@@ -34,9 +37,19 @@ public class SpellAOE : MonoBehaviour
                 }
                 // Debug.Log("AOE");
                 spellPrefab.transform.localScale = new Vector2(AOERange*2, AOERange*2);
+                playSteamVFX(1);
                 Instantiate(spellPrefab, AOEPos, this.transform.rotation);
             }
         }
+    }
+
+    void playSteamVFX(int numParticlesEmit){
+        var main = steamFX.main;
+        // main.startLifetime = steamFX + 0.2f;
+        main.startSize = startSize * AOERange;
+        Debug.Log(startSize * AOERange);
+        steamFX.Emit(numParticlesEmit);
+        // Destroy(spellPrefab, destroyDelay);
     }
 
     public float getAOEOriginDistance(){

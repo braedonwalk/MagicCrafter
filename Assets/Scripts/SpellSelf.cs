@@ -21,7 +21,7 @@ public class SpellSelf : MonoBehaviour
             // speedFX.Emit(1);
             Debug.Log("i am speed");
             statManager.changePlayerSpeed(modifiedSpeed);
-            playSpeedFX();
+            playSpeedFX(1);
             
             Invoke("changePlayerSpeed", speedTime);
         }
@@ -33,9 +33,9 @@ public class SpellSelf : MonoBehaviour
         Debug.Log("stop speed");
     }
 
-    void playSpeedFX(){
+    void playSpeedFX(int numParticlesEmit){
         var main = speedFX.main;
         main.startLifetime = speedTime + 0.2f;
-        speedFX.Emit(1);
+        speedFX.Emit(numParticlesEmit);
     }
 }
