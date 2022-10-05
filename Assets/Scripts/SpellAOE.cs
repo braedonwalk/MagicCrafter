@@ -12,6 +12,7 @@ public class SpellAOE : MonoBehaviour
     [SerializeField] float AOEOriginDistance = 2f;
     AimAtMouse aimAtMouse;
     Vector2 mousePos;
+    Vector2 AOEPos;
 
     [SerializeField] GameObject spellPrefab;
 
@@ -21,18 +22,19 @@ public class SpellAOE : MonoBehaviour
 
     void Update()
     {
-        mousePos = aimAtMouse.getMousePos();
+        mousePos = aimAtMouse.getMousePos();    //remove this eventually
+        AOEPos = aimAtMouse.getAOEPos();
 
         if(!aimAtMouse.getIsProjectile()){
             if(Input.GetButtonDown("Fire1")){      //CHANGE KEY TYPE
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(mousePos, AOERange, whatIsEnemies);
+                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOERange, whatIsEnemies);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
                 {
                     enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(damage);
                 }
                 // Debug.Log("AOE");
                 spellPrefab.transform.localScale = new Vector2(AOERange*2, AOERange*2);
-                Instantiate(spellPrefab, mousePos, this.transform.rotation);
+                Instantiate(spellPrefab, AOEPos, this.transform.rotation);
             }
         }
     }

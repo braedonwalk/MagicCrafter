@@ -64,4 +64,8 @@ public class AimAtMouse : MonoBehaviour
     public bool getIsProjectile(){
         return isProjectile;
     }
+
+    public Vector2 getAOEPos(){
+        return rigidBody.position;
+    }
 }
