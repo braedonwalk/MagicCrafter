@@ -10,7 +10,7 @@ public class ActiveSpellSlot : MonoBehaviour
     [SerializeField] Spell spell = null;
     
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         image = this.GetComponent<Image>();
         
@@ -25,6 +25,11 @@ public void setSpell(Spell newSpell)
 {
     spell = newSpell;
     image.sprite = newSpell.sprite;
+}
+
+public Spell getSpell()
+{
+    return spell;
 }
 
 }

@@ -34,6 +34,14 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 
             activeSpellSlot.setSpell(spell);
         }
+
+        if (droppedSpell.gameObject.tag == "Element")
+        {
+            spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
+            image.sprite = droppedSpell.GetComponent<Image>().sprite;
+
+            activeSpellSlot.setSpell(spell);
+        }
     }
 
     public Spell getSpell(){
