@@ -8,6 +8,8 @@ TagManager:
   - Element
   - KnownSpell
   - EquippedSpell
+  - Enemy
+  - CraftSlot
   layers:
   - Default
   - TransparentFX

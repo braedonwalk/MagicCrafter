@@ -7,10 +7,16 @@ using UnityEngine.EventSystems;
 public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 {
     Image image;
-    Spell spell = null;
+    [SerializeField] Spell spell = null;
+
 
     private void Start() {
         image = this.GetComponent<Image>();
+
+        if (spell != null)
+        {
+            image.sprite = spell.sprite;
+        }
     }
     
     public void OnDrop(PointerEventData eventData)
