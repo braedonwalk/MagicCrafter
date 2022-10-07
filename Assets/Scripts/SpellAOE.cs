@@ -15,7 +15,7 @@ public class SpellAOE : MonoBehaviour
     Vector2 AOEPos;
 
     [SerializeField] ParticleSystem steamFX;
-    float startSize = 0.5f;
+    float startSize = 0f;
 
     [SerializeField] GameObject spellPrefab;
 
@@ -46,8 +46,8 @@ public class SpellAOE : MonoBehaviour
     void playSteamVFX(int numParticlesEmit){
         var main = steamFX.main;
         // main.startLifetime = steamFX + 0.2f;
-        main.startSize = startSize * AOERange;
-        Debug.Log(startSize * AOERange);
+        main.startSize = startSize + AOERange/2;
+        Debug.Log(startSize + AOERange);
         steamFX.Emit(numParticlesEmit);
         // Destroy(spellPrefab, destroyDelay);
     }
