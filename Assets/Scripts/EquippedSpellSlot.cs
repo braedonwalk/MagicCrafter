@@ -18,7 +18,7 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
         GameObject droppedSpell = eventData.pointerDrag;
 
 
-        if (droppedSpell.gameObject.tag == "KnownSpell")
+        if (droppedSpell.gameObject.tag == "KnownSpell" || droppedSpell.gameObject.tag == "EquippedSpell")
         {
             spell = droppedSpell.GetComponent<KnownSpellSlot>().getSpell();
             image.sprite = droppedSpell.GetComponent<Image>().sprite;
