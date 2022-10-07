@@ -8,6 +8,7 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 {
     Image image;
     [SerializeField] Spell spell = null;
+    [SerializeField] ActiveSpellSlot activeSpellSlot;
 
 
     private void Start() {
@@ -16,6 +17,8 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
         if (spell != null)
         {
             image.sprite = spell.sprite;
+
+            activeSpellSlot.setSpell(spell);
         }
     }
     
@@ -28,6 +31,8 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
         {
             spell = droppedSpell.GetComponent<KnownSpellSlot>().getSpell();
             image.sprite = droppedSpell.GetComponent<Image>().sprite;
+
+            activeSpellSlot.setSpell(spell);
         }
     }
 
