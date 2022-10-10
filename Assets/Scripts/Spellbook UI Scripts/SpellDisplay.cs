@@ -14,11 +14,12 @@ public class SpellDisplay : MonoBehaviour
     public static SpellDisplay Instance {get; private set;} // not used now
 
     
-    // Start is called before the first frame update
     void Start()
     {
         image.sprite = spell.sprite;
     }
+
+    //create a reference to another script that checks a bool whether the outside element has been picked up or not
 
     public Spell getSpell()
     {

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Rock
   m_EditorClassIdentifier: 
   spellName: Rock
-  sprite: {fileID: 21300000, guid: f67a7e71b2796b84f87c819098dd3a2a, type: 3}
+  sprite: {fileID: 21300000, guid: edc0f43d76ce6574bbd4247985903a59, type: 3}

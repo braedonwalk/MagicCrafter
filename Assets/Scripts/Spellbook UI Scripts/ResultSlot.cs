@@ -28,9 +28,7 @@ public class ResultSlot : MonoBehaviour
         recipeList.Add(new List<Spell> {water, rock, mud});
     }
                                 
-    
-    // Start is called before the first frame update
-    void Start()
+        void Start()
     {
         setupRecipes();
 
@@ -38,7 +36,6 @@ public class ResultSlot : MonoBehaviour
         image = this.GetComponent<Image>();
         defaultSprite = image.sprite;
     }
-
 
     public void getResult(Spell spell1, Spell spell2)
     {
@@ -55,7 +52,6 @@ public class ResultSlot : MonoBehaviour
                 image.sprite = result.sprite;
             }
         }
-
     }
 
     public Spell getCurrentSpell()

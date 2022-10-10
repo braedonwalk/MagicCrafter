@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Water
   m_EditorClassIdentifier: 
   spellName: Water
-  sprite: {fileID: 21300000, guid: 32d723fef13dfdd4e92c62698e96d4a0, type: 3}
+  sprite: {fileID: 21300000, guid: 85942b7a421196644a9c5bfb5e18d2b5, type: 3}
