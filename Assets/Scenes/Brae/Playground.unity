@@ -5437,7 +5437,7 @@ GameObject:
   - component: {fileID: 345175800}
   - component: {fileID: 345175799}
   m_Layer: 5
-  m_Name: spine
+  m_Name: Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6212,7 +6212,7 @@ GameObject:
   - component: {fileID: 534422086}
   - component: {fileID: 534422085}
   m_Layer: 5
-  m_Name: black overlay
+  m_Name: Black Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6425,7 +6425,7 @@ GameObject:
   - component: {fileID: 594918413}
   - component: {fileID: 594918412}
   m_Layer: 5
-  m_Name: spell slot 4
+  m_Name: Spell Slot 4
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7020,7 +7020,7 @@ GameObject:
   - component: {fileID: 698152545}
   - component: {fileID: 698152544}
   m_Layer: 5
-  m_Name: book right
+  m_Name: Book Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7265,7 +7265,7 @@ GameObject:
   - component: {fileID: 794204918}
   - component: {fileID: 794204917}
   m_Layer: 5
-  m_Name: spell slot 2
+  m_Name: Spell Slot 2
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7367,7 +7367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 847667357}
   m_Layer: 5
-  m_Name: book
+  m_Name: Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7606,7 +7606,7 @@ GameObject:
   - component: {fileID: 1020935567}
   - component: {fileID: 1020935566}
   m_Layer: 5
-  m_Name: spell slot 3
+  m_Name: Spell Slot 3
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7708,7 +7708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1145541896}
   m_Layer: 5
-  m_Name: equipped spells
+  m_Name: Equipped Spells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8250,7 +8250,7 @@ GameObject:
   - component: {fileID: 1255990717}
   - component: {fileID: 1255990716}
   m_Layer: 5
-  m_Name: spell slot 1
+  m_Name: Spell Slot 1
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8472,7 +8472,7 @@ GameObject:
   - component: {fileID: 1337882705}
   - component: {fileID: 1337882704}
   m_Layer: 5
-  m_Name: element2Draggable
+  m_Name: Element2Draggable
   m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8586,7 +8586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1422271799}
   m_Layer: 5
-  m_Name: Known spells
+  m_Name: Known Spells
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8862,7 +8862,7 @@ GameObject:
   - component: {fileID: 1430203659}
   - component: {fileID: 1430203658}
   m_Layer: 5
-  m_Name: element2Still
+  m_Name: Element2Still
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9102,7 +9102,7 @@ GameObject:
   - component: {fileID: 1524236741}
   - component: {fileID: 1524236740}
   m_Layer: 5
-  m_Name: element3Draggable
+  m_Name: Element3Draggable
   m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9311,7 +9311,7 @@ GameObject:
   - component: {fileID: 1556583191}
   - component: {fileID: 1556583190}
   m_Layer: 5
-  m_Name: element1Draggable
+  m_Name: Element1Draggable
   m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9429,7 +9429,7 @@ GameObject:
   - component: {fileID: 1608639274}
   - component: {fileID: 1608639273}
   m_Layer: 5
-  m_Name: element3Still
+  m_Name: Element3Still
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9805,7 +9805,7 @@ GameObject:
   - component: {fileID: 1687635056}
   - component: {fileID: 1687635055}
   m_Layer: 5
-  m_Name: book left
+  m_Name: Book Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10208,7 +10208,7 @@ GameObject:
   - component: {fileID: 1725973566}
   - component: {fileID: 1725973567}
   m_Layer: 5
-  m_Name: result slot
+  m_Name: Result Slot
   m_TagString: ResultSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10490,7 +10490,7 @@ GameObject:
   - component: {fileID: 1778340844}
   - component: {fileID: 1778340843}
   m_Layer: 5
-  m_Name: element1Still
+  m_Name: Element1Still
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10711,7 +10711,7 @@ GameObject:
   - component: {fileID: 1858024892}
   - component: {fileID: 1858024891}
   m_Layer: 5
-  m_Name: craft slot 2
+  m_Name: Craft Slot 2
   m_TagString: CraftSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11212,7 +11212,7 @@ GameObject:
   - component: {fileID: 2010085858}
   - component: {fileID: 2010085857}
   m_Layer: 5
-  m_Name: craft slot 1
+  m_Name: Craft Slot 1
   m_TagString: CraftSlot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
