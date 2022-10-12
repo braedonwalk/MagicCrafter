@@ -6,18 +6,17 @@ public class SpellAOE : MonoBehaviour
 {
     
     // [SerializeField] Transform attackPos;
+    [SerializeField] GameObject spellPrefab;
     [SerializeField] LayerMask whatIsEnemies;
+    [SerializeField] ParticleSystem steamFX;
+    [SerializeField] float AOEOriginDistance = 2f;
     [SerializeField] float AOERange = 1;
     [SerializeField] int damage = 1;
-    [SerializeField] float AOEOriginDistance = 2f;
     AimAtMouse aimAtMouse;
     Vector2 mousePos;
     Vector2 AOEPos;
 
-    [SerializeField] ParticleSystem steamFX;
     float startSize = 0f;
-
-    [SerializeField] GameObject spellPrefab;
 
     private void Start() {
         aimAtMouse = GetComponent<AimAtMouse>();

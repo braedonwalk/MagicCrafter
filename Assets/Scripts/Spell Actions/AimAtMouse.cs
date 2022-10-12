@@ -11,15 +11,17 @@ public class AimAtMouse : MonoBehaviour
     Rigidbody2D rigidBody;
     Vector2 mousePos;
     // Vector3 towardMouse;
-    [SerializeField] float projectileOriginDistance = 1f;
+    // [SerializeField] float projectileOriginDistance = 1f;
     // [SerializeField] float AOEOriginDistance = 2f;
     SpellAOE spellAOE;
+    SpellProjectile spellProjectile;
     [SerializeField] bool isProjectile = true;
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         spellAOE = GetComponent<SpellAOE>();
+        spellProjectile = GetComponent<SpellProjectile>();
     }
 
     void Update()
@@ -42,14 +44,15 @@ public class AimAtMouse : MonoBehaviour
             rigidBody.rotation = angle;
 
             Vector3 towardMouse = (mousePos - playerPosition).normalized;
-            rigidBody.position = towardMouse * projectileOriginDistance + player.transform.position;
+            rigidBody.position = towardMouse * spellProjectile.getProjectileOriginDistance() + player.transform.position;
         }else{
             rigidBody.rotation = 0;
             Vector3 towardMouse = (mousePos - playerPosition);
             // Debug.Log(towardMouse);
             if (Vector3.Distance(towardMouse, player.transform.position) <= spellAOE.getAOEOriginDistance()){
                 rigidBody.position = towardMouse + player.transform.position;
-            }else{
+            }
+            else{
                 towardMouse = (mousePos - playerPosition).normalized;
                 rigidBody.position = towardMouse * spellAOE.getAOEOriginDistance() + player.transform.position;
             }

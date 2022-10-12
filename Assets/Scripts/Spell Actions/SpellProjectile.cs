@@ -11,6 +11,7 @@ public class SpellProjectile : MonoBehaviour
 
     // float spellForce = 5f; //MIGRATE TO SPELL MOVEMENT LATER
     ProjectileMovement spellMovement;
+    [SerializeField] float projectileOriginDistance = 1f;
 
     private void Start() {
         spellMovement = GetComponent<ProjectileMovement>();
@@ -33,5 +34,9 @@ public class SpellProjectile : MonoBehaviour
         GameObject spell = Instantiate(spellPrefab, this.transform.position, this.transform.rotation);
         Rigidbody2D rb = spell.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * spellMovement.getSpellForce(), ForceMode2D.Impulse);
+    }
+
+    public float getProjectileOriginDistance(){
+        return projectileOriginDistance;
     }
 }
