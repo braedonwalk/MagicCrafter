@@ -18,6 +18,7 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
             image.sprite = spell.sprite;
 
             activeSpellSlot.setSpell(spell);
+            // Debug.Log(spell.spellName);
         }
     }
     

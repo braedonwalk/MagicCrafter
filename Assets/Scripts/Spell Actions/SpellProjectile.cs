@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpellProjectile : MonoBehaviour
 {
-    
+    [SerializeField] SpellInputManager spellInputManager;
     [SerializeField] GameObject fireBoltPrefab;
     [SerializeField] GameObject rockBoltPrefab;
     // PlayerSoundManager soundManager;
@@ -19,14 +19,30 @@ public class SpellProjectile : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("f")){      //CHANGE KEY TYPE
-            Debug.Log("fire");
-            cast(fireBoltPrefab);
+        if(Input.GetButtonDown("Fire1"))
+        {
+            string activeSpellName = spellInputManager.getActiveSpell().spellName;
+
+            if(activeSpellName == "Fireball")
+            {
+                Debug.Log("fireball");
+                cast(fireBoltPrefab);
+            }
+            else if(activeSpellName == "Rock")
+            {
+                Debug.Log("rock");
+                cast(rockBoltPrefab);
+            }
         }
-        else if(Input.GetKeyDown("r")){ //CHANGE KEY TYPE
-            Debug.Log("rock");
-            cast(rockBoltPrefab);
-        }
+
+        // if(Input.GetKeyDown("f")){      //CHANGE KEY TYPE
+        //     Debug.Log("fire");
+        //     cast(fireBoltPrefab);
+        // }
+        // else if(Input.GetKeyDown("r")){ //CHANGE KEY TYPE
+        //     Debug.Log("rock");
+        //     cast(rockBoltPrefab);
+        // }
 
     }
 

@@ -7,7 +7,7 @@ public class SpellCollision : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D other) {
         if(!other.gameObject.CompareTag("Player")){
-            Debug.Log(other);
+            // Debug.Log(other);
             Destroy(this.gameObject);
         }
         

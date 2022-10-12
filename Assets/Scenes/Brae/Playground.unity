@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 52816112}
   - component: {fileID: 52816111}
   m_Layer: 5
-  m_Name: spell slot 4
+  m_Name: Spell Slot 4
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8844,6 +8844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09d8d4c3583a75a49889d84a226b3450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   activeSpellSlots:
   - {fileID: 1700533576}
   - {fileID: 1682470614}
@@ -9220,7 +9221,7 @@ GameObject:
   - component: {fileID: 1527726544}
   - component: {fileID: 1527726543}
   m_Layer: 5
-  m_Name: spell slot 3
+  m_Name: Spell Slot 3
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9717,7 +9718,7 @@ GameObject:
   - component: {fileID: 1682470615}
   - component: {fileID: 1682470614}
   m_Layer: 5
-  m_Name: spell slot 2
+  m_Name: Spell Slot 2
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10117,7 +10118,7 @@ GameObject:
   - component: {fileID: 1700533577}
   - component: {fileID: 1700533576}
   m_Layer: 5
-  m_Name: spell slot 1
+  m_Name: Spell Slot 1
   m_TagString: EquippedSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10963,8 +10964,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33f9edfddd0c674c8939fe57962032b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellInputManager: {fileID: 1428251115}
   fireBoltPrefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
   rockBoltPrefab: {fileID: 8985421908937429478, guid: 3ab880670ad28c24bbcfe28b731fd395, type: 3}
+  projectileOriginDistance: 1
 --- !u!50 &1963570383
 Rigidbody2D:
   serializedVersion: 4
@@ -11000,7 +11003,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1428251104}
   cam: {fileID: 519420031}
-  projectileOriginDistance: 1
   isProjectile: 1
 --- !u!114 &1963570385
 MonoBehaviour:
@@ -11042,14 +11044,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bd1b42d68cd035438663a9e18d269ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spellPrefab: {fileID: 5155942832998402077, guid: 2efb091bea8826f439833bd27a7e3861, type: 3}
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 64
+  steamFX: {fileID: 5866693718713687640, guid: 2efb091bea8826f439833bd27a7e3861, type: 3}
+  AOEOriginDistance: 2
   AOERange: 1
   damage: 1
-  AOEOriginDistance: 2
-  steamFX: {fileID: 5866693718713687640, guid: 2efb091bea8826f439833bd27a7e3861, type: 3}
-  spellPrefab: {fileID: 5155942832998402077, guid: 2efb091bea8826f439833bd27a7e3861, type: 3}
 --- !u!1 &1972580733
 GameObject:
   m_ObjectHideFlags: 0
