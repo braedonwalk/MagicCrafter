@@ -9,9 +9,10 @@ public class SpellProjectile : MonoBehaviour
     [SerializeField] GameObject rockBoltPrefab;
     // PlayerSoundManager soundManager;
 
-    // float spellForce = 5f; //MIGRATE TO SPELL MOVEMENT LATER
     ProjectileMovement spellMovement;
     [SerializeField] float projectileOriginDistance = 1f;
+    
+    [SerializeField] PauseGame pause;
 
     private void Start() {
         spellMovement = GetComponent<ProjectileMovement>();
@@ -19,21 +20,24 @@ public class SpellProjectile : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(!pause.getIsPaused())
         {
-            string activeSpellName = spellInputManager.getActiveSpell().spellName;
+            if(Input.GetButtonDown("Fire1"))
+            {
+                string activeSpellName = spellInputManager.getActiveSpell().spellName;
 
-            if(activeSpellName == "Fireball")
-            {
-                Debug.Log("fireball");
-                cast(fireBoltPrefab);
+                if(activeSpellName == "Fireball")
+                {
+                    Debug.Log("fireball");
+                    cast(fireBoltPrefab);
+                }
+                else if(activeSpellName == "Rock")
+                {
+                    Debug.Log("rock");
+                    cast(rockBoltPrefab);
+                }
             }
-            else if(activeSpellName == "Rock")
-            {
-                Debug.Log("rock");
-                cast(rockBoltPrefab);
-            }
-        }
+        } 
 
         // if(Input.GetKeyDown("f")){      //CHANGE KEY TYPE
         //     Debug.Log("fire");

@@ -8303,7 +8303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3af460fdf0c0fb745b50d692671a3705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
+  spell: {fileID: 11400000, guid: 9f102fd3c28a8934d96d32660544b5b1, type: 2}
   activeSpellSlot: {fileID: 1700533576}
 --- !u!114 &1255990718
 MonoBehaviour:
@@ -8469,9 +8469,9 @@ GameObject:
   - component: {fileID: 1337882703}
   - component: {fileID: 1337882708}
   - component: {fileID: 1337882707}
+  - component: {fileID: 1337882704}
   - component: {fileID: 1337882706}
   - component: {fileID: 1337882705}
-  - component: {fileID: 1337882704}
   m_Layer: 5
   m_Name: Element2Draggable
   m_TagString: Element
@@ -8861,8 +8861,8 @@ GameObject:
   - component: {fileID: 1430203657}
   - component: {fileID: 1430203661}
   - component: {fileID: 1430203660}
-  - component: {fileID: 1430203659}
   - component: {fileID: 1430203658}
+  - component: {fileID: 1430203659}
   m_Layer: 5
   m_Name: Element2Still
   m_TagString: Untagged
@@ -9100,9 +9100,9 @@ GameObject:
   - component: {fileID: 1524236739}
   - component: {fileID: 1524236744}
   - component: {fileID: 1524236743}
+  - component: {fileID: 1524236740}
   - component: {fileID: 1524236742}
   - component: {fileID: 1524236741}
-  - component: {fileID: 1524236740}
   m_Layer: 5
   m_Name: Element3Draggable
   m_TagString: Element
@@ -9309,9 +9309,9 @@ GameObject:
   - component: {fileID: 1556583189}
   - component: {fileID: 1556583194}
   - component: {fileID: 1556583193}
+  - component: {fileID: 1556583190}
   - component: {fileID: 1556583192}
   - component: {fileID: 1556583191}
-  - component: {fileID: 1556583190}
   m_Layer: 5
   m_Name: Element1Draggable
   m_TagString: Element
@@ -9428,8 +9428,8 @@ GameObject:
   - component: {fileID: 1608639272}
   - component: {fileID: 1608639276}
   - component: {fileID: 1608639275}
-  - component: {fileID: 1608639274}
   - component: {fileID: 1608639273}
+  - component: {fileID: 1608639274}
   m_Layer: 5
   m_Name: Element3Still
   m_TagString: Untagged
@@ -10489,8 +10489,8 @@ GameObject:
   - component: {fileID: 1778340842}
   - component: {fileID: 1778340846}
   - component: {fileID: 1778340845}
-  - component: {fileID: 1778340844}
   - component: {fileID: 1778340843}
+  - component: {fileID: 1778340844}
   m_Layer: 5
   m_Name: Element1Still
   m_TagString: Untagged
@@ -10968,6 +10968,7 @@ MonoBehaviour:
   fireBoltPrefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
   rockBoltPrefab: {fileID: 8985421908937429478, guid: 3ab880670ad28c24bbcfe28b731fd395, type: 3}
   projectileOriginDistance: 1
+  pause: {fileID: 1315676203}
 --- !u!50 &1963570383
 Rigidbody2D:
   serializedVersion: 4
@@ -11020,6 +11021,7 @@ MonoBehaviour:
   speedFX: {fileID: 286778809}
   modifiedSpeed: 10
   speedTime: 5
+  pause: {fileID: 1315676203}
 --- !u!114 &1963570386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11052,6 +11054,7 @@ MonoBehaviour:
   AOEOriginDistance: 2
   AOERange: 1
   damage: 1
+  pause: {fileID: 1315676203}
 --- !u!1 &1972580733
 GameObject:
   m_ObjectHideFlags: 0

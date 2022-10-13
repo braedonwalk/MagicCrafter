@@ -10,6 +10,8 @@ public class SpellSelf : MonoBehaviour
     [SerializeField] float modifiedSpeed = 10f;
     [SerializeField] float speedTime = 5f;
 
+    [SerializeField] PauseGame pause;
+
     void Start()
     {
         statManager = player.GetComponent<PlayerStatManager>();
@@ -17,13 +19,17 @@ public class SpellSelf : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown("c")){      //CHANGE KEY TYPE
-            // speedFX.Emit(1);
-            Debug.Log("i am speed");
-            statManager.changePlayerSpeed(modifiedSpeed);
-            playSpeedFX(1);
-            
-            Invoke("changePlayerSpeed", speedTime);
+        if(!pause.getIsPaused())
+        {
+            if(Input.GetButtonDown("Fire2"))     //CHANGE KEY TYPE
+            { 
+                // speedFX.Emit(1);
+                Debug.Log("i am speed");
+                statManager.changePlayerSpeed(modifiedSpeed);
+                playSpeedFX(1);
+                
+                Invoke("changePlayerSpeed", speedTime);
+            }
         }
     }
 

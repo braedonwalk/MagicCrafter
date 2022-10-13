@@ -40,4 +40,9 @@ public class PauseGame : MonoBehaviour
         Time.timeScale = 0f;
         isGamePaused = true;
     }
+
+    public bool getIsPaused()
+    {
+        return isGamePaused;
+    }
 }
