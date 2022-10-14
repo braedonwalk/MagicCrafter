@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   spellName: Fireball
-  sprite: {fileID: 21300000, guid: e23e30b914797304aae411a69e80dbe0, type: 3}
+  sprite: {fileID: 21300000, guid: 2376bbb960166e64d8c964101d2e0d11, type: 3}

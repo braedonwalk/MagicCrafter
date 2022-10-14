@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class SpellInputManager : MonoBehaviour
 {
+    [SerializeField] Spell emptySpell;
     [SerializeField] ActiveSpellSlot[] activeSpellSlots;
 
     Spell activeSpell;
@@ -56,17 +57,26 @@ public class SpellInputManager : MonoBehaviour
         if (activeSpellSlots[0].getSpell() != null)
         {
             activeSpell = activeSpellSlots[0].getSpell();
-            Debug.Log("test");
+            // Debug.Log("test");
         }
     }
 
     void handleSpellSelectKey(int keyNum)
     {
-         if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].getSpell() != null)
+        if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].getSpell() != null)
         {
             activeSpell = activeSpellSlots[keyNum-1].getSpell();
             Debug.Log(activeSpell);
         }
+        else if(Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].getSpell() == null)
+        {
+            activeSpell = emptySpell;
+        }
+    }
+
+    public Spell getActiveSpell()
+    {
+        return activeSpell;
     }
 
 }

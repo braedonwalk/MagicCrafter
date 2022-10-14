@@ -9,7 +9,6 @@ public class KnownSpellSlot : MonoBehaviour, IDropHandler
     Image image;
     Spell spell;
 
-
     private void Start() {
         image = this.GetComponent<Image>();
         spell = this.GetComponent<DragNDrop>().getEmptySpell();
@@ -18,7 +17,6 @@ public class KnownSpellSlot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         GameObject droppedSpell = eventData.pointerDrag;
-
 
         if (droppedSpell.gameObject.tag == "ResultSpell")
         {

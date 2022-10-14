@@ -10,7 +10,6 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
     [SerializeField] Spell spell = null;
     [SerializeField] ActiveSpellSlot activeSpellSlot;
 
-
     private void Start() {
         image = this.GetComponent<Image>();
 
@@ -19,6 +18,7 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
             image.sprite = spell.sprite;
 
             activeSpellSlot.setSpell(spell);
+            // Debug.Log(spell.spellName);
         }
     }
     

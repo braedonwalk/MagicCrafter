@@ -6,18 +6,19 @@ public class SpellAOE : MonoBehaviour
 {
     
     // [SerializeField] Transform attackPos;
+    [SerializeField] GameObject spellPrefab;
     [SerializeField] LayerMask whatIsEnemies;
+    [SerializeField] ParticleSystem steamFX;
+    [SerializeField] float AOEOriginDistance = 2f;
     [SerializeField] float AOERange = 1;
     [SerializeField] int damage = 1;
-    [SerializeField] float AOEOriginDistance = 2f;
     AimAtMouse aimAtMouse;
     Vector2 mousePos;
     Vector2 AOEPos;
 
-    [SerializeField] ParticleSystem steamFX;
-    float startSize = 0f;
+    [SerializeField] PauseGame pause;
 
-    [SerializeField] GameObject spellPrefab;
+    float startSize = 0f;
 
     private void Start() {
         aimAtMouse = GetComponent<AimAtMouse>();
@@ -28,17 +29,22 @@ public class SpellAOE : MonoBehaviour
         mousePos = aimAtMouse.getMousePos();    //remove this eventually
         AOEPos = aimAtMouse.getAOEPos();
 
-        if(!aimAtMouse.getIsProjectile()){
-            if(Input.GetButtonDown("Fire1")){      //CHANGE KEY TYPE
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOERange, whatIsEnemies);
-                for (int i = 0; i < enemiesToDamage.Length; i++)
-                {
-                    enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(damage);
+        if(!pause.getIsPaused())
+        {
+            if(!aimAtMouse.getIsProjectile())
+            {
+                if(Input.GetButtonDown("Fire1"))
+                {      //CHANGE KEY TYPE
+                    Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOERange, whatIsEnemies);
+                    for (int i = 0; i < enemiesToDamage.Length; i++)
+                    {
+                        enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(damage);
+                    }
+                    // Debug.Log("AOE");
+                    spellPrefab.transform.localScale = new Vector2(AOERange*2, AOERange*2);
+                    playSteamVFX(1);
+                    Instantiate(spellPrefab, AOEPos, this.transform.rotation);
                 }
-                // Debug.Log("AOE");
-                spellPrefab.transform.localScale = new Vector2(AOERange*2, AOERange*2);
-                playSteamVFX(1);
-                Instantiate(spellPrefab, AOEPos, this.transform.rotation);
             }
         }
     }
