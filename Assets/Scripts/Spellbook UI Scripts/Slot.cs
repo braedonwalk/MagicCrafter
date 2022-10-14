@@ -5,10 +5,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CraftSlot : MonoBehaviour, IDropHandler
+public class Slot : MonoBehaviour, IDropHandler
 {
     
     SpellDisplay spellDisplay;
+
+    [SerializeField] String[] receiveTags;
 
 
     private void Start() {
@@ -19,9 +21,14 @@ public class CraftSlot : MonoBehaviour, IDropHandler
     {
         GameObject droppedSpell = eventData.pointerDrag;
 
-        if (droppedSpell.gameObject.tag == "Element")
+        foreach (String tag in receiveTags)
         {
-            spellDisplay.setSpell(droppedSpell.GetComponent<SpellDisplay>().getSpell());
+
+            if (droppedSpell.gameObject.tag == tag)
+            {
+                spellDisplay.setSpell(droppedSpell.GetComponent<SpellDisplay>().getSpell());
+            }
+
         }
     }
 }
