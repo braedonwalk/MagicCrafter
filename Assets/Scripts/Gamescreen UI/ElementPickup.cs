@@ -7,15 +7,11 @@ public class ElementPickup : MonoBehaviour
 
     bool isPickUp = false;
 
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-        
-    }
+    [SerializeField] SpellDisplay draggableSpellDisplay;
+    [SerializeField] SpellDisplay stillSpellDisplay;
+    
+    
+    [SerializeField] Spell spell;
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
@@ -23,6 +19,8 @@ public class ElementPickup : MonoBehaviour
         {
             Debug.Log("pickup");
             isPickUp = true;
+            draggableSpellDisplay.setSpell(spell);
+            stillSpellDisplay.setSpell(spell);
         }
     }
 

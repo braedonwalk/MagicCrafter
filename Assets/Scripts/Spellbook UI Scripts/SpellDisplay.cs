@@ -11,12 +11,12 @@ public class SpellDisplay : MonoBehaviour
 
     // [SerializeField] Text spellName;
     Image image;
-    [SerializeField] ElementPickup pickUp;
+    // [SerializeField] ElementPickup pickUp;
 
     public static SpellDisplay Instance {get; private set;} // not used now
 
     
-    void Start()
+    void Awake()
     {
         image = this.GetComponent<Image>();
         image.sprite = spell.sprite;
@@ -24,10 +24,10 @@ public class SpellDisplay : MonoBehaviour
 
     private void Update() {
         //if element1True {image.sprite = spell.sprite;}
-        if(pickUp.getPickUp())
-        {
-            image.sprite = spell.sprite;
-        }
+        // if(pickUp.getPickUp())
+        // {
+        //     image.sprite = spell.sprite;
+        // }
     }
 
     //create a reference to another script that checks a bool whether the outside element has been picked up or not
