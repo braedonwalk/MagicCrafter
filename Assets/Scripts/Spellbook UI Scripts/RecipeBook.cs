@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ResultSlot : MonoBehaviour
+public class RecipeBook : MonoBehaviour
 {
     
     List<List<Spell>> recipeList = new List<List<Spell>>();
@@ -56,8 +56,6 @@ public class ResultSlot : MonoBehaviour
             if ( (ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2) )
             {
                 spellDisplay.setSpell(result);
-                Debug.Log("result of crafting:");
-                Debug.Log(result);
             }
         }
 
