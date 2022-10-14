@@ -6,17 +6,12 @@ using UnityEngine.EventSystems;
 
 public class KnownSpellSlot : MonoBehaviour, IDropHandler
 {
-    Spell spell;
-
     SpellDisplay spellDisplay;
 
 
 
     private void Start() {        
         spellDisplay = this.GetComponent<SpellDisplay>();
-
-        spell = this.GetComponent<SpellDisplay>().getEmptySpell();
-
     }
     
     public void OnDrop(PointerEventData eventData)
@@ -26,8 +21,7 @@ public class KnownSpellSlot : MonoBehaviour, IDropHandler
 
         if (droppedSpell.gameObject.tag == "ResultSpell")
         {
-            spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
-            spellDisplay.setSpell(spell);
+            spellDisplay.setSpell(droppedSpell.GetComponent<SpellDisplay>().getSpell());
         }
     }
 }
