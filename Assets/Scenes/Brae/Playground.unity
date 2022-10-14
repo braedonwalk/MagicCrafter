@@ -373,8 +373,8 @@ GameObject:
   - component: {fileID: 222252920}
   - component: {fileID: 222252919}
   - component: {fileID: 222252918}
-  - component: {fileID: 222252917}
   - component: {fileID: 222252922}
+  - component: {fileID: 222252923}
   m_Layer: 5
   m_Name: Spell2
   m_TagString: KnownSpell
@@ -403,18 +403,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 255.00002}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &222252917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222252915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351a522eb2ce0964e98292e83243fbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &222252918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +480,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &222252923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222252915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - ResultSpell
 --- !u!1 &286778806
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,8 +5992,8 @@ GameObject:
   - component: {fileID: 480372704}
   - component: {fileID: 480372703}
   - component: {fileID: 480372702}
-  - component: {fileID: 480372701}
   - component: {fileID: 480372706}
+  - component: {fileID: 480372707}
   m_Layer: 5
   m_Name: Spell1
   m_TagString: KnownSpell
@@ -6020,18 +6022,6 @@ RectTransform:
   m_AnchoredPosition: {x: -225.00002, y: 255.00002}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &480372701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480372699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351a522eb2ce0964e98292e83243fbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &480372702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6109,6 +6099,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &480372707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480372699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - ResultSpell
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6450,9 +6454,9 @@ GameObject:
   - component: {fileID: 594918411}
   - component: {fileID: 594918415}
   - component: {fileID: 594918414}
-  - component: {fileID: 594918413}
   - component: {fileID: 594918412}
   - component: {fileID: 594918416}
+  - component: {fileID: 594918417}
   m_Layer: 5
   m_Name: spell slot 4
   m_TagString: EquippedSpell
@@ -6493,20 +6497,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1315676201}
---- !u!114 &594918413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594918410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af460fdf0c0fb745b50d692671a3705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 0}
-  activeSpellSlot: {fileID: 52816111}
 --- !u!114 &594918414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6559,6 +6549,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &594918417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594918410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - KnownSpell
+  - Element
+  - EquippedSpell
 --- !u!1 &651697862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7188,8 +7194,8 @@ GameObject:
   - component: {fileID: 730517649}
   - component: {fileID: 730517648}
   - component: {fileID: 730517647}
-  - component: {fileID: 730517646}
   - component: {fileID: 730517651}
+  - component: {fileID: 730517652}
   m_Layer: 5
   m_Name: Spell6
   m_TagString: KnownSpell
@@ -7218,18 +7224,6 @@ RectTransform:
   m_AnchoredPosition: {x: 225.00002, y: 0}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &730517646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 730517644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351a522eb2ce0964e98292e83243fbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &730517647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7307,6 +7301,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &730517652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730517644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - ResultSpell
 --- !u!1 &794204915
 GameObject:
   m_ObjectHideFlags: 0
@@ -7318,9 +7326,9 @@ GameObject:
   - component: {fileID: 794204916}
   - component: {fileID: 794204920}
   - component: {fileID: 794204919}
-  - component: {fileID: 794204918}
   - component: {fileID: 794204917}
   - component: {fileID: 794204921}
+  - component: {fileID: 794204922}
   m_Layer: 5
   m_Name: spell slot 2
   m_TagString: EquippedSpell
@@ -7361,20 +7369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1315676201}
---- !u!114 &794204918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794204915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af460fdf0c0fb745b50d692671a3705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 0}
-  activeSpellSlot: {fileID: 1682470614}
 --- !u!114 &794204919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7427,6 +7421,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &794204922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794204915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - KnownSpell
+  - Element
+  - EquippedSpell
 --- !u!1 &847667356
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,9 +7683,9 @@ GameObject:
   - component: {fileID: 1020935565}
   - component: {fileID: 1020935569}
   - component: {fileID: 1020935568}
-  - component: {fileID: 1020935567}
   - component: {fileID: 1020935566}
   - component: {fileID: 1020935570}
+  - component: {fileID: 1020935571}
   m_Layer: 5
   m_Name: spell slot 3
   m_TagString: EquippedSpell
@@ -7716,20 +7726,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1315676201}
---- !u!114 &1020935567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020935564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af460fdf0c0fb745b50d692671a3705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 0}
-  activeSpellSlot: {fileID: 1527726543}
 --- !u!114 &1020935568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7782,6 +7778,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &1020935571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020935564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - KnownSpell
+  - Element
+  - EquippedSpell
 --- !u!1 &1145541895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7835,8 +7847,8 @@ GameObject:
   - component: {fileID: 1154337292}
   - component: {fileID: 1154337291}
   - component: {fileID: 1154337290}
-  - component: {fileID: 1154337289}
   - component: {fileID: 1154337294}
+  - component: {fileID: 1154337295}
   m_Layer: 5
   m_Name: Spell5
   m_TagString: KnownSpell
@@ -7865,18 +7877,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1154337289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154337287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351a522eb2ce0964e98292e83243fbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1154337290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7954,6 +7954,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &1154337295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154337287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - ResultSpell
 --- !u!1 &1206942267
 GameObject:
   m_ObjectHideFlags: 0
@@ -8345,9 +8359,9 @@ GameObject:
   - component: {fileID: 1255990715}
   - component: {fileID: 1255990719}
   - component: {fileID: 1255990718}
-  - component: {fileID: 1255990717}
   - component: {fileID: 1255990716}
   - component: {fileID: 1255990720}
+  - component: {fileID: 1255990721}
   m_Layer: 5
   m_Name: spell slot 1
   m_TagString: EquippedSpell
@@ -8388,20 +8402,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1315676201}
---- !u!114 &1255990717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255990714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af460fdf0c0fb745b50d692671a3705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
-  activeSpellSlot: {fileID: 1700533576}
 --- !u!114 &1255990718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8454,6 +8454,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &1255990721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255990714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - KnownSpell
+  - Element
+  - EquippedSpell
 --- !u!1 &1315676197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10453,8 +10469,8 @@ GameObject:
   - component: {fileID: 1736378508}
   - component: {fileID: 1736378507}
   - component: {fileID: 1736378506}
-  - component: {fileID: 1736378505}
   - component: {fileID: 1736378510}
+  - component: {fileID: 1736378511}
   m_Layer: 5
   m_Name: Spell4
   m_TagString: KnownSpell
@@ -10483,18 +10499,6 @@ RectTransform:
   m_AnchoredPosition: {x: -225.00002, y: 0}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1736378505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736378503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351a522eb2ce0964e98292e83243fbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1736378506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10572,6 +10576,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &1736378511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736378503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - ResultSpell
 --- !u!1 &1754996967
 GameObject:
   m_ObjectHideFlags: 0
@@ -10730,8 +10748,8 @@ GameObject:
   - component: {fileID: 1841761589}
   - component: {fileID: 1841761588}
   - component: {fileID: 1841761587}
-  - component: {fileID: 1841761586}
   - component: {fileID: 1841761591}
+  - component: {fileID: 1841761592}
   m_Layer: 5
   m_Name: Spell3
   m_TagString: KnownSpell
@@ -10760,18 +10778,6 @@ RectTransform:
   m_AnchoredPosition: {x: 225.00002, y: 255.00002}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1841761586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841761584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351a522eb2ce0964e98292e83243fbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1841761587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10849,6 +10855,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &1841761592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841761584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - ResultSpell
 --- !u!1 &1858024890
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,8 +10880,8 @@ GameObject:
   - component: {fileID: 1858024894}
   - component: {fileID: 1858024893}
   - component: {fileID: 1858024892}
-  - component: {fileID: 1858024891}
   - component: {fileID: 1858024895}
+  - component: {fileID: 1858024896}
   m_Layer: 5
   m_Name: craft slot 2
   m_TagString: CraftSlot
@@ -10869,18 +10889,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1858024891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858024890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05d2f519958beca4c8fedd93e415a660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1858024892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10953,6 +10961,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &1858024896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858024890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - Element
 --- !u!1 &1868551271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11376,8 +11398,8 @@ GameObject:
   - component: {fileID: 2010085860}
   - component: {fileID: 2010085859}
   - component: {fileID: 2010085858}
-  - component: {fileID: 2010085857}
   - component: {fileID: 2010085861}
+  - component: {fileID: 2010085862}
   m_Layer: 5
   m_Name: craft slot 1
   m_TagString: CraftSlot
@@ -11385,18 +11407,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2010085857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010085856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05d2f519958beca4c8fedd93e415a660, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2010085858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11469,6 +11479,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!114 &2010085862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010085856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f416e21f3331d34c906cb3fb8172f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiveTags:
+  - Element
 --- !u!1 &2141112395
 GameObject:
   m_ObjectHideFlags: 0
