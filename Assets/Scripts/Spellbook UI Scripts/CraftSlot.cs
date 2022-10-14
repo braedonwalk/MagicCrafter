@@ -8,14 +8,10 @@ using UnityEngine.UI;
 public class CraftSlot : MonoBehaviour, IDropHandler
 {
     
-    Image image;
-    Spell spell = null;
-
     SpellDisplay spellDisplay;
 
 
     private void Start() {
-        image = this.GetComponent<Image>();
         spellDisplay = this.GetComponent<SpellDisplay>();
     }
     
@@ -30,9 +26,5 @@ public class CraftSlot : MonoBehaviour, IDropHandler
 
             spellDisplay.setSpell(droppedSpell.GetComponent<SpellDisplay>().getSpell());
         }
-    }
-
-    public Spell getSpell(){
-        return spell;
     }
 }

@@ -83,7 +83,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 
     bool isKnownSpell(GameObject aGameObject)
     {
-        if (aGameObject.tag == "KnownSpell" && aGameObject.GetComponent<KnownSpellSlot>().getSpell() != aGameObject.GetComponent<SpellDisplay>().getEmptySpell())
+        if (aGameObject.tag == "KnownSpell" && aGameObject.GetComponent<SpellDisplay>().getSpell() != aGameObject.GetComponent<SpellDisplay>().getEmptySpell())
         {
             return true;
         }

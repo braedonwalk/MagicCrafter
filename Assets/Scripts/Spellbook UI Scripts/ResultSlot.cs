@@ -62,25 +62,4 @@ public class ResultSlot : MonoBehaviour
         }
 
     }
-
-    // public Spell getCurrentSpell()
-    // {
-    //     return currentSpell;
-    // }
-
-    // public void setCurrentSpell(Spell newSpell)
-    // {
-    //     currentSpell = newSpell;
-    // }
-
-    // public Spell getEmptySpell()
-    // {
-    //     return empty;
-    // }
-
-    // public void setSprite()
-    // {
-    //     image.sprite = defaultSprite;
-    // }
-
 }

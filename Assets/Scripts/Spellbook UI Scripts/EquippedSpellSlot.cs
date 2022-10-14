@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 
 public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 {
-    Image image;
     [SerializeField] Spell spell = null;
     [SerializeField] ActiveSpellSlot activeSpellSlot;
 
@@ -14,13 +13,12 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 
 
     private void Start() {
-        image = this.GetComponent<Image>();
 
         spellDisplay = this.GetComponent<SpellDisplay>();
 
         if (spell != null)
         {
-            image.sprite = spell.sprite;
+            spellDisplay.setSpell(spell);
 
             activeSpellSlot.setSpell(spell);
         }
@@ -33,22 +31,16 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
 
         if (droppedSpell.gameObject.tag == "KnownSpell" || droppedSpell.gameObject.tag == "EquippedSpell")
         {
-            spell = droppedSpell.GetComponent<KnownSpellSlot>().getSpell();
-            image.sprite = droppedSpell.GetComponent<Image>().sprite;
-
+            spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
+            spellDisplay.setSpell(spell);
             activeSpellSlot.setSpell(spell);
         }
 
         if (droppedSpell.gameObject.tag == "Element")
         {
             spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
-            image.sprite = droppedSpell.GetComponent<Image>().sprite;
-
+            spellDisplay.setSpell(spell);
             activeSpellSlot.setSpell(spell);
         }
-    }
-
-    public Spell getSpell(){
-        return spell;
     }
 }
