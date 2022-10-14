@@ -25,8 +25,10 @@ public class CraftSlot : MonoBehaviour, IDropHandler
 
         if (droppedSpell.gameObject.tag == "Element")
         {
-            spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
-            image.sprite = droppedSpell.GetComponent<Image>().sprite;
+            // spell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
+            // image.sprite = droppedSpell.GetComponent<Image>().sprite;
+
+            spellDisplay.setSpell(droppedSpell.GetComponent<SpellDisplay>().getSpell());
         }
     }
 

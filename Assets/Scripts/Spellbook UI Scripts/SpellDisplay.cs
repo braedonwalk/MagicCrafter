@@ -7,9 +7,9 @@ public class SpellDisplay : MonoBehaviour
 {
     
     [SerializeField] Spell spell;
+    [SerializeField] Spell emptySpell;
 
-    // [SerializeField] Text spellName;
-    [SerializeField] Image image;
+    Image image;
 
     public static SpellDisplay Instance {get; private set;} // not used now
 
@@ -17,6 +17,7 @@ public class SpellDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        image = this.GetComponent<Image>();
         image.sprite = spell.sprite;
     }
 
@@ -31,5 +32,9 @@ public class SpellDisplay : MonoBehaviour
         this.image.sprite = newSpell.sprite;
     }
 
+    public Spell getEmptySpell()
+    {
+        return emptySpell;
+    }
 
 }

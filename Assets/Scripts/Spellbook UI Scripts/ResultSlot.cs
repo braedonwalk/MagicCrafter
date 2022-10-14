@@ -20,6 +20,8 @@ public class ResultSlot : MonoBehaviour
     Image image;
     Sprite defaultSprite;
 
+    SpellDisplay spellDisplay;
+
 
     void setupRecipes()
     {
@@ -33,6 +35,8 @@ public class ResultSlot : MonoBehaviour
     void Start()
     {
         setupRecipes();
+
+        spellDisplay = this.GetComponent<SpellDisplay>();
 
         currentSpell = empty;
         image = this.GetComponent<Image>();
@@ -51,31 +55,32 @@ public class ResultSlot : MonoBehaviour
 
             if ( (ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2) )
             {
-                currentSpell = result;
-                image.sprite = result.sprite;
+                spellDisplay.setSpell(result);
+                Debug.Log("result of crafting:");
+                Debug.Log(result);
             }
         }
 
     }
 
-    public Spell getCurrentSpell()
-    {
-        return currentSpell;
-    }
+    // public Spell getCurrentSpell()
+    // {
+    //     return currentSpell;
+    // }
 
-    public void setCurrentSpell(Spell newSpell)
-    {
-        currentSpell = newSpell;
-    }
+    // public void setCurrentSpell(Spell newSpell)
+    // {
+    //     currentSpell = newSpell;
+    // }
 
-    public Spell getEmptySpell()
-    {
-        return empty;
-    }
+    // public Spell getEmptySpell()
+    // {
+    //     return empty;
+    // }
 
-    public void setSprite()
-    {
-        image.sprite = defaultSprite;
-    }
+    // public void setSprite()
+    // {
+    //     image.sprite = defaultSprite;
+    // }
 
 }

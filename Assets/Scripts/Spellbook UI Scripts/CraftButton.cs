@@ -5,8 +5,8 @@ using UnityEngine;
 public class CraftButton : MonoBehaviour
 {
     
-    [SerializeField] CraftSlot spellSlot1;
-    [SerializeField] CraftSlot spellSlot2;
+    [SerializeField] SpellDisplay spellSlot1;
+    [SerializeField] SpellDisplay spellSlot2;
     [SerializeField] ResultSlot resultSlot;
 
     Spell spell1;
@@ -21,6 +21,7 @@ public class CraftButton : MonoBehaviour
         if (spell1 != null && spell2 != null)
         {
             resultSlot.getResult(spell1, spell2);
+            Debug.Log("craft function called");
         }
     }
 
