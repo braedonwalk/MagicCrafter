@@ -11,9 +11,12 @@ public class CraftSlot : MonoBehaviour, IDropHandler
     Image image;
     Spell spell = null;
 
+    SpellDisplay spellDisplay;
+
 
     private void Start() {
         image = this.GetComponent<Image>();
+        spellDisplay = this.GetComponent<SpellDisplay>();
     }
     
     public void OnDrop(PointerEventData eventData)

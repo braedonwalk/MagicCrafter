@@ -9,10 +9,15 @@ public class KnownSpellSlot : MonoBehaviour, IDropHandler
     Image image;
     Spell spell;
 
+    SpellDisplay spellDisplay;
+
+
 
     private void Start() {
         image = this.GetComponent<Image>();
         spell = this.GetComponent<DragNDrop>().getEmptySpell();
+
+        spellDisplay = this.GetComponent<SpellDisplay>();
     }
     
     public void OnDrop(PointerEventData eventData)

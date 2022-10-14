@@ -10,9 +10,13 @@ public class EquippedSpellSlot : MonoBehaviour, IDropHandler
     [SerializeField] Spell spell = null;
     [SerializeField] ActiveSpellSlot activeSpellSlot;
 
+    SpellDisplay spellDisplay;
+
 
     private void Start() {
         image = this.GetComponent<Image>();
+
+        spellDisplay = this.GetComponent<SpellDisplay>();
 
         if (spell != null)
         {
