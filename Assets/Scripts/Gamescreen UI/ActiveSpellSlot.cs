@@ -18,11 +18,7 @@ public class ActiveSpellSlot : MonoBehaviour
         spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());
     }
 
-
-
-public Spell getSpell()
-{
-    return spellDisplay.getSpell();
-}
-
+    private void Update() {
+        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());
+    }
 }
