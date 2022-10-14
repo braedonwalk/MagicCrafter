@@ -25,5 +25,11 @@ public class SpellDisplay : MonoBehaviour
         return spell;
     }
 
+    public void setSpell(Spell newSpell)
+    {
+        this.spell = newSpell;
+        this.image.sprite = newSpell.sprite;
+    }
+
 
 }
