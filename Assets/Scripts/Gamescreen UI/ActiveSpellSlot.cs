@@ -6,30 +6,23 @@ using UnityEngine.UI;
 public class ActiveSpellSlot : MonoBehaviour
 {
     
-    Image image;
-    [SerializeField] Spell spell = null;
+   SpellDisplay spellDisplay;
+
+   [SerializeField] Slot equipSlot;
     
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
-        image = this.GetComponent<Image>();
-        
-        if (spell != null)
-        {
-            image.sprite = spell.sprite;
-        }
+        spellDisplay = this.GetComponent<SpellDisplay>();
+
+        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());
     }
 
 
-public void setSpell(Spell newSpell)
-{
-    spell = newSpell;
-    image.sprite = newSpell.sprite;
-}
 
 public Spell getSpell()
 {
-    return spell;
+    return spellDisplay.getSpell();
 }
 
 }
