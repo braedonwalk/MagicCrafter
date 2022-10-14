@@ -5,9 +5,9 @@ using UnityEngine;
 public class CraftButton : MonoBehaviour
 {
     
-    [SerializeField] CraftSlot spellSlot1;
-    [SerializeField] CraftSlot spellSlot2;
-    [SerializeField] ResultSlot resultSlot;
+    [SerializeField] SpellDisplay spellSlot1;
+    [SerializeField] SpellDisplay spellSlot2;
+    [SerializeField] RecipeBook recipeBook;
 
     Spell spell1;
     Spell spell2;
@@ -20,7 +20,7 @@ public class CraftButton : MonoBehaviour
 
         if (spell1 != null && spell2 != null)
         {
-            resultSlot.getResult(spell1, spell2);
+            recipeBook.getResult(spell1, spell2);
         }
     }
 

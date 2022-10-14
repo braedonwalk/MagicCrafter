@@ -54,21 +54,21 @@ public class SpellInputManager : MonoBehaviour
 
     void makeActiveSpellDefault()
     {
-        if (activeSpellSlots[0].getSpell() != null)
+        if (activeSpellSlots[0].GetComponent<SpellDisplay>().getSpell() != null)
         {
-            activeSpell = activeSpellSlots[0].getSpell();
-            // Debug.Log("test");
+            activeSpell = activeSpellSlots[0].GetComponent<SpellDisplay>().getSpell();
+            Debug.Log("test");
         }
     }
 
     void handleSpellSelectKey(int keyNum)
     {
-        if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].getSpell() != null)
+         if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() != null)
         {
-            activeSpell = activeSpellSlots[keyNum-1].getSpell();
+            activeSpell = activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell();
             Debug.Log(activeSpell);
         }
-        else if(Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].getSpell() == null)
+        else if(Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() == null)
         {
             activeSpell = emptySpell;
         }

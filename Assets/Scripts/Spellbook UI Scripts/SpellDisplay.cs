@@ -7,9 +7,10 @@ public class SpellDisplay : MonoBehaviour
 {
     
     [SerializeField] Spell spell;
+    [SerializeField] Spell emptySpell;
 
     // [SerializeField] Text spellName;
-    [SerializeField] Image image;   //setup in start?
+    Image image;
     [SerializeField] ElementPickup pickUp;
 
     public static SpellDisplay Instance {get; private set;} // not used now
@@ -17,7 +18,8 @@ public class SpellDisplay : MonoBehaviour
     
     void Start()
     {
-        // image.sprite = spell.sprite;
+        image = this.GetComponent<Image>();
+        image.sprite = spell.sprite;
     }
 
     private void Update() {
@@ -35,5 +37,15 @@ public class SpellDisplay : MonoBehaviour
         return spell;
     }
 
+    public void setSpell(Spell newSpell)
+    {
+        this.spell = newSpell;
+        this.image.sprite = newSpell.sprite;
+    }
+
+    public Spell getEmptySpell()
+    {
+        return emptySpell;
+    }
 
 }

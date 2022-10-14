@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ResultSlot : MonoBehaviour
+public class RecipeBook : MonoBehaviour
 {
     
     List<List<Spell>> recipeList = new List<List<Spell>>();
@@ -20,6 +20,8 @@ public class ResultSlot : MonoBehaviour
     Image image;
     Sprite defaultSprite;
 
+    SpellDisplay spellDisplay;
+
 
     void setupRecipes()
     {
@@ -31,6 +33,8 @@ public class ResultSlot : MonoBehaviour
         void Start()
     {
         setupRecipes();
+
+        spellDisplay = this.GetComponent<SpellDisplay>();
 
         currentSpell = empty;
         image = this.GetComponent<Image>();
@@ -48,30 +52,8 @@ public class ResultSlot : MonoBehaviour
 
             if ( (ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2) )
             {
-                currentSpell = result;
-                image.sprite = result.sprite;
+                spellDisplay.setSpell(result);
             }
         }
     }
-
-    public Spell getCurrentSpell()
-    {
-        return currentSpell;
-    }
-
-    public void setCurrentSpell(Spell newSpell)
-    {
-        currentSpell = newSpell;
-    }
-
-    public Spell getEmptySpell()
-    {
-        return empty;
-    }
-
-    public void setSprite()
-    {
-        image.sprite = defaultSprite;
-    }
-
 }
