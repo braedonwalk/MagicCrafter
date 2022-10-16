@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -2265,9 +2265,9 @@ TextureImporter:
       Dungeon_Tileset_21: 397787645
       Dungeon_Tileset_97: -1084275346
       Dungeon_Tileset_95: 1525452695
+      Dungeon_Tileset_98: 1767740166
       Dungeon_Tileset_3: 1041950786
       Dungeon_Tileset_53: -528289342
-      Dungeon_Tileset_98: 1767740166
       Dungeon_Tileset_93: -1849176883
       Dungeon_Tileset_11: 1655839166
       Dungeon_Tileset_42: -547867262
