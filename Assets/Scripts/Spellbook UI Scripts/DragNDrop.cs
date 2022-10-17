@@ -40,7 +40,8 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
             canvasGroup.blocksRaycasts = true;
             rectTransform.anchoredPosition = startingPos;
 
-            if (isValidResult(this.gameObject))
+            // if it is  result spell that is dragged, then put it back to the empty spell
+            if (isValidDraggableObject(this.gameObject, "ResultSpell"))
             {
                 this.gameObject.GetComponent<SpellDisplay>().setSpell(this.gameObject.GetComponent<SpellDisplay>().getEmptySpell());
             }
@@ -57,33 +58,24 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, 
 
     bool isDraggable()
     {
-        return isElement(this.gameObject) || isValidResult(this.gameObject) || isKnownSpell(this.gameObject);
-    }
+        // return isElement(this.gameObject) || isValidResult(this.gameObject) || isKnownSpell(this.gameObject);
+        GameObject currentGameObject = this.gameObject;
+        string[] draggableTags = {"Element", "Modifier", "ResultSpell", "KnownSpell"};
 
-
-    bool isElement(GameObject aGameObject)
-    {
-        if (aGameObject.tag == "Element")
+        foreach (string tag in draggableTags)
         {
-            return true;
+            if (isValidDraggableObject(currentGameObject, tag))
+            {
+                return true;
+            }
         }
-        
+
         return false;
     }
 
-    bool isValidResult(GameObject aGameObject)
+    bool isValidDraggableObject(GameObject gameObject, string tag)
     {
-        if (aGameObject.tag == "ResultSpell" && aGameObject.GetComponent<SpellDisplay>().getSpell() != aGameObject.GetComponent<SpellDisplay>().getEmptySpell())
-        {
-            return true;
-        }
-        
-        return false;
-    }
-
-    bool isKnownSpell(GameObject aGameObject)
-    {
-        if (aGameObject.tag == "KnownSpell" && aGameObject.GetComponent<SpellDisplay>().getSpell() != aGameObject.GetComponent<SpellDisplay>().getEmptySpell())
+        if (gameObject.tag == tag && gameObject.GetComponent<SpellDisplay>().getSpell() != gameObject.GetComponent<SpellDisplay>().getEmptySpell())
         {
             return true;
         }
