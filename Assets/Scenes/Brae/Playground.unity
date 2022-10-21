@@ -8555,7 +8555,7 @@ SpriteRenderer:
   m_SortingLayerID: 880999447
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 985639236, guid: 5b9e2f537a0a0464fadf95b649fc807a, type: 3}
+  m_Sprite: {fileID: 830720724, guid: ffc8053f3209e6a49897abb4303c3729, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8594,7 +8594,7 @@ Animator:
   m_GameObject: {fileID: 1428251104}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e0254d09a35887e4c9176038be44ee67, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3b2d6255a384fdd449c7273ca2c3e5db, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11018,7 +11018,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33f9edfddd0c674c8939fe57962032b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellInputManager: {fileID: 1428251115}
   fireBoltPrefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
   rockBoltPrefab: {fileID: 8985421908937429478, guid: 3ab880670ad28c24bbcfe28b731fd395, type: 3}
   projectileOriginDistance: 1

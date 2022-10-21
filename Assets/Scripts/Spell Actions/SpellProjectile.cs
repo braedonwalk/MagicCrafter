@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpellProjectile : MonoBehaviour
 {
-    [SerializeField] SpellInputManager spellInputManager;
+    SpellInputManager spellInputManager;
     [SerializeField] GameObject fireBoltPrefab;
     [SerializeField] GameObject rockBoltPrefab;
     // PlayerSoundManager soundManager;
@@ -15,6 +15,7 @@ public class SpellProjectile : MonoBehaviour
     [SerializeField] PauseGame pause;
 
     private void Start() {
+        spellInputManager = GetComponentInParent<SpellInputManager>();
         spellMovement = GetComponent<ProjectileMovement>();
     }
 
