@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e784248a0b00674081d2fba6bc22a7f, type: 3}
   m_Name: EarthProjectile
   m_EditorClassIdentifier: 
-  spellName: WaterProjectile
-  sprite: {fileID: 21300032, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  spellName: EarthProjectile
+  sprite: {fileID: 21300038, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
   spellType: 1
   cooldown: 2
   damage: 10

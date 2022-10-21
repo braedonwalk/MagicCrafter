@@ -11068,8 +11068,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   empty: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   fire: {fileID: 11400000, guid: 9f102fd3c28a8934d96d32660544b5b1, type: 2}
-  rock: {fileID: 11400000, guid: 1e50d3be150c9d6428370b781adf9fb3, type: 2}
+  earth: {fileID: 11400000, guid: 1e50d3be150c9d6428370b781adf9fb3, type: 2}
   water: {fileID: 11400000, guid: 5bcffd51c39f2c64287fc2bda702064b, type: 2}
+  fireProjectile: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
+  fireAOE: {fileID: 11400000, guid: abd0eebac46787e4fbc377925021a974, type: 2}
+  fireSelf: {fileID: 11400000, guid: eb6f4d2ea780e234cb6ec90a01a60c08, type: 2}
+  waterProjectile: {fileID: 11400000, guid: e9b3b2d7cdea1a44cb45dabf85f49cc6, type: 2}
+  waterAOE: {fileID: 11400000, guid: 8175e08fceba43844b04620c2bc89c2d, type: 2}
+  waterSelf: {fileID: 11400000, guid: 5e6577cac3c02fb4dbe0ff2e2d82804f, type: 2}
+  earthProjectile: {fileID: 11400000, guid: bc52cc0d0dcbfb649bf2788fed995160, type: 2}
+  earthAOE: {fileID: 11400000, guid: 46d88fd562689a246b5554018f30ed3d, type: 2}
+  earthSelf: {fileID: 11400000, guid: 1d4a8823e94516a42b7af89a6945d8cd, type: 2}
   lava: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
   steam: {fileID: 11400000, guid: 612243efde9ed314e85dff9079ac55c4, type: 2}
   mud: {fileID: 11400000, guid: 65f9c0380d606fb439655fa619dc8aa3, type: 2}
