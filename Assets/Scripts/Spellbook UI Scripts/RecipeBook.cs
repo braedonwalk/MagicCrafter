@@ -10,9 +10,27 @@ public class RecipeBook : MonoBehaviour
 
     // Spells/Elements
     [SerializeField] Spell empty;
+
+    // elements
     [SerializeField] Spell fire;
-    [SerializeField] Spell rock;
+    [SerializeField] Spell earth;
     [SerializeField] Spell water;
+
+    // crafted spells
+    [SerializeField] Spell fireProjectile;
+    [SerializeField] Spell fireAOE;
+    [SerializeField] Spell fireSelf;
+
+    
+    [SerializeField] Spell waterProjectile;
+    [SerializeField] Spell waterAOE;
+    [SerializeField] Spell waterSelf;
+
+    
+    [SerializeField] Spell earthProjectile;
+    [SerializeField] Spell earthAOE;
+    [SerializeField] Spell earthSelf;
+
     [SerializeField] Spell lava;
     [SerializeField] Spell steam;
     [SerializeField] Spell mud;
@@ -23,6 +41,10 @@ public class RecipeBook : MonoBehaviour
     [SerializeField] Spell self;
     
 
+
+
+
+
     Spell currentSpell;
     Image image;
     Sprite defaultSprite;
@@ -32,9 +54,33 @@ public class RecipeBook : MonoBehaviour
 
     void setupRecipes()
     {
-        recipeList.Add(new List<Spell> {fire, rock, projectile, lava});
+        // spells made from element and modifier
+        recipeList.Add(new List<Spell> {fire, empty, projectile, fireProjectile});
+
+        recipeList.Add(new List<Spell> {fire, empty, aoe, fireAOE});
+
+        recipeList.Add(new List<Spell> {fire, empty, self, fireSelf});
+
+        recipeList.Add(new List<Spell> {water, empty, projectile, waterProjectile});
+
+        recipeList.Add(new List<Spell> {water, empty, aoe, waterAOE});
+
+        recipeList.Add(new List<Spell> {water, empty, self, waterSelf});
+
+        recipeList.Add(new List<Spell> {earth, empty, projectile, earthProjectile});
+
+        recipeList.Add(new List<Spell> {earth, empty, aoe, earthAOE});
+
+        recipeList.Add(new List<Spell> {earth, empty, self, earthSelf});
+
+
+        // spells made from double of same element and modifier
+
+        // spells made from different elements and modifier
+        
+        recipeList.Add(new List<Spell> {fire, earth, projectile, lava});
         recipeList.Add(new List<Spell> {fire, water, aoe, steam});
-        recipeList.Add(new List<Spell> {water, rock, self, mud});
+        recipeList.Add(new List<Spell> {water, earth, self, mud});
     }
                                 
         void Start()

@@ -10,7 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e784248a0b00674081d2fba6bc22a7f, type: 3}
-  m_Name: Fireball
+  m_Name: WaterProjectile
   m_EditorClassIdentifier: 
-  spellName: Fireball
-  sprite: {fileID: 21300000, guid: 2376bbb960166e64d8c964101d2e0d11, type: 3}
+  spellName: WaterProjectile
+  sprite: {fileID: 21300032, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  spellType: 1
+  cooldown: 2
+  damage: 10
+  prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
+  canCauseBurning: 0
+  canCauseWet: 0
+  canCauseSlow: 0
+  speed: 10
+  diameter: 5
+  range: 50

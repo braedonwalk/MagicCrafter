@@ -4828,7 +4828,7 @@ GameObject:
   - component: {fileID: -7163023416512349717}
   - component: {fileID: -8997123899357471781}
   m_Layer: 0
-  m_Name: Fire Bolt
+  m_Name: FireProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

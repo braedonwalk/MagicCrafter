@@ -10,7 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e784248a0b00674081d2fba6bc22a7f, type: 3}
-  m_Name: Rock
+  m_Name: WaterAOE
   m_EditorClassIdentifier: 
-  spellName: Rock
-  sprite: {fileID: 21300000, guid: edc0f43d76ce6574bbd4247985903a59, type: 3}
+  spellName: WaterAOE
+  sprite: {fileID: 21300032, guid: 09e4c6a7d75923945afe43953ef58ad2, type: 3}
+  spellType: 2
+  cooldown: 2
+  damage: 10
+  prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
+  canCauseBurning: 0
+  canCauseWet: 0
+  canCauseSlow: 0
+  speed: 10
+  diameter: 5
+  range: 50
