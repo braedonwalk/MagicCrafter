@@ -7,20 +7,19 @@ public class CraftButton : MonoBehaviour
     
     [SerializeField] SpellDisplay spellSlot1;
     [SerializeField] SpellDisplay spellSlot2;
+    [SerializeField] SpellDisplay modifierSlot;
     [SerializeField] RecipeBook recipeBook;
-
-    Spell spell1;
-    Spell spell2;
     
 
     public void craft()
     {
-        spell1 = spellSlot1.getSpell();
-        spell2 = spellSlot2.getSpell();
+        Spell spell1 = spellSlot1.getSpell();
+        Spell spell2 = spellSlot2.getSpell();
+        Spell modifier = modifierSlot.getSpell();
 
-        if (spell1 != null && spell2 != null)
+        if (spell1 != null && spell2 != null && modifier != null)
         {
-            recipeBook.getResult(spell1, spell2);
+            recipeBook.getResult(spell1, spell2, modifier);
         }
     }
 
