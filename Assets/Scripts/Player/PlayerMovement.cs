@@ -9,11 +9,13 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
     PlayerStatManager player;
+    Animator animator;
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         player = GetComponent<PlayerStatManager>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -21,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        animator.SetFloat("VerticalSpeed", movement.y);
+        // Debug.Log(movement.y);
     }
 
     private void FixedUpdate() {
