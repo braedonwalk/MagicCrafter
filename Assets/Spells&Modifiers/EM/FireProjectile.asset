@@ -17,7 +17,8 @@ MonoBehaviour:
   spellType: 1
   cooldown: 2
   damage: 10
-  prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
+  prefab: {fileID: 4249663564909586706, guid: 9583c4cdd16f9b046a0babafb5f68949, type: 3}
+  originDistance: 1
   canCauseBurning: 0
   canCauseWet: 0
   canCauseSlow: 0

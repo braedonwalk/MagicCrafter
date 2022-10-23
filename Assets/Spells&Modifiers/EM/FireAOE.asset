@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: FireAOE
   sprite: {fileID: 21300000, guid: 93b1855ce3a0e41468386a1d8f3815b4, type: 3}
-  spellType: 1
+  spellType: 2
   cooldown: 2
   damage: 10
-  prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
+  prefab: {fileID: 5155942832998402077, guid: 2efb091bea8826f439833bd27a7e3861, type: 3}
+  originDistance: 5
   canCauseBurning: 0
   canCauseWet: 0
   canCauseSlow: 0
   speed: 10
   diameter: 5
   range: 50
+  duration: 0
