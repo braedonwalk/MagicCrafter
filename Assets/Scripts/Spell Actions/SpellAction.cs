@@ -66,7 +66,7 @@ public class SpellAction : MonoBehaviour
         return spellInputManager.getActiveSpell();
     }
 
-    int getSpellType(){
+    public int getSpellType(){
         return spellInputManager.getActiveSpell().spellType;
     }
 
@@ -77,15 +77,7 @@ public class SpellAction : MonoBehaviour
         rb.AddForce(this.transform.up * speed, ForceMode2D.Impulse);
     }
 
-    float getOriginDistance(){
-        if (spellType == 1){
-            return 1f;
-        }
-        else if (spellType == 2){
-            return 2f;
-        }
-        else {
-            return 0f;
-        }
+    public float getOriginDistance(){
+        return spellInputManager.getActiveSpell().originDistance;;
     }
 }

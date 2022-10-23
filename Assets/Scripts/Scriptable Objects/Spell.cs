@@ -14,6 +14,7 @@ public class Spell : ScriptableObject {
     public float cooldown;
     public float damage=0f;
     public GameObject prefab;
+    public float originDistance;    //projectile = 1, aoe = var, self = 0
 
     public bool canCauseBurning=false;
     public bool canCauseWet=false;

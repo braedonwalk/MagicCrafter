@@ -7,57 +7,81 @@ public class AimAtMouse : MonoBehaviour
 
     [SerializeField] GameObject player;
     [SerializeField] Camera cam;
-    Vector2 playerPosition;
+    SpellAction spellAction;
+    Vector2 playerRbPosition;
+    Vector3 playerTransformPosition;
     Rigidbody2D rigidBody;
     Vector2 mousePos;
-    // Vector3 towardMouse;
-    // [SerializeField] float projectileOriginDistance = 1f;
-    // [SerializeField] float AOEOriginDistance = 2f;
-    SpellAOE spellAOE;
-    SpellProjectile spellProjectile;
+    Vector3 towardMouse;
     [SerializeField] bool isProjectile = true;
 
     void Start()
     {
+        spellAction = GetComponent<SpellAction>();
         rigidBody = GetComponent<Rigidbody2D>();
-        spellAOE = GetComponent<SpellAOE>();
-        spellProjectile = GetComponent<SpellProjectile>();
     }
 
     void Update()
     {
-        playerPosition = player.GetComponent<Rigidbody2D>().position;
+        playerRbPosition = player.GetComponent<Rigidbody2D>().position;
+        playerTransformPosition = player.GetComponent<Transform>().position;
         
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        
-        // towardMouse = (mousePos - playerPosition).normalized;
-
-        // Debug.Log(towardMouse);
     }
 
     private void FixedUpdate() {
-        // mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        if (isProjectile){
-            Vector2 aimDirection = mousePos - rigidBody.position;
-            float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
-            rigidBody.rotation = angle;
-
-            Vector3 towardMouse = (mousePos - playerPosition).normalized;
-            rigidBody.position = towardMouse * spellProjectile.getProjectileOriginDistance() + player.transform.position;
-        }else{
-            rigidBody.rotation = 0;
-            Vector3 towardMouse = (mousePos - playerPosition);
-            // Debug.Log(towardMouse);
-            if (Vector3.Distance(towardMouse, player.transform.position) <= spellAOE.getAOEOriginDistance()){
-                rigidBody.position = towardMouse + player.transform.position;
-            }
-            else{
-                towardMouse = (mousePos - playerPosition).normalized;
-                rigidBody.position = towardMouse * spellAOE.getAOEOriginDistance() + player.transform.position;
-            }
+        if (spellAction.getSpellType() == 1)
+        {
+            setAngle();
+            setTowardMouse(1);
+            setOriginPosition();
         }
-        
+        else if (spellAction.getSpellType() == 2)
+        {
+            rigidBody.rotation = 0;
+            setTowardMouse(2);
+            checkWithinRange();
+        }
+        else 
+        {
+            setOriginPosition();
+            rigidBody.rotation = 0;
+        }
+    }
+
+    void setAngle()
+    {
+        Vector2 aimDirection = mousePos - rigidBody.position;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
+        rigidBody.rotation = angle;
+    }
+
+    void setTowardMouse(int type)
+    {
+        if (type == 1){
+            towardMouse = (mousePos - playerRbPosition).normalized;
+        }
+        else if (type == 2){
+            towardMouse = mousePos - playerRbPosition;
+        }
+    }
+
+    void checkWithinRange()
+    {
+        if (Vector3.Distance(towardMouse, playerTransformPosition) <= spellAction.getOriginDistance())
+        {
+            rigidBody.position = towardMouse + playerTransformPosition;
+        }
+        else
+        {
+            setTowardMouse(1);
+            setOriginPosition();
+        }
+    }
+
+    void setOriginPosition()
+    {   
+        rigidBody.position = towardMouse * spellAction.getOriginDistance() + playerTransformPosition;
     }
 
     public Vector2 getMousePos(){
