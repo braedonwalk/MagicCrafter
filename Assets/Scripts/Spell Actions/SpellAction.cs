@@ -11,13 +11,13 @@ public class SpellAction : MonoBehaviour
     int spellType;
     float cooldown;
     float damage;
-    GameObject prefab;
+    GameObject spellPrefab;
 
     float originDistance;
 
     // Projectile
     float projectileRange;
-    float projectileSpeed;
+    // float projectileSpeed;
 
     // AOE
     float AOEDiameter;
@@ -43,23 +43,12 @@ public class SpellAction : MonoBehaviour
                 if (getSpellType() == 1)
                 {
                     // PROJECTILE
-                    string activeSpellName = spellInputManager.getActiveSpell().spellName;
+                    string activeSpellName = getActiveSpell().spellName;
+                    spellPrefab = getActiveSpell().prefab;
+                    float projectileSpeed = getActiveSpell().speed;
 
-                    if(activeSpellName == "FireProjectile")
-                    {
-                        Debug.Log("fire projectile fired");
-                        // cast(fireBoltPrefab);
-                    }
-                    else if(activeSpellName == "EarthProjectile")
-                    {
-                        Debug.Log("earth projectile fired");
-                        // cast(rockBoltPrefab);
-                    }
-                    else if(activeSpellName == "WaterProjectile")
-                    {
-                        Debug.Log("water projectile fired");
-                        // cast(rockBoltPrefab);
-                    }
+                    castProjectile(spellPrefab, projectileSpeed);
+                    // Debug.Log(activeSpellName);
                 }
                 else if (getSpellType() == 2)
                 {
@@ -73,23 +62,29 @@ public class SpellAction : MonoBehaviour
         }
     }
 
-    int getSpellType()
-    {
+    Spell getActiveSpell(){
+        return spellInputManager.getActiveSpell();
+    }
+
+    int getSpellType(){
         return spellInputManager.getActiveSpell().spellType;
     }
 
-    float getOriginDistance()
+    void castProjectile(GameObject prefab, float speed)
     {
-        if (spellType == 1)
-        {
+        GameObject spell = Instantiate(prefab, this.transform.position, this.transform.rotation);
+        Rigidbody2D rb = spell.GetComponent<Rigidbody2D>();
+        rb.AddForce(this.transform.up * speed, ForceMode2D.Impulse);
+    }
+
+    float getOriginDistance(){
+        if (spellType == 1){
             return 1f;
         }
-        else if (spellType == 2)
-        {
+        else if (spellType == 2){
             return 2f;
         }
-        else 
-        {
+        else {
             return 0f;
         }
     }
