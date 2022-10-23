@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     
-    [SerializeField] int health = 3;
+    [SerializeField] float health = 3f;
     [SerializeField] bool isDead = false;
     // EnemySoundManager soundManager;
     // EnemyParticleEffectManager particleEffectManager;
@@ -19,7 +19,7 @@ public class EnemyHealth : MonoBehaviour
         destroyEnemy();
     }
 
-    public void removeHealth(int damageTaken){
+    public void removeHealth(float damageTaken){
         health -= damageTaken;
         Debug.Log("Enemy Health: " + health);
     }
@@ -35,7 +35,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public int getHealth(){
+    public float getHealth(){
         return health;
     }
 }
