@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: WaterSelf
   sprite: {fileID: 21300036, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
-  spellType: 1
+  spellType: 3
   cooldown: 2
   damage: 10
   prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
+  originDistance: 0
   canCauseBurning: 0
   canCauseWet: 0
   canCauseSlow: 0
   speed: 10
   diameter: 5
   range: 50
+  duration: 0

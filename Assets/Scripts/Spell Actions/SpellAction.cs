@@ -28,6 +28,9 @@ public class SpellAction : MonoBehaviour
 
     // Self
     float effectDuration;
+    [SerializeField] ParticleSystem speedFX;
+    float modifiedSpeed = 10f;
+    float speedTime = 5f;
 
     void Start()
     {
@@ -59,6 +62,7 @@ public class SpellAction : MonoBehaviour
                 else if (getSpellType() == 3)
                 {
                     // SELF
+                    castSelf();
                 }
             }
         }
@@ -104,6 +108,27 @@ public class SpellAction : MonoBehaviour
     //     steamFX.Emit(numParticlesEmit);
     //     // Destroy(spellPrefab, destroyDelay);
     // }
+
+    void castSelf()
+    {
+        Debug.Log("i am speed");
+        statManager.changePlayerSpeed(modifiedSpeed);
+        playSpeedFX(1);
+        
+        Invoke("changePlayerSpeed", speedTime);
+    }
+
+    void changePlayerSpeed(){
+        float defaultSpeed = statManager.getDefaultSpeed();
+        statManager.changePlayerSpeed(defaultSpeed);
+        Debug.Log("stop speed");
+    }
+
+    void playSpeedFX(int numParticlesEmit){
+        var main = speedFX.main;
+        main.startLifetime = speedTime + 0.2f;
+        speedFX.Emit(numParticlesEmit);
+    }
 
     public float getOriginDistance(){
         return spellInputManager.getActiveSpell().originDistance;;
