@@ -62,7 +62,7 @@ public class SpellInputManager : MonoBehaviour
          if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() != null)
         {
             activeSpell = activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell();
-            Debug.Log(activeSpell);
+            Debug.Log(activeSpell + " Selected");
         }
         else if(Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() == null)
         {

@@ -47,17 +47,17 @@ public class SpellAction : MonoBehaviour
 
                     if(activeSpellName == "FireProjectile")
                     {
-                        Debug.Log("fire projectile");
+                        Debug.Log("fire projectile fired");
                         // cast(fireBoltPrefab);
                     }
                     else if(activeSpellName == "EarthProjectile")
                     {
-                        Debug.Log("rock projectile");
+                        Debug.Log("earth projectile fired");
                         // cast(rockBoltPrefab);
                     }
                     else if(activeSpellName == "WaterProjectile")
                     {
-                        Debug.Log("water projectile");
+                        Debug.Log("water projectile fired");
                         // cast(rockBoltPrefab);
                     }
                 }

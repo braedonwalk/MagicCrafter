@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EarthProjectile
   m_EditorClassIdentifier: 
   spellName: EarthProjectile
-  sprite: {fileID: 21300038, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  sprite: {fileID: 1981915677, guid: 0c46a4abf9c121840adc5c289ea509b6, type: 3}
   spellType: 1
   cooldown: 2
   damage: 10
@@ -24,3 +24,4 @@ MonoBehaviour:
   speed: 10
   diameter: 5
   range: 50
+  duration: 0
