@@ -13,7 +13,7 @@ public class SpellAction : MonoBehaviour
     float damage;
     GameObject prefab;
 
-    [SerializeField] float originDistance;
+    float originDistance;
 
     // Projectile
     float projectileRange;
@@ -36,10 +36,50 @@ public class SpellAction : MonoBehaviour
 
     void Update()
     {
-        
+        if(!pause.getIsPaused())
+        {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                if (getSpellType() == 1)
+                {
+                    // PROJECTILE
+                    string activeSpellName = spellInputManager.getActiveSpell().spellName;
+
+                    if(activeSpellName == "FireProjectile")
+                    {
+                        Debug.Log("fire projectile");
+                        // cast(fireBoltPrefab);
+                    }
+                    else if(activeSpellName == "EarthProjectile")
+                    {
+                        Debug.Log("rock projectile");
+                        // cast(rockBoltPrefab);
+                    }
+                    else if(activeSpellName == "WaterProjectile")
+                    {
+                        Debug.Log("water projectile");
+                        // cast(rockBoltPrefab);
+                    }
+                }
+                else if (getSpellType() == 2)
+                {
+                    //AOE
+                }
+                else if (getSpellType() == 3)
+                {
+                    // SELF
+                }
+            }
+        }
     }
 
-    float getOriginDistance(){
+    int getSpellType()
+    {
+        return spellInputManager.getActiveSpell().spellType;
+    }
+
+    float getOriginDistance()
+    {
         if (spellType == 1)
         {
             return 1f;

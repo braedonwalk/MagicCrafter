@@ -30,10 +30,6 @@ public class SpellInputManager : MonoBehaviour
         {
             handleSpellSelectKey(i);
         }
-        // handleSpellSelectKey(1);
-        // handleSpellSelectKey(2);
-        // handleSpellSelectKey(3);
-        // handleSpellSelectKey(4);
 
         if(Input.GetButtonDown("Fire1"))
         {

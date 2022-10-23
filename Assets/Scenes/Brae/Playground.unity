@@ -7379,7 +7379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+  spell: {fileID: 11400000, guid: bc52cc0d0dcbfb649bf2788fed995160, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &794204922
 MonoBehaviour:
@@ -7977,7 +7977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+  spell: {fileID: 11400000, guid: e9b3b2d7cdea1a44cb45dabf85f49cc6, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!1 &1145541895
 GameObject:
@@ -8637,7 +8637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 9f102fd3c28a8934d96d32660544b5b1, type: 2}
+  spell: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &1255990721
 MonoBehaviour:
@@ -11844,6 +11844,7 @@ GameObject:
   - component: {fileID: 1963570386}
   - component: {fileID: 1963570385}
   - component: {fileID: 1963570387}
+  - component: {fileID: 1963570388}
   m_Layer: 0
   m_Name: Spell Origin
   m_TagString: Untagged
@@ -11968,6 +11969,22 @@ MonoBehaviour:
   AOERange: 1
   damage: 1
   pause: {fileID: 1315676203}
+--- !u!114 &1963570388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963570379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5cbf170d442cd747bca5b31c864c9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pause: {fileID: 1315676203}
+  whatIsEnemies:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1972580733
 GameObject:
   m_ObjectHideFlags: 0
