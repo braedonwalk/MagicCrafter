@@ -9,6 +9,8 @@ public class SpellCollision : MonoBehaviour
         if(!other.gameObject.CompareTag("Player")){
             // Debug.Log(other);
             Destroy(this.gameObject);
+
+            //////////deal damgage/status effect/etc.
         }
         
     }

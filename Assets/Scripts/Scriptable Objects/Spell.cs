@@ -24,5 +24,7 @@ public class Spell : ScriptableObject {
     public float diameter = 0f;
     public float range = 0f;
 
+    public float duration;
+
 }
 
