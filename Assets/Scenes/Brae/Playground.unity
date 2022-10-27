@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 52816112}
   - component: {fileID: 52816111}
   - component: {fileID: 52816114}
+  - component: {fileID: 52816115}
   m_Layer: 5
   m_Name: Spell Slot 4
   m_TagString: EquippedSpell
@@ -228,6 +229,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!225 &52816115
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52816109}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &142378585
 GameObject:
   m_ObjectHideFlags: 0
@@ -9649,6 +9662,7 @@ GameObject:
   - component: {fileID: 1527726544}
   - component: {fileID: 1527726543}
   - component: {fileID: 1527726546}
+  - component: {fileID: 1527726547}
   m_Layer: 5
   m_Name: Spell Slot 3
   m_TagString: EquippedSpell
@@ -9741,6 +9755,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!225 &1527726547
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527726541}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1548791190
 GameObject:
   m_ObjectHideFlags: 0
@@ -10442,6 +10468,7 @@ GameObject:
   - component: {fileID: 1682470615}
   - component: {fileID: 1682470614}
   - component: {fileID: 1682470617}
+  - component: {fileID: 1682470618}
   m_Layer: 5
   m_Name: Spell Slot 2
   m_TagString: EquippedSpell
@@ -10534,6 +10561,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!225 &1682470618
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682470612}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1685403730
 GameObject:
   m_ObjectHideFlags: 0
@@ -10940,6 +10979,7 @@ GameObject:
   - component: {fileID: 1700533577}
   - component: {fileID: 1700533576}
   - component: {fileID: 1700533579}
+  - component: {fileID: 1700533580}
   m_Layer: 5
   m_Name: Spell Slot 1
   m_TagString: EquippedSpell
@@ -11032,6 +11072,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+--- !u!225 &1700533580
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700533574}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1725973565
 GameObject:
   m_ObjectHideFlags: 0

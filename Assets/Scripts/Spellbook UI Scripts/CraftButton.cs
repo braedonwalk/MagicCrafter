@@ -19,14 +19,12 @@ public class CraftButton : MonoBehaviour
 
         if (spell1 != null && spell2 != null && modifier != null)
         {
-            bool isValidResult = recipeBook.getResult(spell1, spell2, modifier);
-            if (!isValidResult)
-            {
-                spellSlot1.setSpell(spellSlot1.getEmptySpell());
-                spellSlot2.setSpell(spellSlot2.getEmptySpell());
-                modifierSlot.setSpell(modifierSlot.getEmptySpell());
-            }
+            recipeBook.getResult(spell1, spell2, modifier);
         }
+
+        spellSlot1.setSpell(spellSlot1.getEmptySpell());
+        spellSlot2.setSpell(spellSlot2.getEmptySpell());
+        modifierSlot.setSpell(modifierSlot.getEmptySpell());
     }
 
 }

@@ -90,7 +90,7 @@ public class RecipeBook : MonoBehaviour
         defaultSprite = image.sprite;
     }
 
-    public bool getResult(Spell spell1, Spell spell2, Spell modifier)
+    public void getResult(Spell spell1, Spell spell2, Spell modifier)
     {
 
         foreach (List<Spell> subList in recipeList)
@@ -103,12 +103,9 @@ public class RecipeBook : MonoBehaviour
             if ( ((ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2)) && (ingredient3 == modifier))
             {
                 spellDisplay.setSpell(result);
-                return true;
             }
-
             
         }
-        
-        return false;
+   
     }
 }
