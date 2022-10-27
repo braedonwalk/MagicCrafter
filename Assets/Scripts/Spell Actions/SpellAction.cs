@@ -47,12 +47,7 @@ public class SpellAction : MonoBehaviour
                 spellPrefab = getActiveSpell().prefab;
                 if (getSpellType() == 1)
                 {
-                    // PROJECTILE
-                    // string activeSpellName = getActiveSpell().spellName;
-                    float projectileSpeed = getActiveSpell().speed;
-
-                    castProjectile(spellPrefab, projectileSpeed);
-                    // Debug.Log(activeSpellName);
+                    castProjectile();
                 }
                 else if (getSpellType() == 2)
                 {
@@ -76,11 +71,18 @@ public class SpellAction : MonoBehaviour
         return spellInputManager.getActiveSpell().spellType;
     }
 
-    void castProjectile(GameObject prefab, float speed)
+    void shootProjectile(GameObject prefab, float speed)
     {
         GameObject projectile = Instantiate(prefab, this.transform.position, this.transform.rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * speed, ForceMode2D.Impulse);
+    }
+
+    void castProjectile()
+    {
+        float projectileSpeed = getActiveSpell().speed;
+
+        shootProjectile(spellPrefab, projectileSpeed);
     }
 
     void castAOE()
