@@ -47,11 +47,12 @@ public class SpellAction : MonoBehaviour
                 spellPrefab = getActiveSpell().prefab;
                 if (getSpellType() == 1)
                 {
+                    // PROJECTILE
                     castProjectile();
                 }
                 else if (getSpellType() == 2)
                 {
-                    //AOE
+                    // AOE
                     castAOE();
                 }
                 else if (getSpellType() == 3)
