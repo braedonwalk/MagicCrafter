@@ -63,6 +63,19 @@ public class SpellInputManager : MonoBehaviour
         {
             activeSpell = activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell();
             Debug.Log(activeSpell + " Selected");
+
+            for (int i=0; i< activeSpellSlots.Length; i++)
+            {
+                if ( i != keyNum-1)
+                {
+                    activeSpellSlots[i].setAlpha(0.3f);
+                }
+
+                else
+                {
+                    activeSpellSlots[i].setAlpha(1.0f);
+                }
+            }
         }
         else if(Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() == null)
         {
