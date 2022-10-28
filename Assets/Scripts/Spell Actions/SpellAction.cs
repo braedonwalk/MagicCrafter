@@ -48,7 +48,7 @@ public class SpellAction : MonoBehaviour
                 if (getSpellType() == 1)
                 {
                     // PROJECTILE
-                    castProjectile();
+                    castProjectile(spellPrefab);
                 }
                 else if (getSpellType() == 2)
                 {
@@ -72,18 +72,11 @@ public class SpellAction : MonoBehaviour
         return spellInputManager.getActiveSpell().spellType;
     }
 
-    void shootProjectile(GameObject prefab, float speed)
+    void castProjectile(GameObject prefab)
     {
         GameObject projectile = Instantiate(prefab, this.transform.position, this.transform.rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.AddForce(this.transform.up * speed, ForceMode2D.Impulse);
-    }
-
-    void castProjectile()
-    {
-        float projectileSpeed = getActiveSpell().speed;
-
-        shootProjectile(spellPrefab, projectileSpeed);
+        rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
     }
 
     void castAOE()
