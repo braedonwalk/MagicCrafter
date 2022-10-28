@@ -21,7 +21,10 @@ public class SpellCollision : MonoBehaviour
 
         if (other.gameObject.tag == "Object")
         {            
-            vFXManager.makeBurnEffect(other.gameObject, spell);
+            if (spell.canCauseBurning)
+            {
+                vFXManager.makeBurnEffect(other.gameObject, spell);
+            }
         }
         
     }
