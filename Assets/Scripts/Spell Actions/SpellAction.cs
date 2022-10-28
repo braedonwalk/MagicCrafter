@@ -45,10 +45,11 @@ public class SpellAction : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 spellPrefab = getActiveSpell().prefab;
+
                 if (getSpellType() == 1)
                 {
                     // PROJECTILE
-                    castProjectile(spellPrefab);
+                    castProjectile();
                 }
                 else if (getSpellType() == 2)
                 {
@@ -72,9 +73,9 @@ public class SpellAction : MonoBehaviour
         return spellInputManager.getActiveSpell().spellType;
     }
 
-    void castProjectile(GameObject prefab)
+    void castProjectile()
     {
-        GameObject projectile = Instantiate(prefab, this.transform.position, this.transform.rotation);
+        GameObject projectile = Instantiate(spellPrefab, this.transform.position, this.transform.rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
     }
