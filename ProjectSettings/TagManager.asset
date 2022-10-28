@@ -10,6 +10,8 @@ TagManager:
   - EquippedSpell
   - Enemy
   - CraftSlot
+  - Modifier
+  - Object
   layers:
   - Default
   - TransparentFX

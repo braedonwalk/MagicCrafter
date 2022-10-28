@@ -27,5 +27,7 @@ public class Spell : ScriptableObject {
 
     public float duration;
 
+    public GameObject effectPrefab;
+
 }
 
