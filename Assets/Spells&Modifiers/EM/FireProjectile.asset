@@ -19,7 +19,7 @@ MonoBehaviour:
   damage: 10
   prefab: {fileID: 4249663564909586706, guid: 9583c4cdd16f9b046a0babafb5f68949, type: 3}
   originDistance: 1
-  canCauseBurning: 0
+  canCauseBurning: 1
   canCauseWet: 0
   canCauseSlow: 0
   speed: 10
