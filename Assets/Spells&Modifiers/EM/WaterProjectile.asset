@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: WaterProjectile
   sprite: {fileID: -95422259, guid: 8f3e5c808d6baeb459da0bd1d1ea1acb, type: 3}
+  id: 2010
   spellType: 1
   cooldown: 2
   damage: 10
@@ -26,3 +27,4 @@ MonoBehaviour:
   diameter: 5
   range: 50
   duration: 0
+  effectPrefab: {fileID: 0}

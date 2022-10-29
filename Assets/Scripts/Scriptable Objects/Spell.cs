@@ -9,6 +9,8 @@ public class Spell : ScriptableObject {
 
     public Sprite sprite;
 
+    public int id; // thousands is type, hundreds/tens is effect it can give
+
     // 0 = null, projectile = 1, aoe = 2, self = 3
     public int spellType = 0;
     public float cooldown;

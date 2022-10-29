@@ -10,21 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e784248a0b00674081d2fba6bc22a7f, type: 3}
-  m_Name: EarthAOE
+  m_Name: MudShot
   m_EditorClassIdentifier: 
-  spellName: EarthAOE
-  sprite: {fileID: 21300038, guid: 09e4c6a7d75923945afe43953ef58ad2, type: 3}
-  id: 3020
-  spellType: 2
-  cooldown: 2
-  damage: 10
-  prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
-  originDistance: 5
+  spellName: Mud
+  sprite: {fileID: 21300000, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  spellType: 0
+  cooldown: 0
+  damage: 0
+  prefab: {fileID: 0}
   canCauseBurning: 0
   canCauseWet: 0
   canCauseSlow: 0
-  speed: 10
-  diameter: 5
-  range: 50
-  duration: 0
-  effectPrefab: {fileID: 0}
+  speed: 0
+  diameter: 0
+  range: 0

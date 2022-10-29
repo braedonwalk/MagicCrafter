@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: FireAOE
   sprite: {fileID: 21300000, guid: 93b1855ce3a0e41468386a1d8f3815b4, type: 3}
+  id: 1020
   spellType: 2
   cooldown: 2
   damage: 10
@@ -26,3 +27,4 @@ MonoBehaviour:
   diameter: 5
   range: 50
   duration: 0
+  effectPrefab: {fileID: 0}

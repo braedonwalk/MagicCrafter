@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: FireProjectile
   sprite: {fileID: -1625648082, guid: c8e4dfe8c4468474393a3d3c5edb24f8, type: 3}
+  id: 1010
   spellType: 1
   cooldown: 2
   damage: 10
