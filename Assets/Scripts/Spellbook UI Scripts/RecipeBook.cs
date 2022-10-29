@@ -92,13 +92,29 @@ public class RecipeBook : MonoBehaviour
         recipeList.Add(new List<Spell> {earth, empty, self, earthSelf});
 
 
-        // spells made from double of same element and modifier
+        // spells made from double of same element and 
+        recipeList.Add(new List<Spell> {fire, fire, projectile, fireBlast});
+        recipeList.Add(new List<Spell> {fire, fire, aoe, explosion});
+        recipeList.Add(new List<Spell> {fire, fire, self, burningSpeed});
+        recipeList.Add(new List<Spell> {water, water, projectile, bubble});
+        recipeList.Add(new List<Spell> {water, water, aoe, wave});
+        recipeList.Add(new List<Spell> {water, water, self, heal});
+        recipeList.Add(new List<Spell> {earth, earth, projectile, rockRoll});
+        recipeList.Add(new List<Spell> {earth, earth, aoe, earthquake});
+        recipeList.Add(new List<Spell> {earth, earth, self, rockArmor});
 
         // spells made from different elements and modifier
         
+        recipeList.Add(new List<Spell> {fire, water, projectile, steam});
+        recipeList.Add(new List<Spell> {fire, water, aoe, steamCloud});
+        recipeList.Add(new List<Spell> {fire, water, self, invisibility});
+        recipeList.Add(new List<Spell> {water, earth, projectile, mudShot});
+        recipeList.Add(new List<Spell> {water, earth, aoe, mudPlop});
+        recipeList.Add(new List<Spell> {water, earth, self, mudSelf});
         recipeList.Add(new List<Spell> {fire, earth, projectile, lava});
-        recipeList.Add(new List<Spell> {fire, water, aoe, steam});
-        recipeList.Add(new List<Spell> {water, earth, self, mudShot});
+        recipeList.Add(new List<Spell> {fire, earth, aoe, meteorStrike});
+        recipeList.Add(new List<Spell> {fire, earth, self, burningMan});
+        
     }
                                 
         void Start()
@@ -122,8 +138,10 @@ public class RecipeBook : MonoBehaviour
             Spell ingredient3 = subList[2];
             Spell result = subList[3];
 
+
             if ( ((ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2)) && (ingredient3 == modifier))
             {
+                Debug.Log(result.spellName);
                 spellDisplay.setSpell(result);
             }
             
