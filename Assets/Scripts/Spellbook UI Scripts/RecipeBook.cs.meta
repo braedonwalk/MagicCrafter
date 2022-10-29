@@ -3,7 +3,41 @@ guid: 8d00d24ced2bd0844b038613cde401e9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - empty: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
+  - fire: {fileID: 11400000, guid: 9f102fd3c28a8934d96d32660544b5b1, type: 2}
+  - earth: {fileID: 11400000, guid: 1e50d3be150c9d6428370b781adf9fb3, type: 2}
+  - water: {fileID: 11400000, guid: 5bcffd51c39f2c64287fc2bda702064b, type: 2}
+  - fireProjectile: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
+  - fireAOE: {fileID: 11400000, guid: abd0eebac46787e4fbc377925021a974, type: 2}
+  - fireSelf: {fileID: 11400000, guid: eb6f4d2ea780e234cb6ec90a01a60c08, type: 2}
+  - waterProjectile: {fileID: 11400000, guid: e9b3b2d7cdea1a44cb45dabf85f49cc6, type: 2}
+  - waterAOE: {fileID: 11400000, guid: 8175e08fceba43844b04620c2bc89c2d, type: 2}
+  - waterSelf: {fileID: 11400000, guid: 5e6577cac3c02fb4dbe0ff2e2d82804f, type: 2}
+  - earthProjectile: {fileID: 11400000, guid: bc52cc0d0dcbfb649bf2788fed995160, type: 2}
+  - earthAOE: {fileID: 11400000, guid: 46d88fd562689a246b5554018f30ed3d, type: 2}
+  - earthSelf: {fileID: 11400000, guid: 1d4a8823e94516a42b7af89a6945d8cd, type: 2}
+  - fireBlast: {fileID: 11400000, guid: dd4a20c68bfaab84a916327f3607555f, type: 2}
+  - bubble: {fileID: 11400000, guid: cd65ba9d174d4b54c888bc39b13c5006, type: 2}
+  - rockRoll: {fileID: 11400000, guid: 217fbac4b8852914a8e16808356535db, type: 2}
+  - explosion: {fileID: 11400000, guid: ce1322ae5bfe0d84cb32f4931b6fd93f, type: 2}
+  - wave: {fileID: 11400000, guid: 9bd518f9c5ac342418255701c971d6e0, type: 2}
+  - earthquake: {fileID: 11400000, guid: d63cc92f24ea20a4a8ee7de463ba952c, type: 2}
+  - burningSpeed: {fileID: 11400000, guid: 1e5fb82fb486ad54cbf1a4d7e1b12142, type: 2}
+  - heal: {fileID: 11400000, guid: 59f2d70499d81dd499f3f8ef55cba4c5, type: 2}
+  - rockArmor: {fileID: 11400000, guid: 33dd66b498e38e742b794b4f16ad23d6, type: 2}
+  - steam: {fileID: 11400000, guid: 612243efde9ed314e85dff9079ac55c4, type: 2}
+  - steamCloud: {fileID: 11400000, guid: 1ada9078e43182545b6910dbb90081f8, type: 2}
+  - invisibility: {fileID: 11400000, guid: 132995aeaf22ea442ada24dadced07ae, type: 2}
+  - mudShot: {fileID: 11400000, guid: 65f9c0380d606fb439655fa619dc8aa3, type: 2}
+  - mudPlop: {fileID: 11400000, guid: 8c0b69ab615e9914db02b6f68efde363, type: 2}
+  - mudSelf: {fileID: 11400000, guid: f59cbf6cfd8d81b42989b1c241df7e9d, type: 2}
+  - lava: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
+  - meteorStrike: {fileID: 11400000, guid: db128af506741f34e8d984ee5263e784, type: 2}
+  - burningMan: {fileID: 11400000, guid: 3c42efb9be73e904eb8d523f656a4411, type: 2}
+  - projectile: {fileID: 11400000, guid: f943565e8bec1a34cbb2984f1efd64a0, type: 2}
+  - aoe: {fileID: 11400000, guid: 8c32964f6f65370449151001e79913db, type: 2}
+  - self: {fileID: 11400000, guid: e7a2bfae8d910de49be31088b719679f, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

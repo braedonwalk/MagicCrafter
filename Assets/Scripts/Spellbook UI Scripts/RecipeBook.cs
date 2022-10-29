@@ -17,6 +17,8 @@ public class RecipeBook : MonoBehaviour
     [SerializeField] Spell water;
 
     // crafted spells
+
+    //EXM Spells
     [SerializeField] Spell fireProjectile;
     [SerializeField] Spell fireAOE;
     [SerializeField] Spell fireSelf;
@@ -31,9 +33,29 @@ public class RecipeBook : MonoBehaviour
     [SerializeField] Spell earthAOE;
     [SerializeField] Spell earthSelf;
 
-    [SerializeField] Spell lava;
+    // EEM spells with identical E's
+    [SerializeField] Spell fireBlast;
+    [SerializeField] Spell bubble;
+    [SerializeField] Spell rockRoll;
+    [SerializeField] Spell explosion;
+    [SerializeField] Spell wave;
+    [SerializeField] Spell earthquake;
+    [SerializeField] Spell burningSpeed;
+    [SerializeField] Spell heal;
+    [SerializeField] Spell rockArmor;
+
+    // EEM spells with different E's 
+
     [SerializeField] Spell steam;
-    [SerializeField] Spell mud;
+    [SerializeField] Spell steamCloud;
+    [SerializeField] Spell invisibility;
+    [SerializeField] Spell mudShot;
+     [SerializeField] Spell mudPlop;
+      [SerializeField] Spell mudSelf;
+    [SerializeField] Spell lava;
+     [SerializeField] Spell meteorStrike;
+      [SerializeField] Spell burningMan;
+   
 
     // Modifiers
     [SerializeField] Spell projectile;
@@ -76,7 +98,7 @@ public class RecipeBook : MonoBehaviour
         
         recipeList.Add(new List<Spell> {fire, earth, projectile, lava});
         recipeList.Add(new List<Spell> {fire, water, aoe, steam});
-        recipeList.Add(new List<Spell> {water, earth, self, mud});
+        recipeList.Add(new List<Spell> {water, earth, self, mudShot});
     }
                                 
         void Start()
