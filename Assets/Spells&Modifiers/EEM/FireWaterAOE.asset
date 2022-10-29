@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e784248a0b00674081d2fba6bc22a7f, type: 3}
-  m_Name: Bubble
+  m_Name: FireWaterAOE
   m_EditorClassIdentifier: 
-  spellName: Bubble
+  spellName: SteamCloud
   sprite: {fileID: 0}
-  id: 2212
+  id: 1220
   spellType: 0
   cooldown: 0
   damage: 0

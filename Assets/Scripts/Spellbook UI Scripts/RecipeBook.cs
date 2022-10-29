@@ -23,39 +23,36 @@ public class RecipeBook : MonoBehaviour
     [SerializeField] Spell fireAOE;
     [SerializeField] Spell fireSelf;
 
-    
     [SerializeField] Spell waterProjectile;
     [SerializeField] Spell waterAOE;
     [SerializeField] Spell waterSelf;
 
-    
     [SerializeField] Spell earthProjectile;
     [SerializeField] Spell earthAOE;
     [SerializeField] Spell earthSelf;
 
     // EEM spells with identical E's
-    [SerializeField] Spell fireBlast;
-    [SerializeField] Spell bubble;
-    [SerializeField] Spell rockRoll;
-    [SerializeField] Spell explosion;
-    [SerializeField] Spell wave;
-    [SerializeField] Spell earthquake;
-    [SerializeField] Spell burningSpeed;
-    [SerializeField] Spell heal;
-    [SerializeField] Spell rockArmor;
+    [SerializeField] Spell fireFireProj;
+    [SerializeField] Spell waterWaterProj;
+    [SerializeField] Spell earthEarthProj;
+    [SerializeField] Spell fireFireAOE;
+    [SerializeField] Spell waterWaterAOE;
+    [SerializeField] Spell earthEarthAOE;
+    [SerializeField] Spell fireFireSelf;
+    [SerializeField] Spell waterWaterSelf;
+    [SerializeField] Spell earthEarthSelf;
 
     // EEM spells with different E's 
 
-    [SerializeField] Spell steam;
-    [SerializeField] Spell steamCloud;
-    [SerializeField] Spell invisibility;
-    [SerializeField] Spell mudShot;
-     [SerializeField] Spell mudPlop;
-      [SerializeField] Spell mudSelf;
-    [SerializeField] Spell lava;
-     [SerializeField] Spell meteorStrike;
-      [SerializeField] Spell burningMan;
-   
+    [SerializeField] Spell fireWaterProj;
+    [SerializeField] Spell fireWaterAOE;
+    [SerializeField] Spell fireWaterSelf;
+    [SerializeField] Spell waterEarthProj;
+    [SerializeField] Spell waterEarthAOE;
+    [SerializeField] Spell waterEarthSelf;
+    [SerializeField] Spell fireEarthProj;
+    [SerializeField] Spell fireEarthAOE;
+    [SerializeField] Spell fireEarthSelf;
 
     // Modifiers
     [SerializeField] Spell projectile;
@@ -68,7 +65,6 @@ public class RecipeBook : MonoBehaviour
     Sprite defaultSprite;
 
     SpellDisplay spellDisplay;
-
 
     void setupRecipes()
     {
@@ -93,31 +89,31 @@ public class RecipeBook : MonoBehaviour
 
 
         // spells made from double of same element and 
-        recipeList.Add(new List<Spell> {fire, fire, projectile, fireBlast});
-        recipeList.Add(new List<Spell> {fire, fire, aoe, explosion});
-        recipeList.Add(new List<Spell> {fire, fire, self, burningSpeed});
-        recipeList.Add(new List<Spell> {water, water, projectile, bubble});
-        recipeList.Add(new List<Spell> {water, water, aoe, wave});
-        recipeList.Add(new List<Spell> {water, water, self, heal});
-        recipeList.Add(new List<Spell> {earth, earth, projectile, rockRoll});
-        recipeList.Add(new List<Spell> {earth, earth, aoe, earthquake});
-        recipeList.Add(new List<Spell> {earth, earth, self, rockArmor});
+        recipeList.Add(new List<Spell> {fire, fire, projectile, fireFireProj});
+        recipeList.Add(new List<Spell> {fire, fire, aoe, fireFireAOE});
+        recipeList.Add(new List<Spell> {fire, fire, self, fireFireSelf});
+        recipeList.Add(new List<Spell> {water, water, projectile, waterWaterProj});
+        recipeList.Add(new List<Spell> {water, water, aoe, waterWaterAOE});
+        recipeList.Add(new List<Spell> {water, water, self, waterWaterSelf});
+        recipeList.Add(new List<Spell> {earth, earth, projectile, earthEarthProj});
+        recipeList.Add(new List<Spell> {earth, earth, aoe, earthEarthAOE});
+        recipeList.Add(new List<Spell> {earth, earth, self, earthEarthSelf});
 
         // spells made from different elements and modifier
         
-        recipeList.Add(new List<Spell> {fire, water, projectile, steam});
-        recipeList.Add(new List<Spell> {fire, water, aoe, steamCloud});
-        recipeList.Add(new List<Spell> {fire, water, self, invisibility});
-        recipeList.Add(new List<Spell> {water, earth, projectile, mudShot});
-        recipeList.Add(new List<Spell> {water, earth, aoe, mudPlop});
-        recipeList.Add(new List<Spell> {water, earth, self, mudSelf});
-        recipeList.Add(new List<Spell> {fire, earth, projectile, lava});
-        recipeList.Add(new List<Spell> {fire, earth, aoe, meteorStrike});
-        recipeList.Add(new List<Spell> {fire, earth, self, burningMan});
+        recipeList.Add(new List<Spell> {fire, water, projectile, fireWaterProj});
+        recipeList.Add(new List<Spell> {fire, water, aoe, fireWaterAOE});
+        recipeList.Add(new List<Spell> {fire, water, self, fireWaterSelf});
+        recipeList.Add(new List<Spell> {water, earth, projectile, waterEarthProj});
+        recipeList.Add(new List<Spell> {water, earth, aoe, waterEarthAOE});
+        recipeList.Add(new List<Spell> {water, earth, self, waterEarthSelf});
+        recipeList.Add(new List<Spell> {fire, earth, projectile, fireEarthProj});
+        recipeList.Add(new List<Spell> {fire, earth, aoe, fireEarthAOE});
+        recipeList.Add(new List<Spell> {fire, earth, self, fireEarthSelf});
         
     }
                                 
-        void Start()
+    void Start()
     {
         setupRecipes();
 
@@ -130,7 +126,6 @@ public class RecipeBook : MonoBehaviour
 
     public void getResult(Spell spell1, Spell spell2, Spell modifier)
     {
-
         foreach (List<Spell> subList in recipeList)
         {
             Spell ingredient1 = subList[0];
@@ -138,14 +133,11 @@ public class RecipeBook : MonoBehaviour
             Spell ingredient3 = subList[2];
             Spell result = subList[3];
 
-
             if ( ((ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2)) && (ingredient3 == modifier))
             {
                 Debug.Log(result.spellName);
                 spellDisplay.setSpell(result);
-            }
-            
+            }      
         }
-   
     }
 }
