@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterSelf
   m_EditorClassIdentifier: 
   spellName: WaterSelf
-  sprite: {fileID: 21300036, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  sprite: {fileID: 21300000, guid: 0f8b4c1920270f846b443e4f8fa2d985, type: 3}
   id: 2030
   spellType: 3
   cooldown: 2

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireSelf
   m_EditorClassIdentifier: 
   spellName: FireSelf
-  sprite: {fileID: 21300030, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  sprite: {fileID: 21300000, guid: 960f372dfddce914891b0afc94cb907b, type: 3}
   id: 1031
   spellType: 1
   cooldown: 2
