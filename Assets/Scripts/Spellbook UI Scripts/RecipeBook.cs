@@ -135,7 +135,7 @@ public class RecipeBook : MonoBehaviour
 
             if ( ((ingredient1 == spell1 && ingredient2 == spell2)  || (ingredient2 == spell1 && ingredient1 == spell2)) && (ingredient3 == modifier))
             {
-                Debug.Log(result.spellName);
+                Debug.Log("Crafted: " + result.spellName);
                 spellDisplay.setSpell(result);
             }      
         }

@@ -46,9 +46,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: Floors
     uniqueID: 139903741
     locked: 0
@@ -57,6 +54,9 @@ TagManager:
     locked: 0
   - name: Props
     uniqueID: 3937233481
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Player
     uniqueID: 880999447
