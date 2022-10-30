@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireWaterProj
   m_EditorClassIdentifier: 
   spellName: Steam
-  sprite: {fileID: 21300000, guid: 8d0f23028afaebc4ab79a7f02a1b38fb, type: 3}
+  sprite: {fileID: 21300000, guid: 3cd9d9c5911229d45a3f4d5273c5c5e0, type: 3}
   id: 1210
   spellType: 0
   cooldown: 0

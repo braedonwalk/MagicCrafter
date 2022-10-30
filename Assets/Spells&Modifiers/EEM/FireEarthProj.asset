@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireEarthProj
   m_EditorClassIdentifier: 
   spellName: Lava
-  sprite: {fileID: 21300000, guid: d1ee0aa1761e79642943ef60dbf5b273, type: 3}
+  sprite: {fileID: 21300000, guid: fe94aa3f097ffec4fa508d870943ad45, type: 3}
   id: 1310
   spellType: 0
   cooldown: 0

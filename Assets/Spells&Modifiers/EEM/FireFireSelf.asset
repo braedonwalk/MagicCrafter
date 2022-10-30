@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireFireSelf
   m_EditorClassIdentifier: 
   spellName: BurningSpeed
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 85a4b21cc1c767f48b5dae72b1af058a, type: 3}
   id: 1131
   spellType: 0
   cooldown: 0

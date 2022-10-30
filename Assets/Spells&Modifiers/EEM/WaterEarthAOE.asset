@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterEarthAOE
   m_EditorClassIdentifier: 
   spellName: MudShot
-  sprite: {fileID: 21300000, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  sprite: {fileID: 21300000, guid: b6dffc0afc97aa848b36d5060e4983e4, type: 3}
   id: 2313
   spellType: 0
   cooldown: 0

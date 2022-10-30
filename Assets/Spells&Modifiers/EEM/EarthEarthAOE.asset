@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EarthEarthAOE
   m_EditorClassIdentifier: 
   spellName: Earthquake
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: a8d57c948dba35e4398a4bed865016a9, type: 3}
   id: 3323
   spellType: 0
   cooldown: 0

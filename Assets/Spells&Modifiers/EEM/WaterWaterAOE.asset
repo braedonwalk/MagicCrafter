@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterWaterAOE
   m_EditorClassIdentifier: 
   spellName: Wave
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7ad69024eef3ecd48af20064fa809e6a, type: 3}
   id: 2222
   spellType: 0
   cooldown: 0

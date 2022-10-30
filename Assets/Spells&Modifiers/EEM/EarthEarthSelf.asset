@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EarthEarthSelf
   m_EditorClassIdentifier: 
   spellName: RockArmor
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 7101812144189734fa6dda5d80fe8333, type: 3}
   id: 3333
   spellType: 0
   cooldown: 0

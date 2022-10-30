@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterEarthSelf
   m_EditorClassIdentifier: 
   spellName: MudSelf
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: f7e7658f837df144e94353430f2207ce, type: 3}
   id: 2333
   spellType: 0
   cooldown: 0

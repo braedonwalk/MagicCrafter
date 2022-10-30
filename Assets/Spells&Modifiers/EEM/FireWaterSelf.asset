@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireWaterSelf
   m_EditorClassIdentifier: 
   spellName: Invisibility
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 5646df0ece1819145a336da82cf0fe1b, type: 3}
   id: 1230
   spellType: 0
   cooldown: 0

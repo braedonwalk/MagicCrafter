@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterWaterSelf
   m_EditorClassIdentifier: 
   spellName: Heal
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 91308cdcd276b4248bbd22be62bb96fc, type: 3}
   id: 2230
   spellType: 0
   cooldown: 0

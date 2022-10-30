@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterWaterProj
   m_EditorClassIdentifier: 
   spellName: Bubble
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: c775df5e0c571d2498309e0cb72d1f0c, type: 3}
   id: 2212
   spellType: 0
   cooldown: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FireEarthAOE
   m_EditorClassIdentifier: 
   spellName: MeteorStrike
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 41cf00189cc1aff46ae106995c686086, type: 3}
   id: 1320
   spellType: 0
   cooldown: 0
