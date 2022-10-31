@@ -13,6 +13,9 @@ public class SpellInputManager : MonoBehaviour
     [SerializeField] ActiveSpellSlot[] activeSpellSlots;
 
     Spell activeSpell;
+
+    int spellModifier;
+    int spellEffect;
     
     void Start()
     {
@@ -30,6 +33,8 @@ public class SpellInputManager : MonoBehaviour
         {
             handleSpellSelectKey(i);
         }
+
+        updateSpellModifierAndEffect();
     }
 
     void makeActiveSpellDefault()
@@ -67,9 +72,36 @@ public class SpellInputManager : MonoBehaviour
         }
     }
 
+    void updateSpellModifierAndEffect()
+    {
+        int id = activeSpell.id;
+        
+        List<int> listOfDigits = new List<int>();
+        while(id > 0)
+        {
+            listOfDigits.Add(id % 10);
+            id /= 10;
+        }
+        listOfDigits.Reverse();
+        
+        spellModifier = listOfDigits[2];
+        spellEffect = listOfDigits[3];
+
+    }
+
     public Spell getActiveSpell()
     {
         return activeSpell;
+    }
+
+    public int getSpellModifier()
+    {
+        return spellModifier;
+    }
+
+    public int getSpellEffect()
+    {
+        return spellEffect;
     }
 
 }

@@ -46,6 +46,8 @@ public class SpellAction : MonoBehaviour
             {
                 spellPrefab = getActiveSpell().prefab;
 
+                Debug.Log(spellInputManager.getSpellEffect());
+
                 if (getSpellType() == 1)
                 {
                     // PROJECTILE
@@ -70,7 +72,7 @@ public class SpellAction : MonoBehaviour
     }
 
     public int getSpellType(){
-        return spellInputManager.getActiveSpell().spellType;
+        return spellInputManager.getSpellModifier();
     }
 
     void castProjectile()
