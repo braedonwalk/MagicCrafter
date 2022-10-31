@@ -70,7 +70,18 @@ public class SpellAction : MonoBehaviour
     }
 
     public int getSpellType(){
-        return spellInputManager.getSpellModifier();
+        List<int> listOfDigits = new List<int>();
+
+        int id = getActiveSpell().id;
+
+        while(id > 0)
+        {
+            listOfDigits.Add(id % 10);
+            id /= 10;
+        }
+        listOfDigits.Reverse();
+        
+        return listOfDigits[2];
     }
 
     void castProjectile()

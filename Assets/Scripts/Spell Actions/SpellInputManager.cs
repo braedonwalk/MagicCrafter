@@ -33,8 +33,6 @@ public class SpellInputManager : MonoBehaviour
         {
             handleSpellSelectKey(i);
         }
-
-        updateSpellModifierAndEffect();
     }
 
     void makeActiveSpellDefault()
@@ -70,23 +68,6 @@ public class SpellInputManager : MonoBehaviour
         {
             activeSpell = emptySpell;
         }
-    }
-
-    void updateSpellModifierAndEffect()
-    {
-        int id = activeSpell.id;
-        
-        List<int> listOfDigits = new List<int>();
-        while(id > 0)
-        {
-            listOfDigits.Add(id % 10);
-            id /= 10;
-        }
-        listOfDigits.Reverse();
-        
-        spellModifier = listOfDigits[2];
-        spellEffect = listOfDigits[3];
-
     }
 
     public Spell getActiveSpell()
