@@ -30,22 +30,6 @@ public class SpellInputManager : MonoBehaviour
         {
             handleSpellSelectKey(i);
         }
-
-        if(Input.GetButtonDown("Fire1"))
-        {
-            castActiveSpell();
-        }
-    }
-
-    void castActiveSpell()
-    {
-        if (activeSpell != null)
-        {
-            if(activeSpell.spellName == "Lava")
-            {
-                Debug.Log("Shoot fireball");
-            }
-        }
     }
 
     void makeActiveSpellDefault()
