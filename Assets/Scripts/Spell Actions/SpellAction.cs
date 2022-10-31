@@ -45,7 +45,8 @@ public class SpellAction : MonoBehaviour
             if (Input.GetButtonDown("Fire1"))
             {
                 spellPrefab = getActiveSpell().prefab;
-
+                Debug.Log((getActiveSpell().name));
+                
                 if (getSpellType() == 1)
                 {
                     // PROJECTILE
