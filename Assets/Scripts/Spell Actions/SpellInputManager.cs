@@ -99,9 +99,4 @@ public class SpellInputManager : MonoBehaviour
         return spellModifier;
     }
 
-    public int getSpellEffect()
-    {
-        return spellEffect;
-    }
-
 }

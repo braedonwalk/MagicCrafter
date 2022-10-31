@@ -21,7 +21,8 @@ public class SpellCollision : MonoBehaviour
 
         if (other.gameObject.tag == "Object")
         {            
-            if (spell.canCauseBurning)
+            
+            if (getEffect() == 1) // burning
             {
                 vFXManager.makeBurnEffect(other.gameObject, spell);
             }
@@ -29,7 +30,21 @@ public class SpellCollision : MonoBehaviour
         
     }
 
+    int getEffect()
+    {
+        List<int> listOfDigits = new List<int>();
 
+        int id = spell.id;
+
+        while(id > 0)
+        {
+            listOfDigits.Add(id % 10);
+            id /= 10;
+        }
+        listOfDigits.Reverse();
+        
+        return listOfDigits[3];
+    }
 
 
 }

@@ -46,8 +46,6 @@ public class SpellAction : MonoBehaviour
             {
                 spellPrefab = getActiveSpell().prefab;
 
-                Debug.Log(spellInputManager.getSpellEffect());
-
                 if (getSpellType() == 1)
                 {
                     // PROJECTILE
