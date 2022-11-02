@@ -11,8 +11,9 @@ public class SpellCooldown : MonoBehaviour
     // [SerializeField]
     // private TMP_Text textCooldown;
 
+    Spell activeSpell;
     bool isCooldown;
-    float cooldownTime = 10f;
+    float cooldownTime;
     float cooldownTimer = 0f;
 
     private void Start() 
@@ -25,6 +26,8 @@ public class SpellCooldown : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
+            activeSpell = this.gameObject.GetComponent<SpellDisplay>().getSpell();
+            cooldownTime = activeSpell.cooldown;
             UseSpell();
         }
         if(isCooldown)
