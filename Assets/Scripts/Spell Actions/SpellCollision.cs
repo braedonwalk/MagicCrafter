@@ -21,7 +21,7 @@ public class SpellCollision : MonoBehaviour
             //////////deal damgage/status effect/etc.
         }
 
-        if (other.gameObject.tag == "Object")
+        else if (other.gameObject.tag == "Object")
         {            
             
             if (getEffect() == 1) // burning
@@ -30,7 +30,7 @@ public class SpellCollision : MonoBehaviour
             }
         }
 
-        if (other.gameObject.tag == "Enemy")
+        else if (other.gameObject.tag == "Enemy")
         {
             enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.removeHealth(spell.damage);
