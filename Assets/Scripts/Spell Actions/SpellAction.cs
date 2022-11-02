@@ -8,9 +8,9 @@ public class SpellAction : MonoBehaviour
     PlayerStatManager statManager;
     [SerializeField] PauseGame pause;
 
-    int spellType;
-    float cooldown;
-    float damage;
+    // int spellType;
+    // float cooldown;
+    // float damage;
     GameObject spellPrefab;
 
     float originDistance;
@@ -32,6 +32,8 @@ public class SpellAction : MonoBehaviour
     float modifiedSpeed = 10f;
     float speedTime = 5f;
 
+    float nextCastTime = 0;
+
     void Start()
     {
         spellInputManager = GetComponentInParent<SpellInputManager>();
@@ -42,25 +44,30 @@ public class SpellAction : MonoBehaviour
     {
         if(!pause.getIsPaused())
         {
-            if (Input.GetButtonDown("Fire1"))
+            if (Time.time > nextCastTime)
             {
-                spellPrefab = getActiveSpell().prefab;
-                Debug.Log((getActiveSpell().name));
-                
-                if (getSpellType() == 1)
+                if (Input.GetButtonDown("Fire1"))
                 {
-                    // PROJECTILE
-                    castProjectile();
-                }
-                else if (getSpellType() == 2)
-                {
-                    // AOE
-                    castAOE();
-                }
-                else if (getSpellType() == 3)
-                {
-                    // SELF
-                    castSelf();
+                    spellPrefab = getActiveSpell().prefab;
+                    Debug.Log((getActiveSpell().name));
+                    
+                    if (getSpellType() == 1)
+                    {
+                        // PROJECTILE
+                        castProjectile();
+                    }
+                    else if (getSpellType() == 2)
+                    {
+                        // AOE
+                        castAOE();
+                    }
+                    else if (getSpellType() == 3)
+                    {
+                        // SELF
+                        castSelf();
+                    }
+
+                    nextCastTime = Time.time + getActiveSpell().cooldown;
                 }
             }
         }
