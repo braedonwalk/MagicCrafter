@@ -15,14 +15,10 @@ MonoBehaviour:
   spellName: WaterProjectile
   sprite: {fileID: 21300000, guid: 81275d977ae57d440b7ca7adfea2900d, type: 3}
   id: 2010
-  spellType: 1
-  cooldown: 2
-  damage: 10
+  cooldown: 0.2
+  damage: 1
   prefab: {fileID: 5151278706022204056, guid: 6af21bfa3957b2e439e36ede653718ed, type: 3}
   originDistance: 1
-  canCauseBurning: 0
-  canCauseWet: 0
-  canCauseSlow: 0
   speed: 10
   diameter: 5
   range: 50

@@ -15950,7 +15950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9052d755390c140bce6f3b24ac0adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 10
   isDead: 0
 --- !u!95 &1548791192
 Animator:
