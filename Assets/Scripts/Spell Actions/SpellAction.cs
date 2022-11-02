@@ -32,24 +32,30 @@ public class SpellAction : MonoBehaviour
     float modifiedSpeed = 10f;
     float speedTime = 5f;
 
-    float nextCastTime = 0;
+    float nextCastTime;
+    // GameObject equippedSlot;
+    SpellCooldown SpellCooldown;
 
     void Start()
     {
         spellInputManager = GetComponentInParent<SpellInputManager>();
         statManager = GetComponentInParent<PlayerStatManager>();
+        // equippedSlot = GameObject.FindGameObjectWithTag("EquippedSpell");
     }
 
     void Update()
     {
         if(!pause.getIsPaused())
         {
-            if (Time.time > nextCastTime)
+            if (Input.GetButtonDown("Fire1"))
             {
-                if (Input.GetButtonDown("Fire1"))
+                SpellCooldown = GetComponent<SpellCooldown>();
+
+                // if (Time.time > nextCastTime)
+                if (SpellCooldown.getCanCast())
                 {
                     spellPrefab = getActiveSpell().prefab;
-                    Debug.Log((getActiveSpell().name));
+                    Debug.Log("Casting: " + (getActiveSpell().name));
                     
                     if (getSpellType() == 1)
                     {
@@ -67,13 +73,13 @@ public class SpellAction : MonoBehaviour
                         castSelf();
                     }
 
-                    nextCastTime = Time.time + getActiveSpell().cooldown;
+                    // nextCastTime = Time.time + getActiveSpell().cooldown;
                 }
             }
         }
     }
 
-    Spell getActiveSpell(){
+    public Spell getActiveSpell(){
         return spellInputManager.getActiveSpell();
     }
 

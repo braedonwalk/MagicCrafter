@@ -1,36 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class SpellCooldown : MonoBehaviour
 {
-    [SerializeField]
-    private Image imageCooldown;
-    // [SerializeField]
-    // private TMP_Text textCooldown;
-
     Spell activeSpell;
-    bool isCooldown;
+    bool startCooldown;
     float cooldownTime;
     float cooldownTimer = 0f;
-
-    private void Start() 
-    {
-        // textCooldown.gameObject.SetActive(false);
-        imageCooldown.fillAmount = 0f;
-    }
+    bool canCast = true;
 
     private void Update() 
     {
         if(Input.GetMouseButtonDown(0))
         {
-            activeSpell = this.gameObject.GetComponent<SpellDisplay>().getSpell();
+            SpellAction spellAction = gameObject.GetComponent<SpellAction>();
+            activeSpell = spellAction.getActiveSpell();  //NullReferenceException: Object reference not set to an instance of an object????
             cooldownTime = activeSpell.cooldown;
             UseSpell();
+            // Debug.Log(this.GetType());
         }
-        if(isCooldown)
+        if(startCooldown)
         {
             ApplyCooldown();
         }    
@@ -42,28 +32,29 @@ public class SpellCooldown : MonoBehaviour
 
         if(cooldownTimer < 0f)
         {
-            isCooldown = false;
-            // textCooldown.gameObject.SetActive(false);
-            imageCooldown.fillAmount = 0f;
+            startCooldown = false;
         }
         else{
-            // textCooldown.text = Mathf.RoundToInt(cooldownTimer).ToString();
-            imageCooldown.fillAmount = cooldownTimer / cooldownTime;
         }
     }
 
     void UseSpell()
     {
-        if(isCooldown)
+        if(!startCooldown)
         {
-
+            canCast = true;
+            startCooldown = true;
+            cooldownTimer = cooldownTime;
         }
         else
         {
-            isCooldown = true;
-            // textCooldown.gameObject.SetActive(true);
-            cooldownTimer = cooldownTime;
+            canCast = false;
         }
+    }
+
+    public bool getCanCast()
+    {
+        return canCast;
     }
 
 }
