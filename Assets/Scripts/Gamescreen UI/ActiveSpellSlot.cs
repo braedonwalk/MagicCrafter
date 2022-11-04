@@ -12,7 +12,7 @@ public class ActiveSpellSlot : MonoBehaviour
 
    CanvasGroup canvasGroup;
 
-   bool isActive;
+   [SerializeField] bool isActive;
    //is active bool
    //in inputmanager, when setting active spell, also reset all bools false except activeSlot true
     

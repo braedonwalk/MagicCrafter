@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 594918417}
+  isActive: 0
 --- !u!114 &52816112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15172,7 +15173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1315676199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16191,6 +16192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 1020935571}
+  isActive: 0
 --- !u!114 &1527726544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17027,6 +17029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 794204922}
+  isActive: 0
 --- !u!114 &1682470615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18226,6 +18229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 1255990721}
+  isActive: 0
 --- !u!114 &1700533577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19116,6 +19120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8907cb2a564c418479e4ccd669450ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeSpell: {fileID: 0}
+  startCooldown: 0
+  cooldownTime: 0
+  cooldownTimer: 0
+  canCast: 1
 --- !u!1 &1972580733
 GameObject:
   m_ObjectHideFlags: 0

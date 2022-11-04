@@ -65,7 +65,6 @@ public class SpellInputManager : MonoBehaviour
                 {
                     activeSpellSlots[i].setAlpha(1.0f);
                     activeSpellSlots[i].setActiveSlot(true);
-                    activeSlot = i;
                 }
                 
             }
@@ -74,11 +73,6 @@ public class SpellInputManager : MonoBehaviour
         {
             activeSpell = emptySpell;
         }
-    }
-
-    public ActiveSpellSlot getActiveSpellSlot()
-    {
-        return activeSpellSlots[activeSlot];
     }
 
     public Spell getActiveSpell()
