@@ -21,4 +21,15 @@ public class VFXManager : MonoBehaviour
             Instantiate(aSpell.effectPrefab, otherGameObject.transform);
         }
     }
+
+    public void spontaneousCombustion(Spell aSpell)
+    {
+        Instantiate(aSpell.effectPrefab, this.transform);
+        // particleSystem.renderer.sortingLayerName = "Foreground";    //fix later
+    }
+
+    public void increasePlayerSpeed(Spell aSpell)
+    {
+        Instantiate(aSpell.effectPrefab, this.transform);
+    }
 }

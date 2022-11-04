@@ -30,13 +30,13 @@ public class AimAtMouse : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        if (spellAction.getSpellType() == 1)
+        if (spellAction.getIdAttribute(2) == 1)
         {
             setAngle();
             setTowardMouse(1);
             setOriginPosition();
         }
-        else if (spellAction.getSpellType() == 2)
+        else if (spellAction.getIdAttribute(2) == 2)
         {
             rigidBody.rotation = 0;
             setTowardMouse(2);
