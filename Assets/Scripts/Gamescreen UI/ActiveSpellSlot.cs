@@ -20,12 +20,14 @@ public class ActiveSpellSlot : MonoBehaviour
 
     void Awake() 
     {
-        spellDisplay = this.GetComponent<SpellDisplay>();
-        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());    
+        
     }
 
     void Start()
     {
+        spellDisplay = this.GetComponent<SpellDisplay>();
+        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());    
+        
         canvasGroup = this.GetComponent<CanvasGroup>();
 
         canvasGroup.alpha = 0.3f;
