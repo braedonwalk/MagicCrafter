@@ -21,6 +21,7 @@ public class SpellInputManager : MonoBehaviour
     void Start()
     {
         makeActiveSpellDefault();
+        activeSpell = activeSpellSlots[0].GetComponent<SpellDisplay>().getSpell();
     }
 
     void Update()
@@ -42,7 +43,6 @@ public class SpellInputManager : MonoBehaviour
         {
             activeSpell = activeSpellSlots[0].GetComponent<SpellDisplay>().getSpell();
             Debug.Log(activeSpell);
-            // Debug.Log("test");
         }
     }
 

@@ -18,19 +18,20 @@ public class ActiveSpellSlot : MonoBehaviour
     
     // Start is called before the first frame update
 
-    void Awake() 
-    {
-        
+     void OnEnable() 
+     {
+        spellDisplay = this.GetComponent<SpellDisplay>();
+        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());   
     }
 
     void Start()
     {
-        spellDisplay = this.GetComponent<SpellDisplay>();
-        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());    
-        
         canvasGroup = this.GetComponent<CanvasGroup>();
 
-        canvasGroup.alpha = 0.3f;
+        if (!isActive)
+        {
+            canvasGroup.alpha = 0.3f;
+        }
     }
 
     private void Update() {

@@ -18242,7 +18242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 1255990721}
-  isActive: 1
+  isActive: 0
 --- !u!114 &1700533577
 MonoBehaviour:
   m_ObjectHideFlags: 0
