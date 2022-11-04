@@ -6,26 +6,34 @@ public class SpellCollision : MonoBehaviour
 {
     
     [SerializeField] Spell spell;
-    
+    EnemyHealth enemyHealth;
+
     private void OnCollisionEnter2D(Collision2D other) {
 
         VFXManager vFXManager = other.gameObject.GetComponent<VFXManager>();
 
 
-        if(!other.gameObject.CompareTag("Player")){
+        if(!other.gameObject.CompareTag("Player"))
+        {
             // Debug.Log(other);
             Destroy(this.gameObject);
 
             //////////deal damgage/status effect/etc.
         }
 
-        if (other.gameObject.tag == "Object")
+        else if (other.gameObject.tag == "Object")
         {            
             
             if (getEffect() == 1) // burning
             {
                 vFXManager.makeBurnEffect(other.gameObject, spell);
             }
+        }
+
+        else if (other.gameObject.tag == "Enemy")
+        {
+            enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+            enemyHealth.removeHealth(spell.damage);
         }
         
     }

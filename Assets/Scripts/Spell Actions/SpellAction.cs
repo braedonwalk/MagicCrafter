@@ -8,9 +8,9 @@ public class SpellAction : MonoBehaviour
     PlayerStatManager statManager;
     [SerializeField] PauseGame pause;
 
-    int spellType;
-    float cooldown;
-    float damage;
+    // int spellType;
+    // float cooldown;
+    // float damage;
     GameObject spellPrefab;
 
     float originDistance;
@@ -32,10 +32,15 @@ public class SpellAction : MonoBehaviour
     float modifiedSpeed = 10f;
     float speedTime = 5f;
 
+    float nextCastTime;
+    // GameObject equippedSlot;
+    // SpellCooldown SpellCooldown;
+
     void Start()
     {
         spellInputManager = GetComponentInParent<SpellInputManager>();
         statManager = GetComponentInParent<PlayerStatManager>();
+        // equippedSlot = GameObject.FindGameObjectWithTag("EquippedSpell");
     }
 
     void Update()
@@ -44,29 +49,37 @@ public class SpellAction : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                spellPrefab = getActiveSpell().prefab;
-                Debug.Log((getActiveSpell().name));
-                
-                if (getSpellType() == 1)
+                // SpellCooldown = GetComponent<SpellCooldown>();
+
+                if (Time.time > nextCastTime)
+                // if (spellInputManager.getActiveSpellSlot().GetComponent<UICooldown>().getIsCooldown())
                 {
-                    // PROJECTILE
-                    castProjectile();
-                }
-                else if (getSpellType() == 2)
-                {
-                    // AOE
-                    castAOE();
-                }
-                else if (getSpellType() == 3)
-                {
-                    // SELF
-                    castSelf();
+                    spellPrefab = getActiveSpell().prefab;
+                    // Debug.Log("Casting: " + (getActiveSpell().name));
+                    
+                    if (getSpellType() == 1)
+                    {
+                        // PROJECTILE
+                        castProjectile();
+                    }
+                    else if (getSpellType() == 2)
+                    {
+                        // AOE
+                        castAOE();
+                    }
+                    else if (getSpellType() == 3)
+                    {
+                        // SELF
+                        castSelf();
+                    }
+
+                    nextCastTime = Time.time + getActiveSpell().cooldown;
                 }
             }
         }
     }
 
-    Spell getActiveSpell(){
+    public Spell getActiveSpell(){
         return spellInputManager.getActiveSpell();
     }
 
