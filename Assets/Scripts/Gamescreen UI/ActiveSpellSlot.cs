@@ -12,20 +12,26 @@ public class ActiveSpellSlot : MonoBehaviour
 
    CanvasGroup canvasGroup;
 
-   [SerializeField] bool isActive;
+   [SerializeField] bool isActive = false;
    //is active bool
    //in inputmanager, when setting active spell, also reset all bools false except activeSlot true
     
     // Start is called before the first frame update
+
+     void OnEnable() 
+     {
+        spellDisplay = this.GetComponent<SpellDisplay>();
+        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());   
+    }
+
     void Start()
     {
-        spellDisplay = this.GetComponent<SpellDisplay>();
-
-        spellDisplay.setSpell(equipSlot.GetComponent<SpellDisplay>().getSpell());
-
         canvasGroup = this.GetComponent<CanvasGroup>();
 
-        canvasGroup.alpha = 0.3f;
+        if (!isActive)
+        {
+            canvasGroup.alpha = 0.3f;
+        }
     }
 
     private void Update() {

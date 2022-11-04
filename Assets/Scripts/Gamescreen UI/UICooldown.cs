@@ -10,7 +10,7 @@ public class UICooldown : MonoBehaviour
     private Image imageCooldown;
     // [SerializeField]
     // private TMP_Text textCooldown;
-    [SerializeField] ActiveSpellSlot activeSpellSlot;
+    ActiveSpellSlot activeSpellSlot;
 
     Spell activeSpell;
     bool startCooldown;
