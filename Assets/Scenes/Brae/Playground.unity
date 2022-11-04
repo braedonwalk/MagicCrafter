@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 207071201}
   - component: {fileID: 207071200}
   m_Layer: 5
-  m_Name: CooldownFog
+  m_Name: CooldownFog4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5705,7 +5705,7 @@ GameObject:
   - component: {fileID: 385950460}
   - component: {fileID: 385950459}
   m_Layer: 5
-  m_Name: CooldownFog
+  m_Name: CooldownFog2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6320,7 +6320,7 @@ GameObject:
   - component: {fileID: 505064311}
   - component: {fileID: 505064310}
   m_Layer: 5
-  m_Name: CooldownFog
+  m_Name: CooldownFog3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
