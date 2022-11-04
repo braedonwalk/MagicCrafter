@@ -6,6 +6,7 @@ public class SpellAction : MonoBehaviour
 {
     SpellInputManager spellInputManager;
     PlayerStatManager statManager;
+    VFXManager vFXManager;
     [SerializeField] PauseGame pause;
 
     // int spellType;
@@ -40,7 +41,7 @@ public class SpellAction : MonoBehaviour
     {
         spellInputManager = GetComponentInParent<SpellInputManager>();
         statManager = GetComponentInParent<PlayerStatManager>();
-        // equippedSlot = GameObject.FindGameObjectWithTag("EquippedSpell");
+        vFXManager = GetComponentInParent<VFXManager>();
     }
 
     void Update()
@@ -57,17 +58,17 @@ public class SpellAction : MonoBehaviour
                     spellPrefab = getActiveSpell().prefab;
                     // Debug.Log("Casting: " + (getActiveSpell().name));
                     
-                    if (getSpellType() == 1)
+                    if (getIdAttribute(2) == 1)
                     {
                         // PROJECTILE
                         castProjectile();
                     }
-                    else if (getSpellType() == 2)
+                    else if (getIdAttribute(2) == 2)
                     {
                         // AOE
                         castAOE();
                     }
-                    else if (getSpellType() == 3)
+                    else if (getIdAttribute(2) == 3)
                     {
                         // SELF
                         castSelf();
@@ -83,7 +84,8 @@ public class SpellAction : MonoBehaviour
         return spellInputManager.getActiveSpell();
     }
 
-    public int getSpellType(){
+    List<int> getListOfDigits()
+    {
         List<int> listOfDigits = new List<int>();
 
         int id = getActiveSpell().id;
@@ -95,8 +97,13 @@ public class SpellAction : MonoBehaviour
             id /= 10;
         }
         listOfDigits.Reverse();
-        
-        return listOfDigits[2];
+
+        return listOfDigits;
+    }
+
+    public int getIdAttribute(int i)
+    {    
+        return getListOfDigits()[i];
     }
 
     void castProjectile()
@@ -134,11 +141,19 @@ public class SpellAction : MonoBehaviour
 
     void castSelf()
     {
-        Debug.Log("i am speed");
-        statManager.changePlayerSpeed(modifiedSpeed);
-        playSpeedFX(1);
-        
-        Invoke("changePlayerSpeed", speedTime);
+        if(getIdAttribute(3) == 4)
+        {
+            Debug.Log("i am speed");
+            statManager.changePlayerSpeed(modifiedSpeed);
+            vFXManager.increasePlayerSpeed(getActiveSpell());
+            
+            Invoke("changePlayerSpeed", getActiveSpell().duration);
+        }
+        else if(getIdAttribute(3) == 1)
+        {
+            Debug.Log("he burn");
+            vFXManager.spontaneousCombustion(getActiveSpell());
+        }
     }
 
     void changePlayerSpeed(){
