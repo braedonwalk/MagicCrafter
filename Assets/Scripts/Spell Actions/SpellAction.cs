@@ -34,7 +34,7 @@ public class SpellAction : MonoBehaviour
 
     float nextCastTime;
     // GameObject equippedSlot;
-    SpellCooldown SpellCooldown;
+    // SpellCooldown SpellCooldown;
 
     void Start()
     {
@@ -49,7 +49,7 @@ public class SpellAction : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                SpellCooldown = GetComponent<SpellCooldown>();
+                // SpellCooldown = GetComponent<SpellCooldown>();
 
                 if (Time.time > nextCastTime)
                 // if (spellInputManager.getActiveSpellSlot().GetComponent<UICooldown>().getIsCooldown())
