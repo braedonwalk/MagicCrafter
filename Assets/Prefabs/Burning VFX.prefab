@@ -9576,7 +9576,7 @@ GameObject:
   - component: {fileID: 3770819115314925417}
   - component: {fileID: 3709037838992900714}
   m_Layer: 0
-  m_Name: CFXR Fire
+  m_Name: Burning VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

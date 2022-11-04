@@ -1,0 +1,1464 @@
+fileFormatVersion: 2
+guid: c3bb27fd5ecf9194f945b47a8cd2b471
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Speed Animation Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3947fc3ebd5f9144d8ccdb7cf707e69e
+      internalID: 392453122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ad63198c13f0c4ea1f8ab5f1329d88
+      internalID: 1880062398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1665e8fe60f1aa8458de704ebfeb7eec
+      internalID: 395081625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdaf3d438f3ab14f944401d37a00f6d
+      internalID: 90378796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905199e0b887e364f8b63855c48cd52b
+      internalID: 257520409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba7aa9db1136c14080ac33d2e811086
+      internalID: -1588212491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99e89c86b22a09489dc686ae3929d7d
+      internalID: -326914207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 722
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b3c10971d4492408eca2268fa4c72e
+      internalID: -1101082944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814029d9ec8a8104eb10535031a6fb74
+      internalID: -840842541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab69a86d7b97624449dd5a907f64d6cd
+      internalID: -1938539674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44b85e2e73b28a46abc538ba3772c3c
+      internalID: 605858252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06a38fc38c4bc640bb0ded7f78a72e0
+      internalID: 559162994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b95c16da79cd0f429bfbdd196dc69ca
+      internalID: 1471180124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8948fb0e0611f5d44bbe7263a1e6b3bf
+      internalID: 829224646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af42c578db8b0f48be1f5240963e650
+      internalID: -420707315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 622
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c1a6d987a279f4b83cad0759ca1bb8
+      internalID: 944192243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36094571bfd855744ba0c2e9fdadc480
+      internalID: 205921351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd28701ad766c045a10b2d15e909762
+      internalID: -1205568327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cc14772cf0c5647b8fc19209581ca1
+      internalID: -1705836415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a3fd2d475a7af6449bb8ea835b26798
+      internalID: -2047020736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd0140044e6ee54ab58c36eb3baa8d0
+      internalID: -567406487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98baf7ba2c7ed094db3f7354f97714ac
+      internalID: 87102817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a82f7ef5695e9c4caa1444e6386e66f
+      internalID: 11414932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 522
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9baa00f3121764e9f087c2fa9ffadb
+      internalID: 1650986774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc468d31770ce5e459669fb889c22c39
+      internalID: -373079439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9be11014ec14240b34fa5c018faccb
+      internalID: -1221447656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02be0a45b1f9f1f4d9c7ef83052881c2
+      internalID: -1910989398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23cd2fea1991984ca9ea6edf4ab6693
+      internalID: 328703915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1495e2d9d3f64ae44a1aab307f2dc8ff
+      internalID: -486359437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915e32a0d61bc634ebc833c96ccd26b7
+      internalID: 556520824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36563d43557879419fbfd371d8c14d5
+      internalID: 1862588312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 422
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3038423fd49f143ac38076b7468f24
+      internalID: -2048437658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba5bad4a4312484bbae1d14d2bd0163
+      internalID: -1298502371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e296efad7fc928e4ebfad23180846a11
+      internalID: 523023231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25cd50decac7454a8434b79753e0888
+      internalID: -1741653396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f47c4cf93f93d4586b67afa596934d
+      internalID: -979026284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591520d0ace293d4caa8f2d06e15c5fd
+      internalID: -1899293711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8ab10f1f462a84aac3b6d35d0fec5f
+      internalID: 1533465667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40a8bbf40f6183469ccaaa4c881f7b7
+      internalID: 659745637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 322
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bddc13db584dd43b5ee4c697b8b099
+      internalID: 2131034889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bcf9838f9440e449b4a646d4afaf9e
+      internalID: 67285222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f153ce94d53ff774db376679b26af092
+      internalID: -2083915932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f3f28a0c548454aa034f532f037967
+      internalID: -971198545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21faa4df08dae2149994f59ed068a49b
+      internalID: 693004594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cc586d78ecc234486cf9d020195f4a
+      internalID: -1849475727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02ea081825fe6143b728e7e3d0e2cf6
+      internalID: 2023257215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d78b7dd82cf3094cba21d0e35271a14
+      internalID: 1405151308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 222
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de817b43381069c428234d3a3c3272bb
+      internalID: -555376445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0bafe0f1132234fafe82dc9b32b197
+      internalID: 618469063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c844c671d1cb8c44c94cc083f37f0538
+      internalID: 2013838178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b27186fface7d4582357707628a28b
+      internalID: 303709131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7ad85bf81228c41968d2573e365f20
+      internalID: -1196432152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65b7e107fba6c1488dc903619c8a835
+      internalID: 880019533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd4ffbd334c46f46b2576adb76dcb12
+      internalID: -1483252731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f83e9443ad002439997c783a9c62b6
+      internalID: 483080509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 122
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65707b4c5cb700d498b7fe23932adee1
+      internalID: -172044825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 22
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea43930d099f3a44b8796817d52a90c
+      internalID: -1119721604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 22
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6e93dc75ce5be489437e1eb4d3d53f
+      internalID: 356376740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 22
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97955f9d1a82d044b2fcac35bcaa420
+      internalID: -219156098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 22
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268a808bbaf82314fb496f007a3efa20
+      internalID: 2060573213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Speed Animation Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 22
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc834a9c94f65e499565fa6c31496e1
+      internalID: -1138640547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Speed Animation Sheet_7: -1101082944
+      Speed Animation Sheet_39: 2131034889
+      Speed Animation Sheet_32: -1298502371
+      Speed Animation Sheet_22: 11414932
+      Speed Animation Sheet_28: -486359437
+      Speed Animation Sheet_19: -2047020736
+      Speed Animation Sheet_24: -373079439
+      Speed Animation Sheet_29: 556520824
+      Speed Animation Sheet_54: 483080509
+      Speed Animation Sheet_44: -1849475727
+      Speed Animation Sheet_10: 605858252
+      Speed Animation Sheet_33: 523023231
+      Speed Animation Sheet_36: -1899293711
+      Speed Animation Sheet_57: 356376740
+      Speed Animation Sheet_12: 1471180124
+      Speed Animation Sheet_27: 328703915
+      Speed Animation Sheet_50: 303709131
+      Speed Animation Sheet_43: 693004594
+      Speed Animation Sheet_56: -1119721604
+      Speed Animation Sheet_40: 67285222
+      Speed Animation Sheet_30: 1862588312
+      Speed Animation Sheet_9: -1938539674
+      Speed Animation Sheet_51: -1196432152
+      Speed Animation Sheet_60: -1138640547
+      Speed Animation Sheet_3: 90378796
+      Speed Animation Sheet_38: 659745637
+      Speed Animation Sheet_0: 392453122
+      Speed Animation Sheet_45: 2023257215
+      Speed Animation Sheet_8: -840842541
+      Speed Animation Sheet_58: -219156098
+      Speed Animation Sheet_11: 559162994
+      Speed Animation Sheet_1: 1880062398
+      Speed Animation Sheet_5: -1588212491
+      Speed Animation Sheet_20: -567406487
+      Speed Animation Sheet_26: -1910989398
+      Speed Animation Sheet_48: 618469063
+      Speed Animation Sheet_35: -979026284
+      Speed Animation Sheet_46: 1405151308
+      Speed Animation Sheet_25: -1221447656
+      Speed Animation Sheet_42: -971198545
+      Speed Animation Sheet_37: 1533465667
+      Speed Animation Sheet_47: -555376445
+      Speed Animation Sheet_2: 395081625
+      Speed Animation Sheet_16: 205921351
+      Speed Animation Sheet_6: -326914207
+      Speed Animation Sheet_41: -2083915932
+      Speed Animation Sheet_15: 944192243
+      Speed Animation Sheet_21: 87102817
+      Speed Animation Sheet_52: 880019533
+      Speed Animation Sheet_31: -2048437658
+      Speed Animation Sheet_17: -1205568327
+      Speed Animation Sheet_55: -172044825
+      Speed Animation Sheet_13: 829224646
+      Speed Animation Sheet_53: -1483252731
+      Speed Animation Sheet_18: -1705836415
+      Speed Animation Sheet_23: 1650986774
+      Speed Animation Sheet_4: 257520409
+      Speed Animation Sheet_34: -1741653396
+      Speed Animation Sheet_59: 2060573213
+      Speed Animation Sheet_14: -420707315
+      Speed Animation Sheet_49: 2013838178
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
