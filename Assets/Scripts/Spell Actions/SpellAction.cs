@@ -51,11 +51,11 @@ public class SpellAction : MonoBehaviour
             {
                 SpellCooldown = GetComponent<SpellCooldown>();
 
-                // if (Time.time > nextCastTime)
-                if (SpellCooldown.getCanCast())
+                if (Time.time > nextCastTime)
+                // if (spellInputManager.getActiveSpellSlot().GetComponent<UICooldown>().getIsCooldown())
                 {
                     spellPrefab = getActiveSpell().prefab;
-                    Debug.Log("Casting: " + (getActiveSpell().name));
+                    // Debug.Log("Casting: " + (getActiveSpell().name));
                     
                     if (getSpellType() == 1)
                     {
@@ -73,7 +73,7 @@ public class SpellAction : MonoBehaviour
                         castSelf();
                     }
 
-                    // nextCastTime = Time.time + getActiveSpell().cooldown;
+                    nextCastTime = Time.time + getActiveSpell().cooldown;
                 }
             }
         }

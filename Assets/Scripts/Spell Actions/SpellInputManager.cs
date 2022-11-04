@@ -13,10 +13,11 @@ public class SpellInputManager : MonoBehaviour
     [SerializeField] ActiveSpellSlot[] activeSpellSlots;
 
     Spell activeSpell;
+    int activeSlot;
 
     int spellModifier;
     int spellEffect;
-    
+
     void Start()
     {
         makeActiveSpellDefault();
@@ -46,9 +47,10 @@ public class SpellInputManager : MonoBehaviour
 
     void handleSpellSelectKey(int keyNum)
     {
-         if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() != null)
+        if (Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() != null)
         {
             activeSpell = activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell();
+
             Debug.Log(activeSpell + " Selected");
 
             for (int i=0; i< activeSpellSlots.Length; i++)
@@ -56,18 +58,27 @@ public class SpellInputManager : MonoBehaviour
                 if ( i != keyNum-1)
                 {
                     activeSpellSlots[i].setAlpha(0.3f);
+                    activeSpellSlots[i].setActiveSlot(false);
                 }
 
                 else
                 {
                     activeSpellSlots[i].setAlpha(1.0f);
+                    activeSpellSlots[i].setActiveSlot(true);
+                    activeSlot = i;
                 }
+                
             }
         }
         else if(Input.GetKeyDown(keyNum.ToString()) && activeSpellSlots[keyNum-1].GetComponent<SpellDisplay>().getSpell() == null)
         {
             activeSpell = emptySpell;
         }
+    }
+
+    public ActiveSpellSlot getActiveSpellSlot()
+    {
+        return activeSpellSlots[activeSlot];
     }
 
     public Spell getActiveSpell()

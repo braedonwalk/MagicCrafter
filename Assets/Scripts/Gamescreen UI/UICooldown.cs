@@ -10,9 +10,10 @@ public class UICooldown : MonoBehaviour
     private Image imageCooldown;
     // [SerializeField]
     // private TMP_Text textCooldown;
+    [SerializeField] ActiveSpellSlot activeSpellSlot;
 
     Spell activeSpell;
-    bool isCooldown;
+    bool startCooldown;
     float cooldownTime;
     float cooldownTimer = 0f;
 
@@ -20,22 +21,28 @@ public class UICooldown : MonoBehaviour
     {
         // textCooldown.gameObject.SetActive(false);
         imageCooldown.fillAmount = 0f;
+        activeSpellSlot = GetComponent<ActiveSpellSlot>();
     }
 
     private void Update() 
     {
-        if(Input.GetMouseButtonDown(0))
+        // Debug.Log(activeSpellSlot.name + activeSpellSlot.getIsActive());
+        if(Input.GetButtonDown("Fire1"))
         {
-            SpellDisplay spellDisplay = gameObject.GetComponent<SpellDisplay>();
-            activeSpell = spellDisplay.getSpell();  //NullReferenceException: Object reference not set to an instance of an object????
-            cooldownTime = activeSpell.cooldown;
-            UseSpell();
-            // Debug.Log(this.GetType());
+            if (activeSpellSlot.getIsActive())
+            {
+                SpellDisplay spellDisplay = gameObject.GetComponent<SpellDisplay>();
+                activeSpell = spellDisplay.getSpell();
+                cooldownTime = activeSpell.cooldown;
+                UseSpell();
+                // Debug.Log(activeSpellSlot.getIsActive());
+                // Debug.Log(this.GetType());
+            }
         }
-        if(isCooldown)
+        if(startCooldown)
         {
             ApplyCooldown();
-        }    
+        }   
     }
 
     void ApplyCooldown()
@@ -44,7 +51,7 @@ public class UICooldown : MonoBehaviour
 
         if(cooldownTimer < 0f)
         {
-            isCooldown = false;
+            startCooldown = false;
             // textCooldown.gameObject.SetActive(false);
             imageCooldown.fillAmount = 0f;
         }
@@ -56,20 +63,20 @@ public class UICooldown : MonoBehaviour
 
     void UseSpell()
     {
-        if(isCooldown)
+        if(!startCooldown)
         {
-
+            startCooldown = true;
+            // textCooldown.gameObject.SetActive(true);
+            cooldownTimer = cooldownTime;
         }
         else
         {
-            isCooldown = true;
-            // textCooldown.gameObject.SetActive(true);
-            cooldownTimer = cooldownTime;
+            
         }
     }
 
     public bool getIsCooldown()
     {
-        return isCooldown;
+        return startCooldown;
     }
 }
