@@ -52,9 +52,9 @@ public class SpellAction : MonoBehaviour
             {
                 // SpellCooldown = GetComponent<SpellCooldown>();
 
-                if (Time.time > nextCastTime)
+                // if (Time.time > nextCastTime)        //TURN ON COOLDOWN LATER
                 // if (spellInputManager.getActiveSpellSlot().GetComponent<UICooldown>().getIsCooldown())
-                {
+                // {
                     spellPrefab = getActiveSpell().prefab;
                     // Debug.Log("Casting: " + (getActiveSpell().name));
                     
@@ -75,7 +75,7 @@ public class SpellAction : MonoBehaviour
                     }
 
                     nextCastTime = Time.time + getActiveSpell().cooldown;
-                }
+                // }
             }
         }
     }
@@ -89,7 +89,6 @@ public class SpellAction : MonoBehaviour
         List<int> listOfDigits = new List<int>();
 
         int id = getActiveSpell().id;
-        Debug.Log(getActiveSpell());
 
         while(id > 0)
         {
