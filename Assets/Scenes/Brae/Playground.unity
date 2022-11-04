@@ -18229,7 +18229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 1255990721}
-  isActive: 0
+  isActive: 1
 --- !u!114 &1700533577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19117,14 +19117,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1963570379}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8907cb2a564c418479e4ccd669450ca2, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpell: {fileID: 0}
-  startCooldown: 0
-  cooldownTime: 0
-  cooldownTimer: 0
-  canCast: 1
 --- !u!1 &1972580733
 GameObject:
   m_ObjectHideFlags: 0

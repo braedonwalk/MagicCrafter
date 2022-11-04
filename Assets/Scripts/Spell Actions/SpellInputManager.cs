@@ -41,6 +41,7 @@ public class SpellInputManager : MonoBehaviour
         if (activeSpellSlots[0].GetComponent<SpellDisplay>().getSpell() != null)
         {
             activeSpell = activeSpellSlots[0].GetComponent<SpellDisplay>().getSpell();
+            Debug.Log(activeSpell);
             // Debug.Log("test");
         }
     }

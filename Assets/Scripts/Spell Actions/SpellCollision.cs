@@ -11,6 +11,7 @@ public class SpellCollision : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
 
         VFXManager vFXManager = other.gameObject.GetComponent<VFXManager>();
+        
 
 
         if(!other.gameObject.CompareTag("Player"))
@@ -21,16 +22,18 @@ public class SpellCollision : MonoBehaviour
             //////////deal damgage/status effect/etc.
         }
 
-        else if (other.gameObject.tag == "Object")
+        if (other.gameObject.tag == "Object")
         {            
+            
             
             if (getEffect() == 1) // burning
             {
                 vFXManager.makeBurnEffect(other.gameObject, spell);
+                Debug.Log("burnnnnnnn");
             }
         }
 
-        else if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")
         {
             enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
             enemyHealth.removeHealth(spell.damage);
