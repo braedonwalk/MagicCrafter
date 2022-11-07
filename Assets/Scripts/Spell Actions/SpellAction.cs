@@ -30,8 +30,9 @@ public class SpellAction : MonoBehaviour
     // Self
     float effectDuration;
     [SerializeField] ParticleSystem speedFX;
-    float modifiedSpeed = 10f;
-    float speedTime = 5f;
+    float speedIncrease = 10f;
+    float speedDecrease = 2f;
+    // float speedTime = 5f;
 
     float nextCastTime;
     // GameObject equippedSlot;
@@ -89,7 +90,7 @@ public class SpellAction : MonoBehaviour
         List<int> listOfDigits = new List<int>();
 
         int id = getActiveSpell().id;
-        Debug.Log(getActiveSpell());
+        // Debug.Log(getActiveSpell());
 
         while(id > 0)
         {
@@ -124,19 +125,17 @@ public class SpellAction : MonoBehaviour
             enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
         }
         // Debug.Log("AOE");
-        spellPrefab.transform.localScale = new Vector2(AOEDiameter-2, AOEDiameter-2);   //SCALING IS ALL WRONG
+        spellPrefab.transform.localScale = new Vector2(AOEDiameter+2, AOEDiameter+2);   //SCALING IS ALL WRONG
         // playSteamVFX(1);
         Instantiate(spellPrefab, AOEPos, this.transform.rotation);
     }
 
-    // void playSteamVFX(int numParticlesEmit){
-    //     float startSize = 1;
-    //     var main = steamFX.main;
-    //     // main.startLifetime = steamFX + 0.2f;
-    //     main.startSize = startSize + AOEDiameter/2;
-    //     Debug.Log(startSize + AOEDiameter);
-    //     steamFX.Emit(numParticlesEmit);
-    //     // Destroy(spellPrefab, destroyDelay);
+    // private void OnDrawGizmosSelected() {
+    //     // Vector2 mousePos = GetComponent<AimAtMouse>().getMousePos();
+    //     Vector2 mousePos = GetComponent<Rigidbody2D>().position;
+    //     AOEDiameter = getActiveSpell().diameter;
+    //     Gizmos.color = Color.red;
+    //     Gizmos.DrawWireSphere(mousePos, AOEDiameter);
     // }
 
     void castSelf()
@@ -144,29 +143,36 @@ public class SpellAction : MonoBehaviour
         if(getIdAttribute(3) == 4)
         {
             Debug.Log("i am speed");
-            statManager.changePlayerSpeed(modifiedSpeed);
+            statManager.changePlayerSpeed(speedIncrease);
             vFXManager.increasePlayerSpeed(getActiveSpell());
             
-            Invoke("changePlayerSpeed", getActiveSpell().duration);
+            Invoke("defaultPlayerSpeed", getActiveSpell().duration);
         }
         else if(getIdAttribute(3) == 1)
         {
             Debug.Log("he burn");
             vFXManager.spontaneousCombustion(getActiveSpell());
         }
+        else if(getIdAttribute(3) == 3)
+        {
+            Debug.Log("no more speed");
+            statManager.changePlayerSpeed(speedDecrease);
+            vFXManager.decreasePlayerSpeed(getActiveSpell());
+            Invoke("defaultPlayerSpeed", getActiveSpell().duration);
+        }
     }
 
-    void changePlayerSpeed(){
+    void defaultPlayerSpeed(){
         float defaultSpeed = statManager.getDefaultSpeed();
         statManager.changePlayerSpeed(defaultSpeed);
-        Debug.Log("stop speed");
+        Debug.Log("default speed");
     }
 
-    void playSpeedFX(int numParticlesEmit){
-        var main = speedFX.main;
-        main.startLifetime = speedTime + 0.2f;
-        speedFX.Emit(numParticlesEmit);
-    }
+    // void playSpeedFX(int numParticlesEmit){
+    //     var main = speedFX.main;
+    //     main.startLifetime = speedTime + 0.2f;
+    //     speedFX.Emit(numParticlesEmit);
+    // }
 
     public float getOriginDistance(){
         return spellInputManager.getActiveSpell().originDistance;;

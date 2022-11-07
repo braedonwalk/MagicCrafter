@@ -32,4 +32,9 @@ public class VFXManager : MonoBehaviour
     {
         Instantiate(aSpell.effectPrefab, this.transform);
     }
+
+    public void decreasePlayerSpeed(Spell aSpell)
+    {
+        Instantiate(aSpell.effectPrefab, this.transform);
+    }
 }
