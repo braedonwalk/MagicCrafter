@@ -160,12 +160,31 @@ public class SpellAction : MonoBehaviour
             vFXManager.decreasePlayerSpeed(getActiveSpell());
             Invoke("defaultPlayerSpeed", getActiveSpell().duration);
         }
+        else if(getIdAttribute(3) == 6)
+        {
+            Debug.Log("his name is John Cena");
+            float newVisibility = 0.6f;
+            SpriteRenderer sprite = GetComponentInParent<SpriteRenderer>();
+            sprite.color = new Color (1, 1, 1, newVisibility);
+            // Debug.Log(sprite.color);
+            Invoke("defaultVisibility", getActiveSpell().duration);
+
+        }
     }
 
     void defaultPlayerSpeed(){
         float defaultSpeed = statManager.getDefaultSpeed();
         statManager.changePlayerSpeed(defaultSpeed);
         Debug.Log("default speed");
+    }
+
+    void defaultVisibility()
+    {
+        float defaultVisibility = 1;
+        SpriteRenderer sprite = GetComponentInParent<SpriteRenderer>();
+        // Color spriteRendererA = GetComponentInParent<SpriteRenderer>().color;
+        sprite.color = new Color(1, 1, 1, defaultVisibility);
+        Debug.Log("visible");
     }
 
     // void playSpeedFX(int numParticlesEmit){
