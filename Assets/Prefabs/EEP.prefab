@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8033645522153800747}
   - component: {fileID: 8033645522153800759}
   m_Layer: 0
-  m_Name: RockRoll
+  m_Name: EEP
   m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,15 +115,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 6
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 0.05
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8033645522153800759
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -110,6 +110,9 @@ public class SpellAction : MonoBehaviour
         GameObject projectile = Instantiate(spellPrefab, this.transform.position, this.transform.rotation);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
+
+        Destroy(projectile, getActiveSpell().duration);
+
     }
 
     void castAOE()
@@ -117,15 +120,21 @@ public class SpellAction : MonoBehaviour
         Vector2 AOEPos = GetComponent<Rigidbody2D>().position;
         AOEDiameter = getActiveSpell().diameter;
 
-        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOEDiameter, whatIsEnemies);
-        for (int i = 0; i < enemiesToDamage.Length; i++)
+        // damage anyone in AOE diameter if damage should be applied
+        if (getActiveSpell().damage != 0)
         {
-            enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOEDiameter, whatIsEnemies);
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+            {
+                enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
+            }
         }
         // Debug.Log("AOE");
         spellPrefab.transform.localScale = new Vector2(AOEDiameter-2, AOEDiameter-2);   //SCALING IS ALL WRONG
         // playSteamVFX(1);
-        Instantiate(spellPrefab, AOEPos, this.transform.rotation);
+        GameObject instantiatedObject = Instantiate(spellPrefab, AOEPos, this.transform.rotation);
+
+        Destroy(instantiatedObject, getActiveSpell().duration);
     }
 
     // void playSteamVFX(int numParticlesEmit){
