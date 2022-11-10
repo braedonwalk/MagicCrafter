@@ -125,18 +125,18 @@ public class SpellAction : MonoBehaviour
             enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
         }
         // Debug.Log("AOE");
-        spellPrefab.transform.localScale = new Vector2(AOEDiameter+2, AOEDiameter+2);   //SCALING IS ALL WRONG
+        spellPrefab.transform.localScale = new Vector2(AOEDiameter+7, AOEDiameter+7);   //SCALING IS ALL WRONG
         // playSteamVFX(1);
         Instantiate(spellPrefab, AOEPos, this.transform.rotation);
     }
 
-    // private void OnDrawGizmosSelected() {
-    //     // Vector2 mousePos = GetComponent<AimAtMouse>().getMousePos();
-    //     Vector2 mousePos = GetComponent<Rigidbody2D>().position;
-    //     AOEDiameter = getActiveSpell().diameter;
-    //     Gizmos.color = Color.red;
-    //     Gizmos.DrawWireSphere(mousePos, AOEDiameter);
-    // }
+    private void OnDrawGizmosSelected() {
+        // Vector2 mousePos = GetComponent<AimAtMouse>().getMousePos();
+        Vector2 mousePos = GetComponent<Rigidbody2D>().position;
+        AOEDiameter = getActiveSpell().diameter;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(mousePos, AOEDiameter);
+    }
 
     void castSelf()
     {

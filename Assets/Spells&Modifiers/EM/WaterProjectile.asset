@@ -20,7 +20,7 @@ MonoBehaviour:
   prefab: {fileID: 5151278706022204056, guid: 6af21bfa3957b2e439e36ede653718ed, type: 3}
   originDistance: 1
   speed: 10
-  diameter: 5
+  diameter: 0
   range: 50
   duration: 0
   effectPrefab: {fileID: 0}
