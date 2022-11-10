@@ -14,17 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: Lava
   sprite: {fileID: 21300000, guid: fe94aa3f097ffec4fa508d870943ad45, type: 3}
-  id: 1310
-  spellType: 0
-  cooldown: 0
-  damage: 0
-  prefab: {fileID: 0}
+  id: 1311
+  cooldown: 10
+  damage: 10
+  prefab: {fileID: 4249663564909586706, guid: 9583c4cdd16f9b046a0babafb5f68949, type: 3}
   originDistance: 0
-  canCauseBurning: 0
-  canCauseWet: 0
-  canCauseSlow: 0
-  speed: 0
+  speed: 5
   diameter: 0
   range: 0
-  duration: 0
+  duration: 5
   effectPrefab: {fileID: 0}
