@@ -271,7 +271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 207071200}
-  activeSpellSlot: {fileID: 0}
 --- !u!1 &142378585
 GameObject:
   m_ObjectHideFlags: 0
@@ -16296,7 +16295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 505064310}
-  activeSpellSlot: {fileID: 0}
 --- !u!1 &1548791190
 GameObject:
   m_ObjectHideFlags: 0
@@ -17133,7 +17131,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 385950459}
-  activeSpellSlot: {fileID: 0}
 --- !u!1 &1685403730
 GameObject:
   m_ObjectHideFlags: 0
@@ -18242,7 +18239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equipSlot: {fileID: 1255990721}
-  isActive: 0
+  isActive: 1
 --- !u!114 &1700533577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18333,7 +18330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageCooldown: {fileID: 1058865965}
-  activeSpellSlot: {fileID: 0}
 --- !u!1 &1725973565
 GameObject:
   m_ObjectHideFlags: 0
