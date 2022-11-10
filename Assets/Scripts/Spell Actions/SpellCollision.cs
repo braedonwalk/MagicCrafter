@@ -31,6 +31,33 @@ public class SpellCollision : MonoBehaviour
                 vFXManager.makeBurnEffect(other.gameObject, spell);
                 Debug.Log("burnnnnnnn");
             }
+
+            if (getEffect() == 2) // wet
+            {
+                
+            }
+
+            if (getEffect() == 3) // slow
+            {
+               vFXManager.makeSlowEffect(other.gameObject, spell);
+
+               // check tag and if it is an enemy (or something that can move), decrease the speed and clamp it
+            }
+
+            if (getEffect() == 4) // increase speed
+            {
+               
+            }
+
+            if (getEffect() == 5) // heal
+            {
+                
+            }
+
+            if (getEffect() == 6) // invisible
+            {
+               
+            }
         }
 
         if (other.gameObject.tag == "Enemy")

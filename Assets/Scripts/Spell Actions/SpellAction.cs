@@ -140,25 +140,43 @@ public class SpellAction : MonoBehaviour
 
     void castSelf()
     {
-        if(getIdAttribute(3) == 4)
+        Debug.Log(("casting self spell"));
+        int effectId = getIdAttribute(3);
+        
+        if(effectId == 4)
         {
             Debug.Log("i am speed");
             statManager.changePlayerSpeed(modifiedSpeed);
             vFXManager.increasePlayerSpeed(getActiveSpell());
             
-            Invoke("changePlayerSpeed", getActiveSpell().duration);
+            Invoke("resetPlayerSpeed", getActiveSpell().duration);
         }
-        else if(getIdAttribute(3) == 1)
+        else if(effectId == 1)
         {
             Debug.Log("he burn");
             vFXManager.spontaneousCombustion(getActiveSpell());
         }
+        else if (effectId == 3)
+        {
+            Debug.Log("slowww");
+            statManager.changePlayerSpeed(statManager.getPlayerSpeed()/2);
+            vFXManager.decreasePlayerSpeed(getActiveSpell());
+
+            Invoke("resetPlayerSpeed", getActiveSpell().duration);
+            Invoke("resetPlayerTint", getActiveSpell().duration);
+
+        }
     }
 
-    void changePlayerSpeed(){
+    void resetPlayerSpeed(){
         float defaultSpeed = statManager.getDefaultSpeed();
         statManager.changePlayerSpeed(defaultSpeed);
         Debug.Log("stop speed");
+    }
+
+    void resetPlayerTint()
+    {
+        statManager.setTintToDefault();
     }
 
     void playSpeedFX(int numParticlesEmit){
