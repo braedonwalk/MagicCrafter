@@ -8,6 +8,7 @@ public class SpellAction : MonoBehaviour
     PlayerStatManager statManager;
     VFXManager vFXManager;
     [SerializeField] PauseGame pause;
+    [SerializeField] CinemachineShake cinemachineShake;
 
     // int spellType;
     // float cooldown;
@@ -135,6 +136,13 @@ public class SpellAction : MonoBehaviour
         GameObject instantiatedObject = Instantiate(spellPrefab, AOEPos, this.transform.rotation);
 
         Destroy(instantiatedObject, getActiveSpell().duration);
+
+
+        // special cases
+        if (getActiveSpell().id == 3323) //EES- Earthquake
+        {
+            cinemachineShake.startCameraShake(10, 3);
+        }
     }
 
     // void playSteamVFX(int numParticlesEmit){

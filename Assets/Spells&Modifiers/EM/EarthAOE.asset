@@ -15,16 +15,12 @@ MonoBehaviour:
   spellName: EarthAOE
   sprite: {fileID: 21300000, guid: 146ce11cc5a927d489b63c99d6863fae, type: 3}
   id: 3020
-  spellType: 2
   cooldown: 2
   damage: 10
-  prefab: {fileID: 8985421908937429478, guid: 6c14cb3f7d93c3d4a9dcf013f7996366, type: 3}
+  prefab: {fileID: 8033645522153800746, guid: d300cf1f713be5d40bce1018b2350262, type: 3}
   originDistance: 5
-  canCauseBurning: 0
-  canCauseWet: 0
-  canCauseSlow: 0
   speed: 10
   diameter: 5
   range: 50
-  duration: 0
+  duration: 1
   effectPrefab: {fileID: 0}
