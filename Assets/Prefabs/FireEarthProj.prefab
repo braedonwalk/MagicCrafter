@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef97aaec2fd4964cb4b358a8871663c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
+  spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
 --- !u!95 &4249663564909586707
 Animator:
   serializedVersion: 4
