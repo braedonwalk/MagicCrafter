@@ -21,6 +21,11 @@ public class SpellCollision : MonoBehaviour
 
             //////////deal damgage/status effect/etc.
         }
+        else
+        {
+            Destroy(this.gameObject);
+            // can instantiate effect or play sound here
+        }
 
         if (other.gameObject.tag == "Object")
         {            
