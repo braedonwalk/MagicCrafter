@@ -6461,7 +6461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.047, y: 0.177, z: -10}
+  m_LocalPosition: {x: -0.06, y: 0.177, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6817,7 +6817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: abd0eebac46787e4fbc377925021a974, type: 2}
+  spell: {fileID: 11400000, guid: 132995aeaf22ea442ada24dadced07ae, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &594918417
 MonoBehaviour:
@@ -6972,7 +6972,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 19820e5e7d0704944a98e9204d858b9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13814,7 +13814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: bc52cc0d0dcbfb649bf2788fed995160, type: 2}
+  spell: {fileID: 11400000, guid: 8175e08fceba43844b04620c2bc89c2d, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &794204922
 MonoBehaviour:
@@ -15166,7 +15166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
+  spell: {fileID: 11400000, guid: abd0eebac46787e4fbc377925021a974, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &1255990721
 MonoBehaviour:
@@ -15203,7 +15203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1315676199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15578,7 +15578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428251104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.047, y: 0.177, z: 0}
+  m_LocalPosition: {x: -0.06, y: 0.177, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16466,7 +16466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548791190}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9767618, y: -2.5378077, z: 0}
+  m_LocalPosition: {x: 1.01, y: -2.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -31,8 +31,9 @@ public class SpellAction : MonoBehaviour
     // Self
     float effectDuration;
     [SerializeField] ParticleSystem speedFX;
-    float modifiedSpeed = 10f;
-    float speedTime = 5f;
+    float speedIncrease = 10f;
+    float speedDecrease = 2f;
+    // float speedTime = 5f;
 
     float nextCastTime;
     // GameObject equippedSlot;
@@ -131,7 +132,7 @@ public class SpellAction : MonoBehaviour
             }
         }
         // Debug.Log("AOE");
-        spellPrefab.transform.localScale = new Vector2(AOEDiameter-2, AOEDiameter-2);   //SCALING IS ALL WRONG
+        spellPrefab.transform.localScale = new Vector2(AOEDiameter+7, AOEDiameter+7);   //SCALING IS ALL WRONG
         // playSteamVFX(1);
         GameObject instantiatedObject = Instantiate(spellPrefab, AOEPos, this.transform.rotation);
 
@@ -145,15 +146,13 @@ public class SpellAction : MonoBehaviour
         }
     }
 
-    // void playSteamVFX(int numParticlesEmit){
-    //     float startSize = 1;
-    //     var main = steamFX.main;
-    //     // main.startLifetime = steamFX + 0.2f;
-    //     main.startSize = startSize + AOEDiameter/2;
-    //     Debug.Log(startSize + AOEDiameter);
-    //     steamFX.Emit(numParticlesEmit);
-    //     // Destroy(spellPrefab, destroyDelay);
-    // }
+    private void OnDrawGizmosSelected() {
+        // Vector2 mousePos = GetComponent<AimAtMouse>().getMousePos();
+        Vector2 mousePos = GetComponent<Rigidbody2D>().position;
+        AOEDiameter = getActiveSpell().diameter;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(mousePos, AOEDiameter);
+    }
 
     void castSelf()
     {
@@ -163,10 +162,10 @@ public class SpellAction : MonoBehaviour
         if(effectId == 4)
         {
             Debug.Log("i am speed");
-            statManager.changePlayerSpeed(modifiedSpeed);
+            statManager.changePlayerSpeed(speedIncrease);
             vFXManager.increasePlayerSpeed(getActiveSpell());
             
-            Invoke("resetPlayerSpeed", getActiveSpell().duration);
+            Invoke("defaultPlayerSpeed", getActiveSpell().duration);
         }
         else if(effectId == 1)
         {
@@ -181,14 +180,25 @@ public class SpellAction : MonoBehaviour
 
             Invoke("resetPlayerSpeed", getActiveSpell().duration);
             Invoke("resetPlayerTint", getActiveSpell().duration);
+        }
+    
+        else if(effectId == 6)
+        {
+            Debug.Log("his name is John Cena");
+            float newVisibility = 0.6f;
+            SpriteRenderer sprite = GetComponentInParent<SpriteRenderer>();
+            sprite.color = new Color (1, 1, 1, newVisibility);
+            // Debug.Log(sprite.color);
+            Invoke("defaultVisibility", getActiveSpell().duration);
 
         }
     }
+    
 
-    void resetPlayerSpeed(){
+    void defaultPlayerSpeed(){
         float defaultSpeed = statManager.getDefaultSpeed();
         statManager.changePlayerSpeed(defaultSpeed);
-        Debug.Log("stop speed");
+        Debug.Log("default speed");
     }
 
     void resetPlayerTint()
@@ -196,11 +206,20 @@ public class SpellAction : MonoBehaviour
         statManager.setTintToDefault();
     }
 
-    void playSpeedFX(int numParticlesEmit){
-        var main = speedFX.main;
-        main.startLifetime = speedTime + 0.2f;
-        speedFX.Emit(numParticlesEmit);
+    void defaultVisibility()
+    {
+        float defaultVisibility = 1;
+        SpriteRenderer sprite = GetComponentInParent<SpriteRenderer>();
+        // Color spriteRendererA = GetComponentInParent<SpriteRenderer>().color;
+        sprite.color = new Color(1, 1, 1, defaultVisibility);
+        Debug.Log("visible");
     }
+
+    // void playSpeedFX(int numParticlesEmit){
+    //     var main = speedFX.main;
+    //     main.startLifetime = speedTime + 0.2f;
+    //     speedFX.Emit(numParticlesEmit);
+    // }
 
     public float getOriginDistance(){
         return spellInputManager.getActiveSpell().originDistance;;
