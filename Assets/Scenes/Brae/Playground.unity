@@ -15203,7 +15203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1315676199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16339,7 +16339,7 @@ GameObject:
   - component: {fileID: 1548791193}
   - component: {fileID: 1548791192}
   - component: {fileID: 1548791191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slime Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -19091,7 +19091,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1963570379}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

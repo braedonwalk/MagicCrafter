@@ -18,9 +18,9 @@ MonoBehaviour:
   cooldown: 10
   damage: 10
   prefab: {fileID: 4249663564909586706, guid: ef507dde363600e42b8fc45b62b577e3, type: 3}
-  originDistance: 0
+  originDistance: 1
   speed: 2
   diameter: 0
   range: 0
   duration: 5
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6294508013172393196, guid: b756616e76ea6b64f839cac362673d91, type: 3}

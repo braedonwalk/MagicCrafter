@@ -30,13 +30,16 @@ public class AimAtMouse : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        if (spellAction.getIdAttribute(2) == 1)
+
+        int modifierId = spellAction.getIdAttribute(2);
+
+        if (modifierId == 1)
         {
             setAngle();
             setTowardMouse(1);
             setOriginPosition();
         }
-        else if (spellAction.getIdAttribute(2) == 2)
+        else if (modifierId == 2)
         {
             rigidBody.rotation = 0;
             setTowardMouse(2);
@@ -68,20 +71,22 @@ public class AimAtMouse : MonoBehaviour
 
     void checkWithinRange()
     {
-        if (Vector3.Distance(towardMouse, playerTransformPosition) <= spellAction.getOriginDistance())
+        if (Vector3.Distance(mousePos, playerTransformPosition) <= spellAction.getOriginDistance())
         {
             rigidBody.position = towardMouse + playerTransformPosition;
+            Debug.Log("close up and personal");
         }
         else
         {
             setTowardMouse(1);
             setOriginPosition();
+            Debug.Log("farrrr out man");
         }
     }
 
     void setOriginPosition()
     {   
-        rigidBody.position = towardMouse * spellAction.getOriginDistance() + playerTransformPosition;
+       rigidBody.position = towardMouse * spellAction.getOriginDistance() + playerTransformPosition; // maybe here is the problem??
     }
 
     public Vector2 getMousePos(){

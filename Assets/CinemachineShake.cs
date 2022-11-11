@@ -29,6 +29,10 @@ private void Update()
         shakeTimer -= Time.deltaTime;
         Debug.Log(newIntensity);
     }
+    else
+    {
+        vc.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
+    }
 }
 
 public void startCameraShake(float newIntensity, float duration)
