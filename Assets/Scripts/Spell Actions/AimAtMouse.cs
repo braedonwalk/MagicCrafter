@@ -74,13 +74,11 @@ public class AimAtMouse : MonoBehaviour
         if (Vector3.Distance(mousePos, playerTransformPosition) <= spellAction.getOriginDistance())
         {
             rigidBody.position = towardMouse + playerTransformPosition;
-            Debug.Log("close up and personal");
         }
         else
         {
             setTowardMouse(1);
             setOriginPosition();
-            Debug.Log("farrrr out man");
         }
     }
 

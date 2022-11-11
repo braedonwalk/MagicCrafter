@@ -18,10 +18,7 @@ public class Slot : MonoBehaviour, IDropHandler
     }
     
     public void OnDrop(PointerEventData eventData)
-    {
-        // TODO maybe make custom hitbox vars from the event data-could even add padding
-        // NOTE: how does it know what the slot's hitbox is???
-        
+    {        
         GameObject droppedSpell = eventData.pointerDrag;
 
         foreach (String tag in receiveTags)
