@@ -34,7 +34,7 @@ public class SpellCollision : MonoBehaviour
             if (getEffect() == 1) // burning
             {
                 vFXManager.makeBurnEffect(other.gameObject, spell);
-                Debug.Log("burnnnnnnn");
+                // Debug.Log("burnnnnnnn");
             }
 
             if (getEffect() == 2) // wet
