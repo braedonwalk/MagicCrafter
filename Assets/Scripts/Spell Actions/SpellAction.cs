@@ -169,7 +169,7 @@ public class SpellAction : MonoBehaviour
         else if(effectId == 1)
         {
             Debug.Log("he burn");
-            vFXManager.spontaneousCombustion(getActiveSpell());
+            vFXManager.spontaneousCombustion(getActiveSpell()); //
         }
         else if (effectId == 3)
         {
