@@ -113,16 +113,13 @@ public class SpellAction : MonoBehaviour
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
 
-        // Destroy(projectile, getActiveSpell().duration);
-        
+        Destroy(projectile, getActiveSpell().duration);
     }
 
     void castAOE()
     {
         Vector2 AOEPos = GetComponent<Rigidbody2D>().position; //cursor position
         AOEDiameter = getActiveSpell().diameter; // diameter attribute of spell
-
-        
 
         // damage anyone in AOE diameter if damage should be applied
         if (getActiveSpell().damage != 0)
@@ -134,13 +131,11 @@ public class SpellAction : MonoBehaviour
                 
             }
         }
-        // Debug.Log("AOE");
-        spellPrefab.transform.localScale = new Vector2(AOEDiameter, AOEDiameter);   //SCALING IS ALL WRONG
-        // playSteamVFX(1);
+
+        spellPrefab.transform.localScale = new Vector2(AOEDiameter, AOEDiameter);
         GameObject instantiatedObject = Instantiate(spellPrefab, AOEPos, this.transform.rotation);
 
         Destroy(instantiatedObject, getActiveSpell().duration);
-
 
         // special cases
         if (getActiveSpell().id == 3323) //EES- Earthquake
@@ -193,7 +188,6 @@ public class SpellAction : MonoBehaviour
             sprite.color = new Color (1, 1, 1, newVisibility);
             // Debug.Log(sprite.color);
             Invoke("defaultVisibility", getActiveSpell().duration);
-
         }
     }
     

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8576392942784180415}
   - component: {fileID: 6183751671635471965}
   - component: {fileID: 4281014161266109672}
-  - component: {fileID: 8460560066314504187}
   m_Layer: 0
   m_Name: FW AOE
   m_TagString: Untagged
@@ -106,16 +105,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8460560066314504187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6679471444606364055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42bf5f7e78b955346a3dd17c925a7dca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 1ada9078e43182545b6910dbb90081f8, type: 2}

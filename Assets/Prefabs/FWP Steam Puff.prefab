@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8649411055370465839}
   - component: {fileID: 7206282202380203433}
   - component: {fileID: 3975757033041855797}
-  - component: {fileID: 2511100780660344292}
   - component: {fileID: 1771129884941548975}
   m_Layer: 0
   m_Name: FWP Steam Puff
@@ -107,19 +106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2511100780660344292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8648175616567937034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42bf5f7e78b955346a3dd17c925a7dca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 612243efde9ed314e85dff9079ac55c4, type: 2}
 --- !u!114 &1771129884941548975
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5151278706022204052}
   - component: {fileID: 5151278706022204053}
   - component: {fileID: 5151278706022204058}
-  - component: {fileID: -1835689467283019623}
   m_Layer: 0
   m_Name: WP
   m_TagString: Untagged
@@ -169,19 +168,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cef97aaec2fd4964cb4b358a8871663c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: e9b3b2d7cdea1a44cb45dabf85f49cc6, type: 2}
---- !u!114 &-1835689467283019623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5151278706022204056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42bf5f7e78b955346a3dd17c925a7dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spell: {fileID: 11400000, guid: e9b3b2d7cdea1a44cb45dabf85f49cc6, type: 2}
