@@ -75,6 +75,7 @@ public class SpellAction : MonoBehaviour
                         // SELF
                         castSelf();
                     }
+                    Debug.Log("Cast: " + getActiveSpell().name);
 
                     nextCastTime = Time.time + getActiveSpell().cooldown;
                 // }
