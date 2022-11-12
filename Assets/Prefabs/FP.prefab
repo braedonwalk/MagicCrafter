@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4249663564909586796}
   - component: {fileID: 4249663564909586707}
   m_Layer: 0
-  m_Name: FireEarthProj
+  m_Name: FP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4249663564909586706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9087806, y: -1.1058234, z: 0}
-  m_LocalScale: {x: 4, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,7 +109,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!70 &4249663564909586798
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef97aaec2fd4964cb4b358a8871663c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
+  spell: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
 --- !u!95 &4249663564909586707
 Animator:
   serializedVersion: 4

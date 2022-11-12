@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7916595064943937929}
   - component: {fileID: 7191035982101815581}
   m_Layer: 0
-  m_Name: FireAOE Explosion
+  m_Name: FAOE Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

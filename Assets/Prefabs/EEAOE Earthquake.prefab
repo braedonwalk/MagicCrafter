@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5866693718713687640}
   - component: {fileID: 7169860891096289770}
   m_Layer: 0
-  m_Name: Earthquake
+  m_Name: EEAOE Earthquake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
