@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8033645522153800756}
   - component: {fileID: 8033645522153800747}
   - component: {fileID: 8033645522153800759}
+  - component: {fileID: -5228696190126708065}
   m_Layer: 0
   m_Name: EEP
   m_TagString: Object
@@ -136,3 +137,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d433f30ffcdd9404086497c5816470b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-5228696190126708065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033645522153800746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42bf5f7e78b955346a3dd17c925a7dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spell: {fileID: 11400000, guid: 217fbac4b8852914a8e16808356535db, type: 2}

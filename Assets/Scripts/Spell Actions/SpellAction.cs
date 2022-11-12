@@ -113,7 +113,7 @@ public class SpellAction : MonoBehaviour
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
 
-        Destroy(projectile, getActiveSpell().duration);
+        // Destroy(projectile, getActiveSpell().duration);
         
     }
 

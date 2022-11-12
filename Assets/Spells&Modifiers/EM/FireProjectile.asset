@@ -22,5 +22,5 @@ MonoBehaviour:
   speed: 10
   diameter: 0
   range: 50
-  duration: 5
+  duration: 2
   effectPrefab: {fileID: 6294508013172393196, guid: b756616e76ea6b64f839cac362673d91, type: 3}
