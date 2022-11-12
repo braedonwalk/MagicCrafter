@@ -114,7 +114,7 @@ public class SpellAction : MonoBehaviour
         rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
 
         Destroy(projectile, getActiveSpell().duration);
-
+        
     }
 
     void castAOE()
