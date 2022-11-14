@@ -14993,6 +14993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d433f30ffcdd9404086497c5816470b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireHitFX: {fileID: 0}
 --- !u!1 &1430203656
 GameObject:
   m_ObjectHideFlags: 0
@@ -15629,6 +15630,7 @@ GameObject:
   - component: {fileID: 1548791193}
   - component: {fileID: 1548791192}
   - component: {fileID: 1548791191}
+  - component: {fileID: 1548791196}
   m_Layer: 6
   m_Name: Slime Enemy
   m_TagString: Enemy
@@ -15763,6 +15765,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548791196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548791190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d433f30ffcdd9404086497c5816470b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireHitFX: {fileID: 0}
 --- !u!1 &1556583188
 GameObject:
   m_ObjectHideFlags: 0
@@ -18985,12 +19000,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3270561966547462062, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3270561966547462062, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
       propertyPath: m_SortingLayerID
       value: -357733815
       objectReference: {fileID: 0}
+    - target: {fileID: 3270561966547462063, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
+      propertyPath: fireHitFX
+      value: 
+      objectReference: {fileID: 2504214343621411470, guid: f34594492a0f83c41a31b76b5a164f7c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
 --- !u!1001 &3305935285168151190

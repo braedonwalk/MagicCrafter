@@ -57,5 +57,12 @@ public class VFXManager : MonoBehaviour
         makeSlowEffect(this.gameObject, aSpell);
     }
 
+    //collision FX
+    // [SerializeField] GameObject fireHitFX;
+    // public void fireHit(GameObject gameObject)
+    // {
+    //     Instantiate(fireHitFX, gameObject.GetComponent<Transform>());
+    //     Debug.Log("Fire Hit");
+    // }
 
 }

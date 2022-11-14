@@ -7,19 +7,20 @@ public class SpellCollision : MonoBehaviour
     
     [SerializeField] Spell spell;
     EnemyHealth enemyHealth;
+    SpellAction spellAction;
+
+    private void Start() {
+        spellAction = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpellAction>();
+    }
 
     private void OnCollisionEnter2D(Collision2D other) {
 
         VFXManager vFXManager = other.gameObject.GetComponent<VFXManager>();
         
-
-
         if(!other.gameObject.CompareTag("Player"))
         {
-            // Debug.Log(other);
+            checkElementType(vFXManager);
             Destroy(this.gameObject);
-
-            //////////deal damgage/status effect/etc.
         }
         else
         {
@@ -28,41 +29,8 @@ public class SpellCollision : MonoBehaviour
         }
 
         if (other.gameObject.tag == "Object")
-        {            
-            
-            
-            if (getEffect() == 1) // burning
-            {
-                vFXManager.makeBurnEffect(other.gameObject, spell);
-                // Debug.Log("burnnnnnnn");
-            }
-
-            if (getEffect() == 2) // wet
-            {
-                
-            }
-
-            if (getEffect() == 3) // slow
-            {
-               vFXManager.makeSlowEffect(other.gameObject, spell);
-
-               // check tag and if it is an enemy (or something that can move), decrease the speed and clamp it
-            }
-
-            if (getEffect() == 4) // increase speed
-            {
-               
-            }
-
-            if (getEffect() == 5) // heal
-            {
-                
-            }
-
-            if (getEffect() == 6) // invisible
-            {
-               
-            }
+        {                
+            checkEffect(vFXManager, other);
         }
 
         if (other.gameObject.tag == "Enemy")
@@ -73,21 +41,54 @@ public class SpellCollision : MonoBehaviour
         
     }
 
-    int getEffect()
+    void checkEffect(VFXManager vFXManager, Collision2D other)
     {
-        List<int> listOfDigits = new List<int>();
-
-        int id = spell.id;
-
-        while(id > 0)
+        if (getIdAttribute(3) == 1) // burning
         {
-            listOfDigits.Add(id % 10);
-            id /= 10;
+            vFXManager.makeBurnEffect(other.gameObject, spell);
+            // Debug.Log("burnnnnnnn");
         }
-        listOfDigits.Reverse();
-        
-        return listOfDigits[3];
+
+        if (getIdAttribute(3) == 2) // wet
+        {
+            
+        }
+
+        if (getIdAttribute(3) == 3) // slow
+        {
+            vFXManager.makeSlowEffect(other.gameObject, spell);
+
+            // check tag and if it is an enemy (or something that can move), decrease the speed and clamp it
+        }
+
+        if (getIdAttribute(3) == 4) // increase speed
+        {
+            
+        }
+
+        if (getIdAttribute(3) == 5) // heal
+        {
+            
+        }
+
+        if (getIdAttribute(3) == 6) // invisible
+        {
+            
+        }
     }
 
+    void checkElementType(VFXManager vFXManager)
+    {
+        if (getIdAttribute(0) == 1 || getIdAttribute(1) == 1)
+        {
+            Debug.Log("fire spell");
+            // vFXManager.fireHit(gameObject);
+        }
+    }
+
+    int getIdAttribute(int i)
+    {
+        return spellAction.getIdAttribute(i);
+    }
 
 }

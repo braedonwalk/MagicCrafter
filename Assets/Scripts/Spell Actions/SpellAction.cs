@@ -22,7 +22,7 @@ public class SpellAction : MonoBehaviour
     // float projectileSpeed;
 
     // AOE
-    float AOEDiameter;
+    float AOERadius;
     // [SerializeField] ParticleSystem steamFX;
     // AimAtMouse aimAtMouse;
     // Vector2 AOEPos;
@@ -120,20 +120,19 @@ public class SpellAction : MonoBehaviour
     void castAOE()
     {
         Vector2 AOEPos = GetComponent<Rigidbody2D>().position; //cursor position
-        AOEDiameter = getActiveSpell().diameter; // diameter attribute of spell
+        AOERadius = getActiveSpell().diameter/2; // diameter attribute of spell
 
         // damage anyone in AOE diameter if damage should be applied
         if (getActiveSpell().damage != 0)
         {            
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOEDiameter/2, whatIsEnemies);
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOERadius, whatIsEnemies);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
                 enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
-                
             }
         }
 
-        spellPrefab.transform.localScale = new Vector2(AOEDiameter, AOEDiameter);
+        spellPrefab.transform.localScale = new Vector2(AOERadius*2, AOERadius*2);
         GameObject instantiatedObject = Instantiate(spellPrefab, AOEPos, this.transform.rotation);
 
         Destroy(instantiatedObject, getActiveSpell().duration);
@@ -148,9 +147,9 @@ public class SpellAction : MonoBehaviour
     private void OnDrawGizmosSelected() {
         // Vector2 mousePos = GetComponent<AimAtMouse>().getMousePos();
         Vector2 mousePos = GetComponent<Rigidbody2D>().position;
-        AOEDiameter = getActiveSpell().diameter;
+        AOERadius = getActiveSpell().diameter/2;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(mousePos, AOEDiameter/2);
+        Gizmos.DrawWireSphere(mousePos, AOERadius);
     }
 
     void castSelf()
@@ -192,7 +191,6 @@ public class SpellAction : MonoBehaviour
         }
     }
     
-
     void defaultPlayerSpeed(){
         float defaultSpeed = statManager.getDefaultSpeed();
         statManager.changePlayerSpeed(defaultSpeed);
