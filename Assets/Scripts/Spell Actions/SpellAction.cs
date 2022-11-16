@@ -7,6 +7,7 @@ public class SpellAction : MonoBehaviour
     SpellInputManager spellInputManager;
     PlayerStatManager statManager;
     VFXManager vFXManager;
+    SpellSoundManager soundManager;
     [SerializeField] PauseGame pause;
     [SerializeField] CinemachineShake cinemachineShake;
 
@@ -44,6 +45,7 @@ public class SpellAction : MonoBehaviour
         spellInputManager = GetComponentInParent<SpellInputManager>();
         statManager = GetComponentInParent<PlayerStatManager>();
         vFXManager = GetComponentInParent<VFXManager>();
+        soundManager = GetComponentInParent<SpellSoundManager>();
     }
 
     void Update()
@@ -78,6 +80,8 @@ public class SpellAction : MonoBehaviour
                     Debug.Log("Cast: " + getActiveSpell().name);
 
                     nextCastTime = Time.time + getActiveSpell().cooldown;
+
+                    soundManager.checkSpellCast();
                 // }
             }
         }
