@@ -6940,7 +6940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 132995aeaf22ea442ada24dadced07ae, type: 2}
+  spell: {fileID: 11400000, guid: 612243efde9ed314e85dff9079ac55c4, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &594918417
 MonoBehaviour:
@@ -13803,7 +13803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
+  spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &794204922
 MonoBehaviour:
@@ -14628,7 +14628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 5e6577cac3c02fb4dbe0ff2e2d82804f, type: 2}
+  spell: {fileID: 11400000, guid: dd4a20c68bfaab84a916327f3607555f, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!1 &1145541895
 GameObject:
@@ -15281,7 +15281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: abd0eebac46787e4fbc377925021a974, type: 2}
+  spell: {fileID: 11400000, guid: 06306b93db2333144b31e9f3dc159bdc, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &1255990721
 MonoBehaviour:
@@ -16337,6 +16337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d433f30ffcdd9404086497c5816470b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireHitFX: {fileID: 0}
 --- !u!1 &1430203656
 GameObject:
   m_ObjectHideFlags: 0
@@ -16973,6 +16974,7 @@ GameObject:
   - component: {fileID: 1548791193}
   - component: {fileID: 1548791192}
   - component: {fileID: 1548791191}
+  - component: {fileID: 1548791196}
   m_Layer: 6
   m_Name: Slime Enemy
   m_TagString: Enemy
@@ -17107,6 +17109,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1548791196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548791190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d433f30ffcdd9404086497c5816470b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireHitFX: {fileID: 0}
 --- !u!1 &1556583188
 GameObject:
   m_ObjectHideFlags: 0
@@ -20811,6 +20826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Object
       objectReference: {fileID: 0}
+    - target: {fileID: 3270561966547462034, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3270561966547462061, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -20857,12 +20876,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3270561966547462062, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3270561966547462062, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
       propertyPath: m_SortingLayerID
       value: -357733815
       objectReference: {fileID: 0}
+    - target: {fileID: 3270561966547462063, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
+      propertyPath: fireHitFX
+      value: 
+      objectReference: {fileID: 2504214343621411470, guid: f34594492a0f83c41a31b76b5a164f7c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f65f54ef959e0eb4f96a8e1c1803722b, type: 3}
 --- !u!1001 &3305935285168151190
@@ -20875,6 +20898,10 @@ PrefabInstance:
     - target: {fileID: 3305935284399088097, guid: e57abb47f3e986c488c70a1991b99bfb, type: 3}
       propertyPath: m_Name
       value: Water Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 3305935284399088097, guid: e57abb47f3e986c488c70a1991b99bfb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3305935284399088108, guid: e57abb47f3e986c488c70a1991b99bfb, type: 3}
       propertyPath: m_SortingLayer
@@ -21009,6 +21036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth Pickup
       objectReference: {fileID: 0}
+    - target: {fileID: 3367003577248087732, guid: 34bed56e62aa73642b790c3e060e6d77, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3367003577248087735, guid: 34bed56e62aa73642b790c3e060e6d77, type: 3}
       propertyPath: stillSpellDisplay
       value: 
@@ -21089,6 +21120,10 @@ PrefabInstance:
     - target: {fileID: 4986241802551143603, guid: b6787721edeca04418980bdacd5812ec, type: 3}
       propertyPath: m_Name
       value: Fire Pickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4986241802551143603, guid: b6787721edeca04418980bdacd5812ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4986241802551143615, guid: b6787721edeca04418980bdacd5812ec, type: 3}
       propertyPath: stillSpellDisplay

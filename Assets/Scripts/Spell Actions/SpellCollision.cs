@@ -7,19 +7,20 @@ public class SpellCollision : MonoBehaviour
     
     [SerializeField] Spell spell;
     EnemyHealth enemyHealth;
+    SpellAction spellAction;
+
+    private void Start() {
+        spellAction = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpellAction>();
+    }
 
     private void OnCollisionEnter2D(Collision2D other) {
 
         VFXManager vFXManager = other.gameObject.GetComponent<VFXManager>();
         
-
-
         if(!other.gameObject.CompareTag("Player"))
         {
-            // Debug.Log(other);
+            checkElementType(vFXManager);
             Destroy(this.gameObject);
-
-            //////////deal damgage/status effect/etc.
         }
         else
         {
@@ -28,42 +29,8 @@ public class SpellCollision : MonoBehaviour
         }
 
         if (other.gameObject.tag == "Object")
-        {            
-            int effect1 = getEffects().Item1;
-            int effect2 = getEffects().Item2;
-            
-            if (effect1 == 1 || effect2 == 1) // burning
-            {
-                vFXManager.makeBurnEffect(other.gameObject, spell);
-                Debug.Log("burnnnnnnn");
-            }
-
-            if (effect1 == 2 || effect2 == 2) // wet
-            {
-                
-            }
-
-            if (effect1 == 3 || effect2 == 3) // slow
-            {
-               vFXManager.makeSlowEffect(other.gameObject, spell);
-
-               // check tag and if it is an enemy (or something that can move), decrease the speed and clamp it
-            }
-
-            if (effect1 == 4 || effect2 == 4) // increase speed
-            {
-               
-            }
-
-            if (effect1 == 5 || effect2 == 5) // heal
-            {
-                
-            }
-
-            if (effect1 == 6 || effect2 == 6) // invisible
-            {
-               
-            }
+        {                         
+            checkEffect(vFXManager, other);
         }
 
         if (other.gameObject.tag == "Enemy")
@@ -85,10 +52,63 @@ public class SpellCollision : MonoBehaviour
             listOfDigits.Add(id % 10);
             id /= 10;
         }
+
         listOfDigits.Reverse();
         
         return (listOfDigits[3], listOfDigits[4]);
     }
 
+    void checkEffect(VFXManager vFXManager, Collision2D other)
+    {
+        int effect1 = getEffects().Item1;
+        int effect2 = getEffects().Item2;
+        
+        if (effect1 == 1 || effect2 == 1) // burning
+        {
+            vFXManager.makeBurnEffect(other.gameObject, spell);
+            Debug.Log("burnnnnnnn");
+        }
+
+        if (effect1 == 2 || effect2 == 2) // wet
+        {
+            
+        }
+
+        if (effect1 == 3 || effect2 == 3) // slow
+        {
+            vFXManager.makeSlowEffect(other.gameObject, spell);
+
+            // check tag and if it is an enemy (or something that can move), decrease the speed and clamp it
+        }
+
+        if (effect1 == 4 || effect2 == 4) // increase speed
+        {
+            
+        }
+
+        if (effect1 == 5 || effect2 == 5) // heal
+        {
+            
+        }
+
+        if (effect1 == 6 || effect2 == 6) // invisible
+        {
+            
+        }
+    }
+
+    void checkElementType(VFXManager vFXManager)
+    {
+        if (getIdAttribute(0) == 1 || getIdAttribute(1) == 1)
+        {
+            Debug.Log("fire spell");
+            // vFXManager.fireHit(gameObject);
+        }
+    }
+
+    int getIdAttribute(int i)
+    {
+        return spellAction.getIdAttribute(i);
+    }
 
 }

@@ -9,17 +9,10 @@ public class VFXManager : MonoBehaviour
     
     public void makeBurnEffect(GameObject otherGameObject, Spell aSpell)
     {
-        float newRed = otherGameObject.GetComponent<SpriteRenderer>().color.r - 0.25f;
-        float newGreen = otherGameObject.GetComponent<SpriteRenderer>().color.g - 0.4f;
-        float newBlue = otherGameObject.GetComponent<SpriteRenderer>().color.b - 0.4f;
+        changeSpriteColor(otherGameObject, -0.25f, -0.4f, -0.4f);
+        float spriteRed = otherGameObject.GetComponent<SpriteRenderer>().color.r;
 
-        newRed = Mathf.Clamp(newRed, 0.2f, 1.0f);
-        newGreen = Mathf.Clamp(newGreen, 0.2f, 1.0f);
-        newBlue = Mathf.Clamp(newBlue, 0.2f, 1.0f);
-
-        otherGameObject.GetComponent<SpriteRenderer>().color = new Color(newRed, newGreen, newBlue);
-
-        if (newRed > 0)
+        if (spriteRed > 0.2f)
         {
             Instantiate(aSpell.effectPrefab, otherGameObject.transform);
         }
@@ -27,9 +20,14 @@ public class VFXManager : MonoBehaviour
 
     public void makeSlowEffect(GameObject aGameObject, Spell aSpell)
     {
-        float newRed = aGameObject.GetComponent<SpriteRenderer>().color.r + 0.2f;
-        float newGreen = aGameObject.GetComponent<SpriteRenderer>().color.g + 0.2f;
-        float newBlue = aGameObject.GetComponent<SpriteRenderer>().color.b - 0.4f;
+        changeSpriteColor(aGameObject, 0.2f, 0.2f, -0.4f);
+    }
+
+    void changeSpriteColor(GameObject aGameObject, float redChange, float greenChange, float blueChange)
+    {
+        float newRed = aGameObject.GetComponent<SpriteRenderer>().color.r + redChange;
+        float newGreen = aGameObject.GetComponent<SpriteRenderer>().color.g + greenChange;
+        float newBlue = aGameObject.GetComponent<SpriteRenderer>().color.b + blueChange;
 
         newRed = Mathf.Clamp(newRed, 0.2f, 1.0f);
         newGreen = Mathf.Clamp(newGreen, 0.2f, 1.0f);
@@ -41,6 +39,7 @@ public class VFXManager : MonoBehaviour
     // to be used on self
 
     // TODO: refactor this to just use the makeBurnEffect function with this.gameobject as the first parameter
+    // do NOT use makeBurnEffect on player - we do not want to change the color of the sprite
     public void spontaneousCombustion(Spell aSpell)
     {
         Instantiate(aSpell.effectPrefab, this.transform);
@@ -58,5 +57,12 @@ public class VFXManager : MonoBehaviour
         makeSlowEffect(this.gameObject, aSpell);
     }
 
+    //collision FX
+    // [SerializeField] GameObject fireHitFX;
+    // public void fireHit(GameObject gameObject)
+    // {
+    //     Instantiate(fireHitFX, gameObject.GetComponent<Transform>());
+    //     Debug.Log("Fire Hit");
+    // }
 
 }

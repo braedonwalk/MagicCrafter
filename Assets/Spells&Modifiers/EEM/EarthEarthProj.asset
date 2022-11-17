@@ -18,7 +18,7 @@ MonoBehaviour:
   cooldown: 0
   damage: 0
   prefab: {fileID: 8033645522153800746, guid: 185a41d93fb5ecd45a3b44d1f76dfbda, type: 3}
-  originDistance: 0
+  originDistance: 1
   speed: 0
   diameter: 0
   range: 0

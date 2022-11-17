@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e784248a0b00674081d2fba6bc22a7f, type: 3}
   m_Name: FireWaterProj
   m_EditorClassIdentifier: 
-  spellName: Steam
+  spellName: SteamPuff
   sprite: {fileID: 21300000, guid: 3cd9d9c5911229d45a3f4d5273c5c5e0, type: 3}
   id: 12100
   cooldown: 0
   damage: 0
-  prefab: {fileID: 0}
-  originDistance: 0
+  prefab: {fileID: 8648175616567937034, guid: 1ab51d099df773246ad2e2b06ee98ddd, type: 3}
+  originDistance: 1
   speed: 0
   diameter: 0
   range: 0
-  duration: 0
+  duration: 1
   effectPrefab: {fileID: 0}

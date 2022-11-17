@@ -22,7 +22,7 @@ public class SpellAction : MonoBehaviour
     // float projectileSpeed;
 
     // AOE
-    float AOEDiameter;
+    float AOERadius;
     // [SerializeField] ParticleSystem steamFX;
     // AimAtMouse aimAtMouse;
     // Vector2 AOEPos;
@@ -75,6 +75,7 @@ public class SpellAction : MonoBehaviour
                         // SELF
                         castSelf();
                     }
+                    Debug.Log("Cast: " + getActiveSpell().name);
 
                     nextCastTime = Time.time + getActiveSpell().cooldown;
                 // }
@@ -114,33 +115,27 @@ public class SpellAction : MonoBehaviour
         rb.AddForce(this.transform.up * getActiveSpell().speed, ForceMode2D.Impulse);
 
         Destroy(projectile, getActiveSpell().duration);
-
     }
 
     void castAOE()
     {
         Vector2 AOEPos = GetComponent<Rigidbody2D>().position; //cursor position
-        AOEDiameter = getActiveSpell().diameter; // diameter attribute of spell
-
-        
+        AOERadius = getActiveSpell().diameter/2; // diameter attribute of spell
 
         // damage anyone in AOE diameter if damage should be applied
         if (getActiveSpell().damage != 0)
         {            
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOEDiameter/2, whatIsEnemies);
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AOEPos, AOERadius, whatIsEnemies);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
                 enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
-                
             }
         }
-        // Debug.Log("AOE");
-        spellPrefab.transform.localScale = new Vector2(AOEDiameter, AOEDiameter);   //SCALING IS ALL WRONG
-        // playSteamVFX(1);
+
+        spellPrefab.transform.localScale = new Vector2(AOERadius*2, AOERadius*2);
         GameObject instantiatedObject = Instantiate(spellPrefab, AOEPos, this.transform.rotation);
 
         Destroy(instantiatedObject, getActiveSpell().duration);
-
 
         // special cases
         if (getActiveSpell().id == 3323) //EES- Earthquake
@@ -152,9 +147,9 @@ public class SpellAction : MonoBehaviour
     private void OnDrawGizmosSelected() {
         // Vector2 mousePos = GetComponent<AimAtMouse>().getMousePos();
         Vector2 mousePos = GetComponent<Rigidbody2D>().position;
-        AOEDiameter = getActiveSpell().diameter;
+        AOERadius = getActiveSpell().diameter/2;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(mousePos, AOEDiameter/2);
+        Gizmos.DrawWireSphere(mousePos, AOERadius);
     }
 
     void castSelf()
@@ -173,7 +168,7 @@ public class SpellAction : MonoBehaviour
         else if(effectId == 1)
         {
             Debug.Log("he burn");
-            vFXManager.spontaneousCombustion(getActiveSpell());
+            vFXManager.spontaneousCombustion(getActiveSpell()); //
         }
         else if (effectId == 3)
         {
@@ -181,7 +176,7 @@ public class SpellAction : MonoBehaviour
             statManager.changePlayerSpeed(statManager.getPlayerSpeed()/2);
             vFXManager.decreasePlayerSpeed(getActiveSpell());
 
-            Invoke("resetPlayerSpeed", getActiveSpell().duration);
+            Invoke("defaultPlayerSpeed", getActiveSpell().duration);
             Invoke("resetPlayerTint", getActiveSpell().duration);
         }
     
@@ -193,11 +188,9 @@ public class SpellAction : MonoBehaviour
             sprite.color = new Color (1, 1, 1, newVisibility);
             // Debug.Log(sprite.color);
             Invoke("defaultVisibility", getActiveSpell().duration);
-
         }
     }
     
-
     void defaultPlayerSpeed(){
         float defaultSpeed = statManager.getDefaultSpeed();
         statManager.changePlayerSpeed(defaultSpeed);
