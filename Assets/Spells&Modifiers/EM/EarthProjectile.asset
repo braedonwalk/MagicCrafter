@@ -19,8 +19,8 @@ MonoBehaviour:
   damage: 10
   prefab: {fileID: 2743226631944220009, guid: fb6fb7b20005d5a4daf8b0fe30860a39, type: 3}
   originDistance: 1
-  speed: 10
+  speed: 2
   diameter: 5
   range: 50
-  duration: 0
+  duration: 10
   effectPrefab: {fileID: 0}

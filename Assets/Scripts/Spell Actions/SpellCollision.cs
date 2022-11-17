@@ -30,7 +30,7 @@ public class SpellCollision : MonoBehaviour
         if (other.gameObject.tag == "Object")
         {            
             int effect1 = getEffects().Item1;
-            int effect2 = getEffects().Item1;
+            int effect2 = getEffects().Item2;
             
             if (effect1 == 1 || effect2 == 1) // burning
             {
