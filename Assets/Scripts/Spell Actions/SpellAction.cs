@@ -185,7 +185,7 @@ public class SpellAction : MonoBehaviour
                 statManager.changePlayerSpeed(statManager.getPlayerSpeed()/2);
                 vFXManager.decreasePlayerSpeed(getActiveSpell());
 
-                Invoke("resetPlayerSpeed", getActiveSpell().duration);
+                Invoke("defaultPlayerSpeed", getActiveSpell().duration);
                 Invoke("resetPlayerTint", getActiveSpell().duration);
             }
         
