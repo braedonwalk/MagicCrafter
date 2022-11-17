@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: FireSelf
   sprite: {fileID: 21300000, guid: 960f372dfddce914891b0afc94cb907b, type: 3}
-  id: 1031
+  id: 10310
   cooldown: 2
   damage: 10
   prefab: {fileID: 0}
