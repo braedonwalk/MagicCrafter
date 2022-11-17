@@ -29,37 +29,38 @@ public class SpellCollision : MonoBehaviour
 
         if (other.gameObject.tag == "Object")
         {            
+            int effect1 = getEffects().Item1;
+            int effect2 = getEffects().Item1;
             
-            
-            if (getEffect() == 1) // burning
+            if (effect1 == 1 || effect2 == 1) // burning
             {
                 vFXManager.makeBurnEffect(other.gameObject, spell);
                 Debug.Log("burnnnnnnn");
             }
 
-            if (getEffect() == 2) // wet
+            if (effect1 == 2 || effect2 == 2) // wet
             {
                 
             }
 
-            if (getEffect() == 3) // slow
+            if (effect1 == 3 || effect2 == 3) // slow
             {
                vFXManager.makeSlowEffect(other.gameObject, spell);
 
                // check tag and if it is an enemy (or something that can move), decrease the speed and clamp it
             }
 
-            if (getEffect() == 4) // increase speed
+            if (effect1 == 4 || effect2 == 4) // increase speed
             {
                
             }
 
-            if (getEffect() == 5) // heal
+            if (effect1 == 5 || effect2 == 5) // heal
             {
                 
             }
 
-            if (getEffect() == 6) // invisible
+            if (effect1 == 6 || effect2 == 6) // invisible
             {
                
             }
@@ -73,7 +74,7 @@ public class SpellCollision : MonoBehaviour
         
     }
 
-    int getEffect()
+    (int, int) getEffects()
     {
         List<int> listOfDigits = new List<int>();
 
@@ -86,7 +87,7 @@ public class SpellCollision : MonoBehaviour
         }
         listOfDigits.Reverse();
         
-        return listOfDigits[3];
+        return (listOfDigits[3], listOfDigits[4]);
     }
 
 
