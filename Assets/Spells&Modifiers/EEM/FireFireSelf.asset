@@ -23,4 +23,4 @@ MonoBehaviour:
   diameter: 0
   range: 0
   duration: 5
-  effectPrefab: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d, type: 3}
+  effectPrefab: {fileID: 8764043878647920493, guid: dcca310fc303e27478f816438bbda801, type: 3}
