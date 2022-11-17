@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: FireProjectile
   sprite: {fileID: 21300000, guid: 0054cecd728d1c24b9cbf8d2a2de71d2, type: 3}
-  id: 1011
+  id: 10110
   cooldown: 0.5
   damage: 2
   prefab: {fileID: 4249663564909586706, guid: 9583c4cdd16f9b046a0babafb5f68949, type: 3}

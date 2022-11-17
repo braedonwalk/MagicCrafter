@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: EarthProjectile
   sprite: {fileID: 21300000, guid: 0203bfbd4ae6943498b0ccee90a07918, type: 3}
-  id: 3010
+  id: 30100
   cooldown: 1
   damage: 10
   prefab: {fileID: 2743226631944220009, guid: fb6fb7b20005d5a4daf8b0fe30860a39, type: 3}

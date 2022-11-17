@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: Invisibility
   sprite: {fileID: 21300000, guid: 5646df0ece1819145a336da82cf0fe1b, type: 3}
-  id: 1236
+  id: 12360
   cooldown: 20
   damage: 0
   prefab: {fileID: 0}

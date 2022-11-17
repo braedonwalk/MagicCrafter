@@ -14,15 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: RockArmor
   sprite: {fileID: 21300000, guid: 7101812144189734fa6dda5d80fe8333, type: 3}
-  id: 3333
-  spellType: 0
+  id: 33330
   cooldown: 0
   damage: 0
   prefab: {fileID: 0}
   originDistance: 0
-  canCauseBurning: 0
-  canCauseWet: 0
-  canCauseSlow: 1
   speed: 0
   diameter: 0
   range: 0

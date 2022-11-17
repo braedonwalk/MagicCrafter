@@ -14,15 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: BurningSpeed
   sprite: {fileID: 21300000, guid: 85a4b21cc1c767f48b5dae72b1af058a, type: 3}
-  id: 1131
-  spellType: 0
+  id: 11310
   cooldown: 0
   damage: 0
   prefab: {fileID: 0}
   originDistance: 0
-  canCauseBurning: 0
-  canCauseWet: 0
-  canCauseSlow: 0
   speed: 0
   diameter: 0
   range: 0

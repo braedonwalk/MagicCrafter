@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: WaterAOE
   sprite: {fileID: 21300000, guid: ca92aedf9872c104793fe22114b49703, type: 3}
-  id: 2020
+  id: 20200
   cooldown: 2
   damage: 10
   prefab: {fileID: 0}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellName: EarthSelf
   sprite: {fileID: 21300000, guid: 62b480c434717764da0dcdb86d6cc7b2, type: 3}
-  id: 3033
+  id: 30330
   cooldown: 2
   damage: 10
   prefab: {fileID: 0}
