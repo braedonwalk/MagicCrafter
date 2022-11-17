@@ -160,40 +160,59 @@ public class SpellAction : MonoBehaviour
     void castSelf()
     {
         Debug.Log(("casting self spell"));
-        int effectId = getIdAttribute(3);
+        int effect1Id = getIdAttribute(3);
+        int effect2Id = getIdAttribute(4);
         
-        if(effectId == 4)
+        // if there is only one effect
+        if (effect2Id == 0)
         {
-            Debug.Log("i am speed");
-            statManager.changePlayerSpeed(speedIncrease);
-            vFXManager.increasePlayerSpeed(getActiveSpell());
-            
-            Invoke("defaultPlayerSpeed", getActiveSpell().duration);
-        }
-        else if(effectId == 1)
-        {
-            Debug.Log("he burn");
-            vFXManager.spontaneousCombustion(getActiveSpell());
-        }
-        else if (effectId == 3)
-        {
-            Debug.Log("slowww");
-            statManager.changePlayerSpeed(statManager.getPlayerSpeed()/2);
-            vFXManager.decreasePlayerSpeed(getActiveSpell());
+            if(effect1Id == 4)
+            {
+                Debug.Log("i am speed");
+                statManager.changePlayerSpeed(speedIncrease);
+                vFXManager.increasePlayerSpeed(getActiveSpell());
+                
+                Invoke("defaultPlayerSpeed", getActiveSpell().duration);
+            }
+            else if(effect1Id == 1)
+            {
+                Debug.Log("he burn");
+                vFXManager.spontaneousCombustion(getActiveSpell());
+            }
+            else if (effect1Id == 3)
+            {
+                Debug.Log("slowww");
+                statManager.changePlayerSpeed(statManager.getPlayerSpeed()/2);
+                vFXManager.decreasePlayerSpeed(getActiveSpell());
 
-            Invoke("resetPlayerSpeed", getActiveSpell().duration);
-            Invoke("resetPlayerTint", getActiveSpell().duration);
-        }
-    
-        else if(effectId == 6)
-        {
-            Debug.Log("his name is John Cena");
-            float newVisibility = 0.6f;
-            SpriteRenderer sprite = GetComponentInParent<SpriteRenderer>();
-            sprite.color = new Color (1, 1, 1, newVisibility);
-            // Debug.Log(sprite.color);
-            Invoke("defaultVisibility", getActiveSpell().duration);
+                Invoke("resetPlayerSpeed", getActiveSpell().duration);
+                Invoke("resetPlayerTint", getActiveSpell().duration);
+            }
+        
+            else if(effect1Id == 6)
+            {
+                Debug.Log("his name is John Cena");
+                float newVisibility = 0.6f;
+                SpriteRenderer sprite = GetComponentInParent<SpriteRenderer>();
+                sprite.color = new Color (1, 1, 1, newVisibility);
+                // Debug.Log(sprite.color);
+                Invoke("defaultVisibility", getActiveSpell().duration);
 
+            }
+        }
+
+        // if there are two effects
+        else
+        {
+            // burn and increase speed
+            if ( (effect1Id == 1 && effect2Id == 4) || (effect1Id == 4 && effect2Id == 1) )
+            {
+                Debug.Log("he burn and zoom");
+                vFXManager.spontaneousCombustion(getActiveSpell());
+                statManager.changePlayerSpeed(speedIncrease);
+
+                Invoke("defaultPlayerSpeed", getActiveSpell().duration);
+            }
         }
     }
     
