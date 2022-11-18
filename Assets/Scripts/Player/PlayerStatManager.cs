@@ -6,6 +6,7 @@ public class PlayerStatManager : MonoBehaviour
 {
 
     [SerializeField] float defaultMoveSpeed = 5f;
+    [SerializeField] float maxHealth = 5f;
     float moveSpeed;
     float defaultRed;
     float defaultGreen;
@@ -33,4 +34,7 @@ public class PlayerStatManager : MonoBehaviour
     {
         this.GetComponent<SpriteRenderer>().color = new Color(defaultRed,defaultGreen,defaultBlue);
     }
+
+    // health functions
+    // public get
 }

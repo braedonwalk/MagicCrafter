@@ -26,10 +26,10 @@ public class SpellInputManager : MonoBehaviour
 
     void Update()
     {
-        setActiveSpell();
+        activateEquippedSpellSlot();
     }
 
-    void setActiveSpell()
+    void activateEquippedSpellSlot()
     {
         for(int i = 1; i <= 4; i++)
         {
@@ -84,6 +84,11 @@ public class SpellInputManager : MonoBehaviour
     public int getSpellModifier()
     {
         return spellModifier;
+    }
+
+    public void setActiveSpell(Spell aSpell)
+    {
+        activeSpell  = aSpell;
     }
 
 }

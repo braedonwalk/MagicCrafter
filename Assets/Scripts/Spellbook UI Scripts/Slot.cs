@@ -10,11 +10,14 @@ public class Slot : MonoBehaviour, IDropHandler
     
     SpellDisplay spellDisplay;
 
+    SpellInputManager spellInputManager;
+
     [SerializeField] String[] receiveTags;
 
 
     private void Start() {
         spellDisplay = this.GetComponent<SpellDisplay>();
+        spellInputManager = GameObject.FindGameObjectWithTag("Player").GetComponent<SpellInputManager>();
     }
     
     public void OnDrop(PointerEventData eventData)
@@ -26,7 +29,10 @@ public class Slot : MonoBehaviour, IDropHandler
 
             if (droppedSpell.gameObject.tag == tag)
             {
-                spellDisplay.setSpell(droppedSpell.GetComponent<SpellDisplay>().getSpell());
+                Spell newSpell = droppedSpell.GetComponent<SpellDisplay>().getSpell();
+                
+                spellDisplay.setSpell(newSpell);
+                spellInputManager.setActiveSpell(newSpell);
             }
 
         }
