@@ -162,8 +162,16 @@ public class SpellAction : MonoBehaviour
         int effect1Id = getIdAttribute(3);
         int effect2Id = getIdAttribute(4);
         
+        // unique spells
+        // TODO: make it where the parameters for startHealthChangeOverTime refer to spell attributes
+        if (getActiveSpell().id == 23350) // waterEarthSelf- slow heal
+        {
+            Debug.Log("healing over time");
+            statManager.startHealthChangeOverTime(statManager.getHealth() + 1.0f, 0.001f, 5f);
+        }
+
         // if there is only one effect
-        if (effect2Id == 0)
+        else if (effect2Id == 0)
         {
             if(effect1Id == 4)
             {
@@ -197,6 +205,16 @@ public class SpellAction : MonoBehaviour
                 // Debug.Log(sprite.color);
                 Invoke("defaultVisibility", getActiveSpell().duration);
 
+            }
+
+            else if (effect1Id == 5)
+            {
+                Debug.Log("healing");
+                statManager.setHealth(statManager.getHealth() + 1.0f);
+
+                GameObject effect = Instantiate(spellPrefab, this.transform.position, this.transform.rotation);
+
+                Destroy(effect, getActiveSpell().duration);
             }
         }
 
