@@ -12,7 +12,7 @@ public class PlayerStatManager : MonoBehaviour
     float defaultGreen;
     float defaultBlue;
 
-    float currentHealth;
+    [SerializeField] float currentHealth;
     bool healthIsChanging;
     float healthGoal;
     float durationOfHealthChange;
@@ -37,7 +37,7 @@ public class PlayerStatManager : MonoBehaviour
 
     private void Update() 
     {
-        changeHealthOverTime();    
+        // changeHealthOverTime();    
     }
 
     // speed functions
@@ -84,57 +84,88 @@ public class PlayerStatManager : MonoBehaviour
     {
         healthGoal = newHealthGoal;
         amtOfHealthChange = newAmtOfHealthChange;
-        durationOfHealthChange = newDurationOfHealthChange;
 
-        healthIsChanging = true;
+        StartCoroutine(Countdown());
+        
     }
-    
 
-    void changeHealthOverTime()
-    {        
-        if (!healthIsChanging)
-        {
-            startTime = Time.fixedDeltaTime; 
-        }
+     private IEnumerator Countdown()
+ {
+        float duration = 3f; // 3 seconds you can change this 
+        //to whatever you want
+        float normalizedTime = 0;
 
-        else
+        while(normalizedTime <= duration)
         {
-            Debug.Log("health: " + currentHealth);
-            // Debug.Log("time passed: " + (Time.deltaTime - startTime));
-            // Debug.Log("duration: " + durationOfHealthChange);
+            normalizedTime += Time.deltaTime / duration;
             
-            // if the timer is still active
-            // if (Time.deltaTime - startTime > durationOfHealthChange)
-            // {
-                // if health should increase
-                if (currentHealth < healthGoal)
-                {
-                    currentHealth += amtOfHealthChange;
+            Debug.Log("health: " + currentHealth);
 
-                    if (currentHealth >= healthGoal)
-                    {
-                        healthIsChanging = false;
-                    }
-                }
-                // if health should decrease
-                else 
-                {
-                    currentHealth -= amtOfHealthChange;
-                    
-                    if (currentHealth <= healthGoal)
-                    {
-                        healthIsChanging = false;
-                    }
-                }
-            // }
-            // if timer has triggered
-            // else 
-            // {
-            //     healthIsChanging = false;
+            // if health should increase
+            if (currentHealth < healthGoal)
+            {
+                currentHealth += amtOfHealthChange;
 
-            // }
+            }
+            // if health should decrease
+            else 
+            {
+                currentHealth -= amtOfHealthChange;
+                
+            }
+
+            currentHealth = Mathf.Clamp(currentHealth, 0 , maxHealth);
+
+            yield return null;
         }
-    }
+ }
+    
+    // TODO: Probablu remove this
+    // void changeHealthOverTime()
+    // {        
+    //     if (!healthIsChanging)
+    //     {
+    //         startTime = Time.fixedDeltaTime; 
+    //     }
+
+    //     else
+    //     {
+    //         Debug.Log("health: " + currentHealth);
+    //         // Debug.Log("time passed: " + (Time.deltaTime - startTime));
+    //         // Debug.Log("duration: " + durationOfHealthChange);
+            
+    //         // if the timer is still active
+    //         // if (Time.deltaTime - startTime > durationOfHealthChange)
+    //         // {
+    //             // if health should increase
+    //             if (currentHealth < healthGoal)
+    //             {
+    //                 currentHealth += amtOfHealthChange;
+
+    //                 if (currentHealth >= healthGoal)
+    //                 {
+    //                     healthIsChanging = false;
+    //                 }
+    //             }
+    //             // if health should decrease
+    //             else 
+    //             {
+    //                 currentHealth -= amtOfHealthChange;
+                    
+    //                 if (currentHealth <= healthGoal)
+    //                 {
+    //                     healthIsChanging = false;
+    //                 }
+    //             }
+    //         // }
+    //         // if timer has triggered
+    //         // else 
+    //         // {
+    //         //     healthIsChanging = false;
+
+    //         // }
+    //     }
+    // }
 
     // armor function
     public void setArmor(bool isNowArmored)
