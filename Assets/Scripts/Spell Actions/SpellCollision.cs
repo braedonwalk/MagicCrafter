@@ -41,27 +41,10 @@ public class SpellCollision : MonoBehaviour
         
     }
 
-    (int, int) getEffects()
-    {
-        List<int> listOfDigits = new List<int>();
-
-        int id = spell.id;
-
-        while(id > 0)
-        {
-            listOfDigits.Add(id % 10);
-            id /= 10;
-        }
-
-        listOfDigits.Reverse();
-        
-        return (listOfDigits[3], listOfDigits[4]);
-    }
-
     void checkEffect(VFXManager vFXManager, Collision2D other)
     {
-        int effect1 = getEffects().Item1;
-        int effect2 = getEffects().Item2;
+        int effect1 = getIdAttribute(3);
+        int effect2 = getIdAttribute(4);
         
         if (effect1 == 1 || effect2 == 1) // burning
         {
