@@ -8,9 +8,11 @@ public class SpellCollision : MonoBehaviour
     [SerializeField] Spell spell;
     EnemyHealth enemyHealth;
     SpellAction spellAction;
+    SpellSoundManager soundManager;
 
     private void Start() {
         spellAction = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpellAction>();
+        soundManager = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpellSoundManager>();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -20,6 +22,7 @@ public class SpellCollision : MonoBehaviour
         if(!other.gameObject.CompareTag("Player"))
         {
             checkElementType(vFXManager);
+            soundManager.hitSound(other.transform.position);
             Destroy(this.gameObject);
         }
         else

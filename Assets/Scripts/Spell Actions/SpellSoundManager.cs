@@ -12,8 +12,8 @@ public class SpellSoundManager : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        spellAction = GetComponentInChildren<SpellAction>();
+        audioSource = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<AudioSource>();
+        spellAction = GetComponent<SpellAction>();
     }
 
     Spell getActiveSpell()
@@ -21,11 +21,25 @@ public class SpellSoundManager : MonoBehaviour
         return spellAction.getActiveSpell();
     }
 
-    public void checkSpellCast()
+    int getIdAttribute(int i)
     {
-        if (getActiveSpell().id == 1011)
-        {
-            audioSource?.PlayOneShot(fireProjectileCast);
-        }
+        return spellAction.getIdAttribute(i);
+    }
+
+    // bool checkElementType(int i, int j)
+    // {
+    //     if (getIdAttribute(0) == i && getIdAttribute(1) == j) { return true; }
+    //     else { return false; }
+    // }
+
+    public void castSound()
+    {
+        audioSource?.PlayOneShot(getActiveSpell().castSound);
+    }
+
+    public void hitSound(Vector3 pos)
+    {
+        // audioSource?.PlayOneShot(getActiveSpell().hitSound);
+        AudioSource.PlayClipAtPoint(getActiveSpell().hitSound, pos);
     }
 }
