@@ -51,6 +51,11 @@ public class VFXManager : MonoBehaviour
         Instantiate(aSpell.effectPrefab, this.transform);
     }
 
+    public void healEffect(Spell aSpell)
+    {
+        Instantiate(aSpell.effectPrefab, this.transform);
+    }
+
     public void decreasePlayerSpeed(Spell aSpell)
     {
         // should you instantiate anything here?

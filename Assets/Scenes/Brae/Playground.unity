@@ -16297,6 +16297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultMoveSpeed: 5
   maxHealth: 5
+  currentHealth: 5
 --- !u!114 &1428251114
 MonoBehaviour:
   m_ObjectHideFlags: 0

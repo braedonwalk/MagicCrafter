@@ -164,10 +164,17 @@ public class SpellAction : MonoBehaviour
         
         // unique spells
         // TODO: make it where the parameters for startHealthChangeOverTime refer to spell attributes
-        if (getActiveSpell().id == 23350) // waterEarthSelf- slow heal
+        if (getActiveSpell().id == 23353) // waterEarthSelf- slow heal
         {
             Debug.Log("healing over time");
             statManager.startHealthChangeOverTime(statManager.getHealth() + 1.0f, 0.001f, 5f);
+
+            statManager.changePlayerSpeed(statManager.getPlayerSpeed()/2);
+            vFXManager.decreasePlayerSpeed(getActiveSpell());
+            vFXManager.healEffect(getActiveSpell());
+
+            Invoke("defaultPlayerSpeed", getActiveSpell().duration);
+            Invoke("resetPlayerTint", getActiveSpell().duration);
         }
 
         // if there is only one effect
@@ -185,6 +192,7 @@ public class SpellAction : MonoBehaviour
             {
                 Debug.Log("he burn");
                 vFXManager.spontaneousCombustion(getActiveSpell());
+                statManager.startHealthChangeOverTime(statManager.getHealth() + getActiveSpell().damage, 0.001f, getActiveSpell().duration);
             }
             else if (effect1Id == 3)
             {
