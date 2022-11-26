@@ -126,6 +126,9 @@ public class SpellAction : MonoBehaviour
         Vector2 AOEPos = GetComponent<Rigidbody2D>().position; //cursor position
         AOERadius = getActiveSpell().diameter/2; // diameter attribute of spell
 
+        int effect1Id = getIdAttribute(3);
+        int effect2Id = getIdAttribute(4);
+
         // damage anyone in AOE diameter if damage should be applied
         if (getActiveSpell().damage != 0)
         {            
@@ -133,6 +136,15 @@ public class SpellAction : MonoBehaviour
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
                 enemiesToDamage[i].GetComponent<EnemyHealth>().removeHealth(getActiveSpell().damage);
+
+                if (effect1Id == 3 || effect2Id == 3)
+                {
+                    vFXManager.makeSlowEffect(enemiesToDamage[i].gameObject, getActiveSpell());
+                    Debug.Log("red" + enemiesToDamage[i].GetComponent<SpriteRenderer>().color.r);
+                    Debug.Log("green" + enemiesToDamage[i].GetComponent<SpriteRenderer>().color.g);
+                    Debug.Log("blue" + enemiesToDamage[i].GetComponent<SpriteRenderer>().color.b);
+                }
+
             }
         }
 
@@ -146,6 +158,11 @@ public class SpellAction : MonoBehaviour
         {
             cinemachineShake.startCameraShake(10, 3);
         }
+        // TODO: Refactor this by checking some effectId numbers and applying the proper one.
+        if (getActiveSpell().id == 23130) // WE AOE- mud splash
+        {
+
+        }
     }
 
     private void OnDrawGizmosSelected() {
@@ -156,6 +173,10 @@ public class SpellAction : MonoBehaviour
         Gizmos.DrawWireSphere(mousePos, AOERadius);
     }
 
+
+    // TODO: Refactor this so that all unique spells are checked first and then
+    // all subsequent if statements check to see if effect1Id == # || effect2Id == #
+    // no else if's there so that multiple effects could be applied.
     void castSelf()
     {
         Debug.Log(("casting self spell"));
@@ -227,6 +248,7 @@ public class SpellAction : MonoBehaviour
                 Debug.Log("he burn and zoom");
                 vFXManager.spontaneousCombustion(getActiveSpell());
                 statManager.changePlayerSpeed(speedIncrease);
+                statManager.startHealthChangeOverTime(statManager.getHealth() + 1.0f, -0.001f, 5f);
 
                 Invoke("defaultPlayerSpeed", getActiveSpell().duration);
             }

@@ -86,7 +86,6 @@ public class PlayerStatManager : MonoBehaviour
         amtOfHealthChange = newAmtOfHealthChange;
 
         StartCoroutine(Countdown());
-        
     }
 
      private IEnumerator Countdown()
