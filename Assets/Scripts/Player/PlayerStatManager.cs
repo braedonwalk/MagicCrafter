@@ -92,7 +92,7 @@ public class PlayerStatManager : MonoBehaviour
     }
 
      private IEnumerator Countdown()
- {
+    {
         float duration = 3f; // 3 seconds you can change this 
         //to whatever you want
         float normalizedTime = 0;
@@ -101,26 +101,13 @@ public class PlayerStatManager : MonoBehaviour
         {
             normalizedTime += Time.deltaTime / duration;
             
-            Debug.Log("health: " + currentHealth);
-
-            // if health should increase
-            if (currentHealth < healthGoal)
-            {
-                currentHealth += amtOfHealthChange;
-
-            }
-            // if health should decrease
-            else 
-            {
-                currentHealth -= amtOfHealthChange;
-                
-            }
+            currentHealth += amtOfHealthChange;
 
             currentHealth = Mathf.Clamp(currentHealth, 0 , maxHealth);
 
             yield return null;
         }
- }
+    }
     
     // TODO: Probablu remove this
     // void changeHealthOverTime()
