@@ -143,7 +143,7 @@ public class SpellAction : MonoBehaviour
         Destroy(instantiatedObject, getActiveSpell().duration);
 
         // special cases
-        if (getActiveSpell().id == 3323) //EES- Earthquake
+        if (getActiveSpell().id == 33230) //EES- Earthquake
         {
             cinemachineShake.startCameraShake(10, 3);
         }
