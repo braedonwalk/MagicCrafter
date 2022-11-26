@@ -7,8 +7,8 @@ public class SpellSoundManager : MonoBehaviour
     AudioSource audioSource;
     SpellAction spellAction;
     //CREATE A DICTIONARY OF AUDIOFILES AND ID NUMBERS?
-    [SerializeField] AudioClip fireProjectileCast;
-    [SerializeField] AudioClip fireProjectileHit;
+    // [SerializeField] AudioClip fireProjectileCast;
+    // [SerializeField] AudioClip fireProjectileHit;
 
     void Start()
     {
@@ -37,9 +37,15 @@ public class SpellSoundManager : MonoBehaviour
         audioSource?.PlayOneShot(getActiveSpell().castSound);
     }
 
+    public void activeSound()
+    {
+        audioSource?.PlayOneShot(getActiveSpell().activeSound);
+    }
+
     public void hitSound(Vector3 pos)
     {
         // audioSource?.PlayOneShot(getActiveSpell().hitSound);
         AudioSource.PlayClipAtPoint(getActiveSpell().hitSound, pos);
+        // audioSource.Stop();
     }
 }

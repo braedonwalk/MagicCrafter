@@ -82,6 +82,7 @@ public class SpellAction : MonoBehaviour
                     nextCastTime = Time.time + getActiveSpell().cooldown;
 
                     soundManager.castSound();
+                    // soundManager.activeSound();
                 // }
             }
         }

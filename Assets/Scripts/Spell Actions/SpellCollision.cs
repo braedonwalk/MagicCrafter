@@ -87,7 +87,7 @@ public class SpellCollision : MonoBehaviour
     {
         if (getIdAttribute(0) == 1 || getIdAttribute(1) == 1)
         {
-            Debug.Log("fire spell");
+            // Debug.Log("fire spell");
             // vFXManager.fireHit(gameObject);
         }
     }

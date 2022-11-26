@@ -7037,7 +7037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 612243efde9ed314e85dff9079ac55c4, type: 2}
+  spell: {fileID: 11400000, guid: bc52cc0d0dcbfb649bf2788fed995160, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &594918417
 MonoBehaviour:
@@ -13900,7 +13900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: 2795ca1d10edb1c40893d03216fa1f41, type: 2}
+  spell: {fileID: 11400000, guid: 612243efde9ed314e85dff9079ac55c4, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!114 &794204922
 MonoBehaviour:
@@ -14725,7 +14725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3c107b612128f4eaced2bd6147e0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spell: {fileID: 11400000, guid: dd4a20c68bfaab84a916327f3607555f, type: 2}
+  spell: {fileID: 11400000, guid: e9b3b2d7cdea1a44cb45dabf85f49cc6, type: 2}
   emptySpell: {fileID: 11400000, guid: 25819adc8c4d664498982798f8cc1d55, type: 2}
 --- !u!1 &1145541895
 GameObject:
@@ -20429,8 +20429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1623f5af68946fc4a92b25c253a883c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireProjectileCast: {fileID: 8300000, guid: 929e24f15c210e44ca2b787974237e7f, type: 3}
-  fireProjectileHit: {fileID: 0}
 --- !u!82 &1963570390
 AudioSource:
   m_ObjectHideFlags: 0

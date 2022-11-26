@@ -24,3 +24,6 @@ MonoBehaviour:
   range: 0
   duration: 1
   effectPrefab: {fileID: 0}
+  castSound: {fileID: 8300000, guid: f00132d0c24a7b04abd2ddcedc6a6403, type: 3}
+  hitSound: {fileID: 0}
+  activeSound: {fileID: 0}
