@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
     
-    [SerializeField] float health = 3f;
+    [SerializeField] float health = 20f;
     [SerializeField] bool isDead = false;
+    [SerializeField] Image healthBarImage;
     // EnemySoundManager soundManager;
     // EnemyParticleEffectManager particleEffectManager;
+
+    float maxHealth;
 
     private void Start() {
         // soundManager = GetComponent<EnemySoundManager>();
         // particleEffectManager = GetComponent<EnemyParticleEffectManager>();
+        maxHealth = health;
     }
 
     private void Update() {
@@ -21,7 +26,8 @@ public class EnemyHealth : MonoBehaviour
 
     public void removeHealth(float damageTaken){
         health -= damageTaken;
-        Debug.Log("Enemy Health: " + health);
+        healthBarImage.fillAmount = health/maxHealth;
+
     }
 
     void destroyEnemy(){
