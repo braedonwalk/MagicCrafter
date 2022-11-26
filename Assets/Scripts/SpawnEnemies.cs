@@ -15,6 +15,11 @@ public class SpawnEnemies : MonoBehaviour
     {
         if (Input.GetKeyDown("p"))
         {
+            GameObject[] enemyList = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject obj in enemyList)
+            {
+                Destroy(obj);
+            }
             Debug.Log("hey");
             Instantiate(prefab, this.transform);
         }
