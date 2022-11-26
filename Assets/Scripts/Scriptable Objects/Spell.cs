@@ -26,5 +26,9 @@ public class Spell : ScriptableObject {
 
     public GameObject effectPrefab;
 
+    public AudioClip castSound;
+    public AudioClip hitSound;
+    public AudioClip activeSound;
+
 }
 
