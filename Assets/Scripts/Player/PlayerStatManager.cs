@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerStatManager : MonoBehaviour
 {
 
     [SerializeField] float defaultMoveSpeed = 5f;
     [SerializeField] float maxHealth = 5f;
+    [SerializeField] Image healthBarImage;
     float moveSpeed;
     float defaultRed;
     float defaultGreen;
@@ -37,7 +39,8 @@ public class PlayerStatManager : MonoBehaviour
 
     private void Update() 
     {
-        // changeHealthOverTime();    
+        // changeHealthOverTime();
+        healthBarImage.fillAmount = currentHealth/maxHealth;
     }
 
     // speed functions
@@ -86,7 +89,6 @@ public class PlayerStatManager : MonoBehaviour
         amtOfHealthChange = newAmtOfHealthChange;
 
         StartCoroutine(Countdown());
-        
     }
 
      private IEnumerator Countdown()
